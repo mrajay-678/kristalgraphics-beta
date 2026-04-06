@@ -1,1 +1,1 @@
-# kristalgraphics.
+# kristalgraphics
