@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>Kristal Graphics - Coming Soon</title>
     <style>
         body {
@@ -11,10 +14,10 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            height: 100%;
+            height: 80vh;
             max-height: 100vh;
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: "Outfit", sans-serif;
             font-size: 1rem;
             background-image: url('/pattern.png');
             background-size: cover;
@@ -22,30 +25,47 @@
             line-height: 2;
             padding: 30px;
         }
+
         .coming-soon {
             text-align: center;
             position: relative;
         }
+
         .circle {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
         .rotate {
             animation: rotate 20s linear infinite;
             width: 300px;
         }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
         @keyframes rotate {
             from {
                 transform: rotate(0deg);
             }
+
             to {
                 transform: rotate(360deg);
             }
         }
+
+        @media (max-width: 1000px) {
+            body {
+                height: 100vh;
+            }
+        }
     </style>
 </head>
+
 <body class="bg-black">
     <div class="coming-soon">
         <img src="./logo.png" alt="Kristal Graphics Logo" width="100" height="150" class="circle">
@@ -53,8 +73,8 @@
     </div>
     <div>
         Address : 9607 Canoga Ave, Chatsworth, CA 91311, United States <br>
-        Phone : +1 818-998-8888 <br>
-        Email : info@kristalgraphics.net
+        Phone : <a href="tel:+18189988888">+1 818-998-8888</a> <br>
+        Email : <a href="mailto:info@kristalgraphics.net">info@kristalgraphics.net</a>
     </div>
 </body>
 
