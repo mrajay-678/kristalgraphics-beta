@@ -1,0 +1,76 @@
+# ----------------------
+# Dependencies
+# ----------------------
+node_modules/
+
+# ----------------------
+# Next.js build output
+# ----------------------
+.next/
+out/
+
+# ----------------------
+# Production build
+# ----------------------
+build/
+
+# ----------------------
+# Logs
+# ----------------------
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------
+# Environment variables
+# ----------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Keep example env file
+!.env.example
+
+# ----------------------
+# TypeScript
+# ----------------------
+*.tsbuildinfo
+next-env.d.ts
+
+# ----------------------
+# IDE / Editor
+# ----------------------
+.vscode/
+.idea/
+
+# ----------------------
+# OS files
+# ----------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------
+# Testing / coverage
+# ----------------------
+coverage/
+
+# ----------------------
+# Cache
+# ----------------------
+.cache/
+
+# ----------------------
+# Optional: lockfiles
+# ----------------------
+# Keep ONLY one depending on your package manager
+
+# pnpm (you are using this — keep it tracked)
+# pnpm-lock.yaml → DO NOT ignore
+
+# If you ever switch, uncomment:
+# package-lock.json
+# yarn.lock
