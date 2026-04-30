@@ -1,0 +1,17 @@
+.hero-03-headline__title {
+    font-size: 7vw;
+    color: #fff;
+
+    span {
+        font-weight: 300;
+    }
+}
+.m-0 {
+    margin: 0;
+}
+.font-40 {
+    font-size: 40px;
+}
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}

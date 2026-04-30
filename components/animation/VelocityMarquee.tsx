@@ -30,7 +30,7 @@ export default function VelocityMarquee({
 
   // ✅ left should be NEGATIVE, right should be POSITIVE
   const dirDelta = useMemo(
-    () => (direction === "left" ? "-=50%" : "+=50%"),
+    () => (direction === "left" ? "-=0%" : "+=100%"),
     [direction]
   );
 
@@ -103,7 +103,7 @@ export default function VelocityMarquee({
       {/* 🚫 remove direction-specific CSS class */}
       <div
         ref={trackRef}
-        className="marquee-flex"
+        className="marquee-flex w-full"
         style={{
           display: "inline-flex",
           whiteSpace: "nowrap",

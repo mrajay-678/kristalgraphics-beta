@@ -1,6 +1,7 @@
 import Blogs from "@/components/common/Blogs";
 import Cta from "@/components/common/Cta";
 import Footer2 from "@/components/footers/Footer2";
+import "@/public/css/kg.css";
 
 import About from "@/components/homes/home-software-development-company/About";
 import Capabilities from "@/components/homes/home-software-development-company/Capabilities";
@@ -13,6 +14,8 @@ import ParallaxDivider from "@/components/homes/home-software-development-compan
 import Projects from "@/components/homes/home-software-development-company/Projects";
 import Services from "@/components/homes/home-software-development-company/Services";
 import TechStacks from "@/components/homes/home-software-development-company/TechStacks";
+import Experties from "@/components/homes/home-software-development-company/Experties";
+import BrandsMarquee from "@/components/homes/home-software-development-company/BrandsMarquee";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
@@ -25,20 +28,33 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
     <>
       <main id="mxd-page-content" className="mxd-page-content">
         <Hero />
-        <MarqueeSlider />
-        <Services />
-        <About />
-        <ParallaxBanner />
+        <MarqueeSlider items={["Design", "Development", "Branding", "Strategy"]} />
         <Capabilities />
-        <Projects />
-        <TechStacks />
-        <MarqueeSlider2 />
-        <Facts />
-        <ParallaxDivider />
-        <Blogs />
-        <Cta />
+        <Experties />
+        <video
+          className=" w-11/12 mx-auto"
+          preload="auto"
+          autoPlay
+          loop
+          muted
+        >
+          <source type="video/mp4" src="img/kg/download.mp4" />
+        </video>
+        <section className="mt-52">
+          <MarqueeSlider items={["Brands that trust us", "Brands that trust us", "Brands that trust us", "Brands that trust us"]} />
+        </section>
+        <BrandsMarquee direction="left" items={["brand-1.png", "brand-2.png", "brand-3.png", "brand-4.png", "brand-5.png", "brand-6.png", "brand-7.png", "brand-8.png", "brand-9.png", "brand-11.png"]} />
+        <BrandsMarquee direction="right" items={[  "brand-11.png","brand-9.png","brand-8.png","brand-7.png","brand-6.png","brand-5.png","brand-4.png","brand-3.png","brand-2.png","brand-1.png",]} />
       </main>
       <Footer2 />
     </>
   );
 }
+
+{/* <TechStacks />
+<Projects />
+<MarqueeSlider2 />
+<Facts />
+<ParallaxDivider />
+<Blogs />
+<Cta /> */}

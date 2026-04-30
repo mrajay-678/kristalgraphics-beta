@@ -1,10 +1,8 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import capabilities from "@/data/capabilities.json";
 import RevealText from "@/components/animation/RevealText";
-import AnimatedButton from "@/components/animation/AnimatedButton";
 import { compatibility } from "@/types/capabilities";
 type HoverState = {
   activeIndex: number | null;
@@ -48,18 +46,6 @@ export default function Capabilities() {
                     <RevealText as="h2" className="reveal-type">
                       Our capabilities
                     </RevealText>
-                  </div>
-                </div>
-                <div className="col-12 col-xl-3 mxd-grid-item no-margin"></div>
-                <div className="col-12 col-xl-3 mxd-grid-item no-margin">
-                  <div className="mxd-section-title__hrcontrols anim-uni-in-up">
-                    <AnimatedButton
-                      text="All Services"
-                      className="btn btn-anim btn-default btn-outline slide-right-up"
-                      href={`/services`}
-                    >
-                      <i className="ph-bold ph-arrow-up-right" />
-                    </AnimatedButton>
                   </div>
                 </div>
               </div>
@@ -108,8 +94,8 @@ export default function Capabilities() {
                         />
                       </div>
                       <div className="mxd-cpb-list__content anim-uni-in-up">
-                        <h6 className="mxd-cpb-list__title">{item.title}</h6>
-                        <div className="mxd-cpb-list__num">
+                        <h6 className="mxd-cpb-list__title m-0 font-40">{item.title}</h6>
+                        <div className="mxd-cpb-list__num"> 
                           <span>{item.num}</span>
                         </div>
                       </div>

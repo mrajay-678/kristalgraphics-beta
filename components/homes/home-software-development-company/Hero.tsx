@@ -116,15 +116,15 @@ export default function Hero() {
             </div>
             {/* headline */}
             <div className="mxd-hero-03__headline">
-              <p className="hero-03-headline__caption loading__item">
+              <p className="hero-03-headline__caption loading__item text-white">
                 Memorable merch
                 <br />
                 that makes your brand
                 <br />
                  impossible to ignore
               </p>
-              <h1 className="hero-03-headline__title loading__item">
-                <span className="hero-03-headline" >Kristal Graphics</span>
+              <h1 className="hero-03-headline__title loading__item text-white">
+                <div className="!text-[6vw]">Kristal  <span>Graphics</span></div>  
               </h1>
             </div>
           </div>
@@ -134,11 +134,13 @@ export default function Hero() {
               {/* video divider */}
               <div className="mxd-divider">
                 <div className="mxd-divider__video">
-                  <VideoParallax
-                    className="video parallax-video"
-                    src="/video/1920x1080_video-04.webm"
-                    poster="/video/1920x1080_video-04.webp"
-                  />
+                  <Image
+                    className="mxd-pulse-small"
+                    alt="Image"
+                    src="/img/kg/hero-1.png"
+                    width={800}
+                    height={780}
+                    />
                 </div>
               </div>
             </div>
