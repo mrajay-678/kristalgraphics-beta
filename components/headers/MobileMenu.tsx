@@ -5,6 +5,7 @@ import menuItems from "@/data/menu.json"; // adjust path accordingly
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 import gsap from "gsap";
+// @ts-ignore - GSAP has casing conflict in types (Flip.d.ts vs flip.d.ts)
 import Flip from "gsap/Flip";
 import { usePathname } from "next/navigation";
 import AnimatedButton from "../animation/AnimatedButton";

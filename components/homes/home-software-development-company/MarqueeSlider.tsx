@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 
-export default function MarqueeSlider({ items }: { items: string[] }) {
+export default function MarqueeSlider({ items }: { items: string[] }): React.JSX.Element {
   return (
     <div className="mxd-section padding-mtext-pre-grid">
       <div className="mxd-container fullwidth-container">
