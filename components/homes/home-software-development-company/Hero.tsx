@@ -50,6 +50,39 @@ export default function Hero() {
                     />
                   </div>
                 </div>
+                <div className="marquee__item one-line">
+                  <div className="hero-03-marquee__image">
+                    <Image
+                      className="mxd-move"
+                      alt="Image"
+                      src="/img/kg/marquee-3.png"
+                      width={1000}
+                      height={1532}
+                    />
+                  </div>
+                </div>
+                <div className="marquee__item one-line">
+                  <div className="hero-03-marquee__image">
+                    <Image
+                      className="mxd-move"
+                      alt="Image"
+                      src="/img/kg/marquee-4.png"
+                      width={1000}
+                      height={1532}
+                    />
+                  </div>
+                </div>
+                <div className="marquee__item one-line">
+                  <div className="hero-03-marquee__image">
+                    <Image
+                      className="mxd-move"
+                      alt="Image"
+                      src="/img/kg/marquee-5.png"
+                      width={1000}
+                      height={1532}
+                    />
+                  </div>
+                </div>
                 {/* item */}
                 <div className="marquee__item one-line">
                   <div className="hero-03-marquee__video">
@@ -81,7 +114,7 @@ export default function Hero() {
                     <Image
                       className="mxd-rotate-slow"
                       alt="Image"
-                      src="/img/kg/marquee-1.png"
+                      src="/img/kg/marquee-2.png"
                       width={1410}
                       height={1056}
                     />
@@ -105,7 +138,18 @@ export default function Hero() {
                     <Image
                       className="mxd-pulse-small"
                       alt="Image"
-                      src="/img/kg/marquee-1.png"
+                      src="/img/kg/marquee-5.png"
+                      width={800}
+                      height={780}
+                    />
+                  </div>
+                </div>
+                <div className="marquee__item one-line">
+                  <div className="hero-03-marquee__image">
+                    <Image
+                      className="mxd-pulse-small"
+                      alt="Image"
+                      src="/img/kg/marquee-6.png"
                       width={800}
                       height={780}
                     />
@@ -116,16 +160,16 @@ export default function Hero() {
             </div>
             {/* headline */}
             <div className="mxd-hero-03__headline">
-              <p className="hero-03-headline__caption loading__item text-white">
+              <p className="hero-03-headline__caption loading__item text-white !font-body font-light">
                 Memorable merch
                 <br />
                 that makes your brand
                 <br />
                  impossible to ignore
               </p>
-              <h1 className="hero-03-headline__title loading__item text-white">
-                <div className="!text-[6vw]">Kristal  <span>Graphics</span></div>  
-              </h1>
+              <div className="hero-03-headline__title loading__item text-black">
+                <div className="!text-[7vw] font-heading">Kristal  <span className="">Graphics</span></div>  
+              </div>
             </div>
           </div>
           {/* bottom part */}

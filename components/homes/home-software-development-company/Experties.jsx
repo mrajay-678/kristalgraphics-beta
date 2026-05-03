@@ -5,15 +5,15 @@ export const Experties = () => {
     <section>
         <div className="w-10/12 mx-auto flex justify-between pb-52">
             <div className="flex flex-col gap-5 w-2/4">
-                <div className="flex items-center gap-5">
+                <div className="flex items-center gap-7">
                     <div className="">
-                        <div className="text-[15vw] leading-none font-bold">4</div>
+                        <div className="text-[15vw] leading-none font-bold font-heading">4</div>
                     </div>
                     <div className="">
-                        <div className="text-[6vw] font-light leading-none">decades of expertise</div>
+                        <div className="text-[5vw] font-light leading-none font-heading">decades of expertise</div>
                     </div>
                 </div>
-                <div className="text-5xl">We're a full-service print and promo shop in Chatsworth, California. We handle it all in-house with an experienced crew, committed to delivering quality that lasts and timelines you can actually count on</div>
+                <div className="text-5xl font-body pt-10">We're a full-service print and promo shop in Chatsworth, California. We handle it all in-house with an experienced crew, committed to delivering quality that lasts and timelines you can actually count on</div>
             </div>
             <div className='text-end'>
                 <svg width="441" height="440" viewBox="0 0 441 440" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -3,20 +3,15 @@ import Cta from "@/components/common/Cta";
 import Footer2 from "@/components/footers/Footer2";
 import "@/public/css/kg.css";
 
-import About from "@/components/homes/home-software-development-company/About";
 import Capabilities from "@/components/homes/home-software-development-company/Capabilities";
-import Facts from "@/components/homes/home-software-development-company/Facts";
 import Hero from "@/components/homes/home-software-development-company/Hero";
 import MarqueeSlider from "@/components/homes/home-software-development-company/MarqueeSlider";
-import MarqueeSlider2 from "@/components/homes/home-software-development-company/MarqueeSlider2";
-import ParallaxBanner from "@/components/homes/home-software-development-company/ParallaxBanner";
-import ParallaxDivider from "@/components/homes/home-software-development-company/ParallaxDivider";
-import Projects from "@/components/homes/home-software-development-company/Projects";
-import Services from "@/components/homes/home-software-development-company/Services";
-import TechStacks from "@/components/homes/home-software-development-company/TechStacks";
 import Experties from "@/components/homes/home-software-development-company/Experties";
 import BrandsMarquee from "@/components/homes/home-software-development-company/BrandsMarquee";
+import ImageSequenceScroll from "@/components/homes/home-software-development-company/ImageSequenceScroll";
+import Instagram from "@/components/homes/home-software-development-company/Instagram";
 import { Metadata } from "next";
+
 export const metadata: Metadata = {
   title:
     "Software Development Company || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
@@ -31,20 +26,16 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
         <MarqueeSlider items={["Design", "Development", "Branding", "Strategy"]} />
         <Capabilities />
         <Experties />
-        <video
-          className=" w-11/12 mx-auto"
-          preload="auto"
-          autoPlay
-          loop
-          muted
-        >
-          <source type="video/mp4" src="img/kg/download.mp4" />
-        </video>
+        <ImageSequenceScroll />
+        <Instagram />
         <section className="mt-52">
           <MarqueeSlider items={["Brands that trust us", "Brands that trust us", "Brands that trust us", "Brands that trust us"]} />
         </section>
         <BrandsMarquee direction="left" items={["brand-1.png", "brand-2.png", "brand-3.png", "brand-4.png", "brand-5.png", "brand-6.png", "brand-7.png", "brand-8.png", "brand-9.png", "brand-11.png"]} />
         <BrandsMarquee direction="right" items={[  "brand-11.png","brand-9.png","brand-8.png","brand-7.png","brand-6.png","brand-5.png","brand-4.png","brand-3.png","brand-2.png","brand-1.png",]} />
+        <div className="w-6/12 mx-auto font-body text-center text-5xl pt-52">
+          Trusted by unions, local businesses, national brands, <br /> event planners, and companies that care about quality.
+        </div>
       </main>
       <Footer2 />
     </>

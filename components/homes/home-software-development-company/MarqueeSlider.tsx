@@ -30,7 +30,7 @@ export default function MarqueeSlider({ items }: { items: string[] }): React.JSX
             {items.map((item, index) => (
               <SwiperSlide key={index} style={{ width: "auto" }}>
                 <div className="marquee__item one-line item-regular text">
-                  <p className="marquee__text text-black" dangerouslySetInnerHTML={{ __html: item }}></p>
+                  <p className="marquee__text text-black font-heading" dangerouslySetInnerHTML={{ __html: item }}></p>
 
                   <div className="marquee__image">
                     <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">

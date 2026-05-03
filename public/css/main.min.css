@@ -8382,7 +8382,7 @@ form textarea:required:valid {
 .mxd-hero-03__marquee {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 0%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -8492,7 +8492,7 @@ form textarea:required:valid {
   }
 }
 .hero-03-headline__caption {
-  font: normal var(--fw-medium) 3rem/1.2 var(--_font-accent);
+  font: 300 3rem/1.2 var(--_font-accent);
   color: #fff;
   margin-bottom: 5.2rem;
 }
@@ -20670,8 +20670,4 @@ html {
   rotate: none;
   scale: none;
   transform: translate(0px, -5px) rotate(-45deg);
-}
-.loading__item,
-.loading__fade {
-  opacity: 0;
 }

@@ -1,5 +1,23 @@
 @import "../public/css/main.min.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Heading';
+  src: url('../public/fonts/Glancyr-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Heading';
+  src: url('../public/fonts/Glancyr-Thin.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@theme {
+  --font-brand: "Heading", ui-sans-serif, system-ui;
+  --font-body: "Outfit", ui-sans-serif, system-ui;
+}

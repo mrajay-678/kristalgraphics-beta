@@ -7,7 +7,12 @@ const config: Config = {
     "./hooks/**/*.{js,jsx,ts,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        heading: ["Heading"],
+        body: ["Outfit"],
+      },
+    },
   },
   plugins: [],
 };
