@@ -14,9 +14,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Software Development Company || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Kristal Graphics",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Kristal Graphics",
 };
 export default function HomeSoftwareDevelopmentCompanyPage() {
   return (
