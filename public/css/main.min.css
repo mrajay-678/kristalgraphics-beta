@@ -84,8 +84,8 @@
  * ------------------------------------------------ */
 :root {
   --_size: 1.8rem;
-  --_font-default: "Funnel Sans", sans-serif;
-  --_font-accent: "Funnel Display", sans-serif;
+  --_font-default: Heading;
+  --_font-accent: Outfit;
   --_radius-s: 1rem;
   --_radius-m: 1.6rem;
   --_radius-pt-m: 1.6rem;
