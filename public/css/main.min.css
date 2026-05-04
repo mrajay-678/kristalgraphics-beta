@@ -111,7 +111,7 @@
   --st-muted--light: #e0dddb;
   --st-opp-bright--light: #ffffff;
   --fw-regular--light: 400;
-  --fw-medium--light: 600;
+  --fw-medium--light: 400;
   --fw-semibold--light: 700;
   --fw-bold--light: 800;
   --fw-regular-opp--light: 300;
@@ -1759,7 +1759,7 @@ html.lenis body {
   height: 1px;
 }
 h1 {
-  font: normal var(--fw-medium) 6rem/1.1 var(--_font-accent);
+  font: normal var(--fw-regular) 6rem/1.1 var(--_font-accent);
   letter-spacing: -0.06rem;
   color: var(--t-bright);
 }
@@ -1796,7 +1796,7 @@ h1 {
   color: var(--accent);
 }
 h2 {
-  font: normal var(--fw-medium) 4.4rem/1.1 var(--_font-accent);
+  font: normal var(--fw-regular) 4.4rem/1.1 var(--_font-accent);
   letter-spacing: -0.06rem;
   color: var(--t-bright);
 }
@@ -1832,7 +1832,7 @@ h2.permanent-dark {
   }
 }
 h3 {
-  font: normal var(--fw-medium) 3.6rem/1.2 var(--_font-accent);
+  font: normal var(--fw-regular) 3.6rem/1.2 var(--_font-accent);
   color: var(--t-bright);
 }
 h3.opposite {
@@ -1844,7 +1844,7 @@ h3.opposite {
   }
 }
 h4 {
-  font: normal var(--fw-medium) 3rem/1.2 var(--_font-accent);
+  font: normal var(--fw-regural) 3rem/1.2 var(--_font-accent);
   color: var(--t-bright);
 }
 @media only screen and (min-width: 1200px) {
@@ -1853,7 +1853,7 @@ h4 {
   }
 }
 h5 {
-  font: normal var(--fw-medium) 2.6rem/1.2 var(--_font-accent);
+  font: normal var(--fw-regular) 2.6rem/1.2 var(--_font-accent);
   color: var(--t-bright);
 }
 h5 small {
@@ -1882,7 +1882,7 @@ h5.opposite a {
   }
 }
 h6 {
-  font: normal var(--fw-medium) 2.2rem/1.2 var(--_font-accent);
+  font: normal var(--fw-regular) 2.2rem/1.2 var(--_font-accent);
   color: var(--t-bright);
 }
 h6 a {
