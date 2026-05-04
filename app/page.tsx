@@ -10,6 +10,7 @@ import Experties from "@/components/homes/home-software-development-company/Expe
 import BrandsMarquee from "@/components/homes/home-software-development-company/BrandsMarquee";
 import ImageSequenceScroll from "@/components/homes/home-software-development-company/ImageSequenceScroll";
 import Instagram from "@/components/homes/home-software-development-company/Instagram";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -37,7 +38,6 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
           Trusted by unions, local businesses, national brands, <br /> event planners, and companies that care about quality.
         </div>
       </main>
-      <Footer2 />
     </>
   );
 }

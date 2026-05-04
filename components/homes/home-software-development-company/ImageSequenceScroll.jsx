@@ -42,11 +42,11 @@ const ImageSequenceScroll = () => {
       ease: "none",
       scrollTrigger: {
         trigger: canvas,
-        start: "top 50%",
+        start: "50% 50%",
         end: "400% 50%",
         scrub: true,
         pin: true,
-        markers: false,
+        markers: true,
       },
       onUpdate: render,
     });

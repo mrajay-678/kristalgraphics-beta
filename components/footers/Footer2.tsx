@@ -19,13 +19,13 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             Get a <span className="text-[#FFD700]">quote!</span>
           </div>
         </div>
-        <div className="w-7/12 flex flex-row h-full justify-evenly pb-20">
-          <div className="text-white text-4xl font-body">
+        <div className="w-7/12 flex flex-row items-end h-full justify-evenly pb-10">
+          <div className="text-white text-3xl font-body">
             Addres: <br />
             9607, Canoga Ave,<br />
             Woodland Hills,<br /> CA 91367
           </div>
-          <div className="text-white text-4xl font-body">
+          <div className="text-white text-3xl font-body">
             We got you!: <br />
             info@kristalgraphics.com<br />
             +1 (818) 342-7822
@@ -34,10 +34,10 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
       </div>
       <div className="w-9/12 mt-20 mx-auto pb-32">
         <div className="border-t border-white flex flex-row justify-between">
-          <div className="text-white text-2xl mt-10">
+          <div className="text-white text-2xl mt-10 font-body">
             Privacy Policy | Terms of Service
           </div>
-          <div className="text-white text-2xl mt-10">
+          <div className="text-white text-2xl mt-10 font-body">
             © 1977 Kristal Graphics. All rights reserved
           </div>
         </div>
