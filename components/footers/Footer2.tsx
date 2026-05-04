@@ -12,20 +12,20 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
     >
       <div className="relative pt-96 w-10/12 mx-auto flex flex-row items-end">
         <div className="w-9/12 flex flex-col h-full justify-between">
-          <h2 className="text-white text-[5vw] font-light">
+          <h2 className="text-white text-[5vw] font-light font-heading">
             Ready to print something people keep forever?
           </h2>
-          <div className="text-white text-[5vw] pt-52 font-medium">
+          <div className="text-white text-[5vw] pt-52 font-medium font-heading">
             Get a <span className="text-[#FFD700]">quote!</span>
           </div>
         </div>
         <div className="w-7/12 flex flex-row h-full justify-evenly pb-20">
-          <div className="text-white text-4xl">
+          <div className="text-white text-4xl font-body">
             Addres: <br />
             9607, Canoga Ave,<br />
             Woodland Hills,<br /> CA 91367
           </div>
-          <div className="text-white text-4xl">
+          <div className="text-white text-4xl font-body">
             We got you!: <br />
             info@kristalgraphics.com<br />
             +1 (818) 342-7822
