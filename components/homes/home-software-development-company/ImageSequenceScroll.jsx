@@ -58,7 +58,7 @@ const ImageSequenceScroll = () => {
 
   return (
     <div style={{ minHeight: "100vh" }}>
-      <canvas className="mx-20 !w-12/12" ref={canvasRef} />
+      <canvas className="mx-20 !w-[90vw]" ref={canvasRef} />
     </div>
   );
 };
