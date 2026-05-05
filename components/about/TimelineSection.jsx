@@ -91,21 +91,16 @@ export default function Timeline() {
       className="h-screen w-full flex bg-[#f5f5f5] overflow-hidden pt-96"
     >
       {/* LEFT YEARS */}
-      <div className="w-1/3 relative flex items-center pl-10">
+      <div className="w-1/4 relative flex items-center justify-center pl-10">
         {/* vertical line */}
         <div className="absolute left-[0] top-0 h-full w-[2px] bg-gray-300 flex" />
-        {/* moving indicator */}
-        <div
-          ref={lineRef}
-          className="absolute left-4 w-4 h-[2px] bg-black"
-        />
 
         <div className="space-y-4">
           {years.map((year, i) => (
             <div
               key={i}
               ref={el => (yearRefs.current[i] = el)}
-              className="text-2xl opacity-30 transition"
+              className="text-5xl opacity-30 transition"
             >
               {year}
             </div>
@@ -114,7 +109,7 @@ export default function Timeline() {
       </div>
 
       {/* RIGHT CONTENT */}
-      <div className="w-2/3 right-section relative flex flex-col justify-start pt-20 px-16">
+      <div className="w-3/4 right-section relative flex flex-col justify-start pt-20 px-16">
         {/* TOP LINE */}
         <div className="absolute top-0 left-0 w-full h-[2px] bg-gray-300" />
 

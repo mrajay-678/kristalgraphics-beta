@@ -8391,6 +8391,11 @@ form textarea:required:valid {
   width: 100%;
   overflow: hidden;
 }
+@media only screen and (min-width: 1600px) {
+  .mxd-hero-03__marquee {
+    top: 100px;
+  }
+}
 .mxd-hero-03__marquee .marquee__item {
   width: auto;
   height: auto;

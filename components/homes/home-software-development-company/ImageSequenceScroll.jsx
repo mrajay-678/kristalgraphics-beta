@@ -46,7 +46,7 @@ const ImageSequenceScroll = () => {
         end: "400% 50%",
         scrub: true,
         pin: true,
-        markers: true,
+        markers: false,
       },
       onUpdate: render,
     });

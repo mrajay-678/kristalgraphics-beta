@@ -1,4 +1,4 @@
-import TimelineSection from "../../components/about/TimelineSection2";
+import TimelineSection from "../../components/about/TimelineSection";
 
 export const page = () => {
   return (
