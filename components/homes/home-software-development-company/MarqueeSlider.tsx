@@ -2,7 +2,9 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
+import logo from "@/public/img/kg/logo.svg";
 import "swiper/css";
+import Image from "next/image";
 
 export default function MarqueeSlider({ items }: { items: string[] }): React.JSX.Element {
   return (
@@ -30,22 +32,10 @@ export default function MarqueeSlider({ items }: { items: string[] }): React.JSX
             {items.map((item, index) => (
               <SwiperSlide key={index} style={{ width: "auto" }}>
                 <div className="marquee__item one-line item-regular text">
-                  <p className="marquee__text text-black font-heading" dangerouslySetInnerHTML={{ __html: item }}></p>
+                  <p className="text-black marquee__text font-heading " dangerouslySetInnerHTML={{ __html: item }}></p>
 
-                  <div className="marquee__image">
-                    <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clipPath="url(#clip0_2026_72)">
-                        <path d="M31.334 0V57.4433L0 23.5V0H31.334Z" fill="#FEBB12"/>
-                        <path d="M94 62.666H36.5546L70.5 94.0001H94V62.666Z" fill="#FEBB12"/>
-                        <path d="M62.666 0H94V31.334L36.5546 57.4433L62.666 0Z" fill="#FEBB12"/>
-                        <path d="M0 62.666H31.334V94.0001H20.8887L0 73.1114V62.666Z" fill="#FEBB12"/>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_2026_72">
-                          <rect width="94" height="94" fill="white"/>
-                        </clipPath>
-                      </defs>
-                    </svg>
+                  <div className="p-5 marquee__image">
+                    <Image src={logo} alt="Logo" />
                   </div>
                 </div>
               </SwiperSlide>

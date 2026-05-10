@@ -86,11 +86,11 @@
   --_size: 1.8rem;
   --_font-default: Heading;
   --_font-accent: Outfit;
-  --_radius-s: 1rem;
-  --_radius-m: 1.6rem;
-  --_radius-pt-m: 1.6rem;
-  --_radius-l: 3.8rem;
-  --_radius-xl: 6rem;
+  --_radius-s: 0;
+  --_radius-m: 0;
+  --_radius-pt-m: 0;
+  --_radius-l: 0;
+  --_radius-xl: 0;
   --_animspeed-fast: 0.1s;
   --_animspeed-medium: 0.3s;
   --_animspeed-slow: 0.6s;
@@ -182,14 +182,14 @@
 }
 @media only screen and (min-width: 768px) {
   :root {
-    --_radius-m: 2.6rem;
-    --_radius-l: 5rem;
-    --_radius-xl: 8rem;
+    --_radius-m: 0;
+    --_radius-l: 0;
+    --_radius-xl: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
   :root {
-    --_radius-xl: 8rem;
+    --_radius-xl: 0;
   }
 }
 @media (prefers-color-scheme: light) {
@@ -8382,7 +8382,7 @@ form textarea:required:valid {
 .mxd-hero-03__marquee {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 30%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -8393,7 +8393,7 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1600px) {
   .mxd-hero-03__marquee {
-    top: 100px;
+    top: 35%;
   }
 }
 .mxd-hero-03__marquee .marquee__item {
@@ -17461,7 +17461,7 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 768px) {
   .mxd-approach-list__inner {
-    padding: 8rem 0;
+    padding: 4rem 0;
   }
 }
 .mxd-approach-list__image {
@@ -17748,6 +17748,7 @@ form textarea:required:valid {
 }
 .marquee__text {
   margin-right: 1.6rem;
+  line-height: 1;
 }
 .marquee__text.text-with-gliph {
   margin-right: 0;
@@ -17769,7 +17770,7 @@ form textarea:required:valid {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 4.1rem;
-  height: 4.1rem;
+  height: auto;
 }
 .marquee__image.image-xl {
   width: 9rem;
@@ -17778,7 +17779,7 @@ form textarea:required:valid {
 @media only screen and (min-width: 768px) {
   .marquee__image {
     width: 8.1rem;
-    height: 8.1rem;
+    height: auto;
   }
   .marquee__image.image-xl {
     width: 14rem;
@@ -17799,8 +17800,9 @@ form textarea:required:valid {
   object-fit: cover;
 }
 .marquee__text {
-  font: normal var(--fw-regular) 6rem/1.2 var(--_font-accent);
+  line-height: 1.4;
   letter-spacing: -0.06rem;
+  font-weight: 300;
 }
 .marquee__text.text-xl {
   font-weight: var(--fw-medium);

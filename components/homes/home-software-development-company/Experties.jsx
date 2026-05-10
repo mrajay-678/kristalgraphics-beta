@@ -4,17 +4,17 @@ import RevealText from "@/components/animation/RevealText";
 export const Experties = () => {
   return (
     <section>
-        <div className="w-10/12 mx-auto flex justify-between pb-52">
-            <div className="flex flex-col gap-5 w-2/4">
+        <div className="flex justify-between mx-auto mxd-container grid-container ">
+            <div className="flex flex-col w-2/4 gap-5 pb-52">
                 <div className="flex items-center gap-7">
                     <RevealText className="reveal-type">
-                        <div className="text-[15vw] leading-none font-bold font-heading reveal-type">4</div>
+                        <div className="text-[14vw] leading-none font-bold font-heading reveal-type">4</div>
                     </RevealText>
                     <RevealText className="reveal-type">
-                        <div className="text-[5vw] font-light leading-none font-heading reveal-type ">decades of expertise</div>
+                        <div className="font-light leading-none text-[4.5vw] font-heading reveal-type ">decades of expertise</div>
                     </RevealText>
                 </div>
-                <RevealText className="text-5xl font-body pt-10 reveal-type">We're a full-service print and promo shop in Chatsworth, California. We handle it all in-house with an experienced crew, committed to delivering quality that lasts and timelines you can actually count on</RevealText>
+                <RevealText className="pt-10 text-5xl font-body reveal-type">We're a full-service print and promo shop in Chatsworth, California. We handle it all in-house with an experienced crew, committed to delivering quality that lasts and timelines you can actually count on</RevealText>
             </div>
             <div className='text-end'>
                 <svg width="441" height="440" viewBox="0 0 441 440" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,8 +30,7 @@ export const Experties = () => {
                     <rect width="441" height="440" fill="white"/>
                     </clipPath>
                     </defs>
-                    </svg>
-
+                </svg>
             </div>
         </div>
     </section>

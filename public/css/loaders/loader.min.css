@@ -21,11 +21,11 @@
   --_size: 1.8rem;
   --_font-default: "Funnel Sans", sans-serif;
   --_font-accent: "Funnel Display", sans-serif;
-  --_radius-s: 1rem;
-  --_radius-m: 1.6rem;
-  --_radius-pt-m: 1.6rem;
-  --_radius-l: 3.8rem;
-  --_radius-xl: 6rem;
+  --_radius-s: 0;
+  --_radius-m: 0;
+  --_radius-pt-m: 9;
+  --_radius-l: 0;
+  --_radius-xl: 0;
   --_animspeed-fast: 0.1s;
   --_animspeed-medium: 0.3s;
   --_animspeed-slow: 0.6s;
@@ -117,14 +117,14 @@
 }
 @media only screen and (min-width: 768px) {
   :root {
-    --_radius-m: 2.6rem;
-    --_radius-l: 5rem;
-    --_radius-xl: 8rem;
+    --_radius-m: 0;
+    --_radius-l: 0;
+    --_radius-xl: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
   :root {
-    --_radius-xl: 8rem;
+    --_radius-xl: 0;
   }
 }
 @media (prefers-color-scheme: light) {

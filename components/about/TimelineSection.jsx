@@ -3,10 +3,25 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
+import year from "@/public/img/kg/year-1977.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const years = ["1977", "1980", "1982", "1991", "1995", "1998", "2001", "2003", "2006", "2015", "2021", "2026"];
+const years = [
+  "1977",
+  "1980",
+  "1982",
+  "1991",
+  "1995",
+  "1998",
+  "2001",
+  "2003",
+  "2006",
+  "2015",
+  "2021",
+  "2026",
+];
 
 export default function Timeline() {
   const containerRef = useRef(null);
@@ -17,7 +32,7 @@ export default function Timeline() {
   const [active, setActive] = useState(0);
 
   // ---- animate to index ----
-  const goTo = index => {
+  const goTo = (index) => {
     if (index < 0 || index >= years.length) return;
 
     const progress = index / (years.length - 1);
@@ -52,7 +67,11 @@ export default function Timeline() {
     });
 
     // content animation
-    gsap.fromTo(".content", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4 });
+    gsap.fromTo(
+      ".content",
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 0.4 },
+    );
   };
 
   // ---- scroll control (STEP BASED) ----
@@ -70,7 +89,7 @@ export default function Timeline() {
           snapTo: 1 / (years.length - 1),
           duration: 0.3,
         },
-        onUpdate: self => {
+        onUpdate: (self) => {
           const index = Math.round(self.progress * (years.length - 1));
           if (index !== current) {
             current = index;
@@ -91,7 +110,7 @@ export default function Timeline() {
       className="h-screen w-full flex bg-[#f5f5f5] overflow-hidden pt-96"
     >
       {/* LEFT YEARS */}
-      <div className="w-1/4 relative flex items-center justify-center pl-10">
+      <div className="relative flex items-center justify-center w-1/4 pl-10">
         {/* vertical line */}
         <div className="absolute left-[0] top-0 h-full w-[2px] bg-gray-300 flex" />
 
@@ -99,8 +118,9 @@ export default function Timeline() {
           {years.map((year, i) => (
             <div
               key={i}
-              ref={el => (yearRefs.current[i] = el)}
-              className="text-5xl opacity-30 transition"
+              ref={(el) => (yearRefs.current[i] = el)}
+              className="text-5xl transition cursor-pointer opacity-30"
+              onClick={() => goTo(i)}
             >
               {year}
             </div>
@@ -109,32 +129,37 @@ export default function Timeline() {
       </div>
 
       {/* RIGHT CONTENT */}
-      <div className="w-3/4 right-section relative flex flex-col justify-start pt-20 px-16">
+      <div className="relative flex flex-col justify-between w-3/4 px-16 pt-20 right-section pb-96">
         {/* TOP LINE */}
-        <div className="absolute top-0 left-0 w-full h-[2px] bg-gray-300" />
+        <div>
+          <div className="absolute top-0 left-0 w-full h-[2px] bg-gray-300" />
 
-        {/* MOVING DOT */}
-        <div
-          ref={dotRef}
-          className="absolute top-0 left-0 -translate-y-1/2 w-4 h-4 bg-yellow-400 rounded-full border-2 border-black"
-        />
-
-        {/* BIG YEAR */}
-        <div className="text-[120px] leading-none font-light tracking-tight mb-10">{years[active]}</div>
-
-        {/* IMAGE */}
-        <div className="w-full max-w-3xl mb-10">
-          <img
-            src="/your-image.jpg"
-            className="w-full h-auto object-cover"
-            alt=""
+          {/* MOVING DOT */}
+          <div
+            ref={dotRef}
+            className="absolute top-0 left-0 w-4 h-4 -translate-y-1/2 bg-yellow-400 border-2 border-black rounded-full"
           />
+
+          {/* BIG YEAR */}
+          <div className="text-[120px] leading-none font-light tracking-tight mb-10">
+            {years[active]}
+          </div>
         </div>
 
         {/* CONTENT */}
-        <div className="content">
-          <h2 className="text-5xl font-semibold mb-4">Humble beginnings</h2>
-          <p className="text-gray-600 max-w-xl">Kristal Graphics has been around since 1977. Trusted for our quality, partnered with for our expertise.</p>
+        <div className="relative w-3/4 content">
+          <Image
+            src={year}
+            alt="Year"
+            className="absolute w-5/12 -translate-x-1/2 -top-[250%] left-1/2 ms-auto"
+          />
+          <h2 className="mb-4 font-semibold text-9xl font-heading">
+            Humble beginnings
+          </h2>
+          <p className="max-w-xl text-gray-600">
+            Kristal Graphics has been around since 1977. Trusted for our
+            quality, partnered with for our expertise.
+          </p>
         </div>
       </div>
     </section>

@@ -26,7 +26,6 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
         <Hero />
         <MarqueeSlider items={["Design", "Development", "Branding", "Strategy"]} />
         <Capabilities />
-        <Experties />
         <ImageSequenceScroll />
         <Instagram />
         <section className="mt-52">
@@ -34,7 +33,7 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
         </section>
         <BrandsMarquee direction="left" items={["brand-1.png", "brand-2.png", "brand-3.png", "brand-4.png", "brand-5.png", "brand-6.png", "brand-7.png", "brand-8.png", "brand-9.png", "brand-11.png"]} />
         <BrandsMarquee direction="right" items={[  "brand-11.png","brand-9.png","brand-8.png","brand-7.png","brand-6.png","brand-5.png","brand-4.png","brand-3.png","brand-2.png","brand-1.png",]} />
-        <div className="w-6/12 mx-auto font-body text-center text-5xl pt-52">
+        <div className="w-6/12 mx-auto text-5xl text-center font-body pt-52">
           Trusted by unions, local businesses, national brands, <br /> event planners, and companies that care about quality.
         </div>
       </main>

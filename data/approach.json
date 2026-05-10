@@ -1,28 +1,27 @@
 {"approach1":[
   {
-    "title": "Perfection",
-    "description": "From pixel-perfect designs to flawless code, every aspect of our projects is crafted with care to ensure the highest standards of quality.",
-    "icon": "/img/icons/h70_appr-01.webp"
+    "title": "Quality",
+    "description": "Union-made craftsmanship. Every order checked before it ships."
   },
   {
-    "title": "Innovative",
-    "description": "We stay ahead of design trends, offering modern and visually impactful solutions that set your brand apart.",
-    "icon": "/img/icons/h70_appr-02.webp"
+    "title": "Speed",
+    "description": "Fast production, rush service available. We're good with deadlines."
   },
   {
-    "title": "Expertise",
-    "description": "We are passionate about integrating the latest technologies and trends, including interactive animations and mobile-first strategies.",
-    "icon": "/img/icons/h70_appr-03.webp"
+    "title": "Customization",
+    "description": "Full design support. Tailored solutions for your needs."
   },
   {
-    "title": "Full-Cycle services",
-    "description": "From web design to development, branding, SEO, and UX/UI, we provide a full range of services that cover all your digital needs.",
-    "icon": "/img/icons/h70_appr-04.webp"
+    "title": "Pricing",
+    "description": "Competitive rates, transparent quotes. No hidden fees."
   },
   {
-    "title": "Client Success",
-    "description": "Our clients consistently see improved engagement, conversion rates, and business growth.",
-    "icon": "/img/icons/h70_appr-05.webp"
+    "title": "Support",
+    "description": "Real humans who actually respond and solve problems."
+  },
+  {
+    "title": "Delivery",
+    "description": "Coordinated logistics. On-time, every time."
   }
 ]
 }

@@ -3,39 +3,20 @@ import Image from "next/image";
 
 import { approach1 } from "@/data/approach.json";
 import RevealText from "../animation/RevealText";
-import AnimatedButton from "../animation/AnimatedButton";
 export default function Approch() {
   return (
-    <div className="mxd-section padding-pre-grid mobile-grid-s">
+    <div className="mxd-section padding-pre-grid mobile-grid-s pt-52">
       <div className="mxd-container grid-container">
         {/* Block - Section Title Start */}
         <div className="mxd-block">
           <div className="mxd-section-title">
-            <div className="container-fluid p-0">
+            <div className="p-0 container-fluid">
               <div className="row g-0">
                 <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrtitle anim-uni-in-up">
-                    <RevealText as="h2" className="reveal-type">
-                      Approach and philosophy
+                    <RevealText as="h2" className="font-light reveal-type font-heading text-9xl">
+                      Why Choose Us?
                     </RevealText>
-                  </div>
-                </div>
-                <div className="col-12 col-xl-3 mxd-grid-item no-margin">
-                  <div className="mxd-section-title__hrdescr">
-                    <p className="anim-uni-in-up">Design</p>
-                    <p className="anim-uni-in-up">Development</p>
-                    <p className="anim-uni-in-up">Mastership</p>
-                  </div>
-                </div>
-                <div className="col-12 col-xl-3 mxd-grid-item no-margin">
-                  <div className="mxd-section-title__hrcontrols anim-uni-in-up">
-                    <AnimatedButton
-                      text="Let's Chat"
-                      className="btn btn-anim btn-default btn-outline slide-right-up"
-                      href={`/contact`}
-                    >
-                      <i className="ph-bold ph-arrow-up-right" />
-                    </AnimatedButton>
                   </div>
                 </div>
               </div>
@@ -50,26 +31,16 @@ export default function Approch() {
               <div className="mxd-approach-list__item" key={idx}>
                 <div className="mxd-approach-list__border anim-uni-in-up" />
                 <div className="mxd-approach-list__inner">
-                  <div className="container-fluid px-0">
-                    <div className="row gx-0">
-                      <div className="col-12 col-xl-2 mxd-grid-item no-margin">
-                        <div className="mxd-approach-list__image anim-uni-in-up">
-                          <Image
-                            alt="Icon"
-                            src={item.icon}
-                            width={210}
-                            height={210}
-                          />
+                  <div className="px-0 container-fluid">
+                    <div className="flex flex-col justify-between gap-0 xl:flex-row">
+                      <div className="w-full xl:w-1/2 mxd-grid-item no-margin">
+                        <div className="mxd-approach-list__title !text-start anim-uni-in-up">
+                          <h6 className="text-7xl font-heading">{item.title}</h6>
                         </div>
                       </div>
-                      <div className="col-12 col-xl-4 mxd-grid-item no-margin">
-                        <div className="mxd-approach-list__title anim-uni-in-up">
-                          <h6>{item.title}</h6>
-                        </div>
-                      </div>
-                      <div className="col-12 col-xl-6 mxd-grid-item no-margin">
+                      <div className="w-full xl:w-1/2 mxd-grid-item no-margin">
                         <div className="mxd-approach-list__descr anim-uni-in-up">
-                          <p>{item.description}</p>
+                          <p className="w-3/4 text-5xl font-thin">{item.description}</p>
                         </div>
                       </div>
                     </div>
