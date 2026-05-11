@@ -129,7 +129,7 @@ export default function Timeline() {
       </div>
 
       {/* RIGHT CONTENT */}
-      <div className="relative flex flex-col justify-between w-3/4 px-16 pt-20 right-section pb-96">
+      <div className="relative flex flex-col justify-between w-3/4 px-16 pt-20 right-section pb-20">
         {/* TOP LINE */}
         <div>
           <div className="absolute top-0 left-0 w-full h-[2px] bg-gray-300" />
@@ -151,7 +151,7 @@ export default function Timeline() {
           <Image
             src={year}
             alt="Year"
-            className="absolute w-5/12 -translate-x-1/2 -top-[250%] left-1/2 ms-auto"
+            className="absolute w-5/12 -translate-x-1/4 -translate-y-2/4 -top-3/4 left-1/2 ms-auto"
           />
           <h2 className="mb-4 font-semibold text-9xl font-heading">
             Humble beginnings

@@ -43,8 +43,8 @@ const ImageSequenceScroll = () => {
       ease: "none",
       scrollTrigger: {
         trigger: ".mid-animation",
-        start: "0% 10%",
-        end: "400% 50%",
+        start: "0% 0%",
+        end: "400% 100%",
         scrub: true,
         pin: true,
         markers: false,
@@ -58,7 +58,7 @@ const ImageSequenceScroll = () => {
   }, []);
 
   return (
-    <section className="mid-animation" style={{ minHeight: "100vh" }}>
+    <section className="mid-animation pb-52" style={{ minHeight: "100vh" }}>
       <div>
         <div className="flex justify-between mx-auto mxd-container grid-container ">
           <div className="flex flex-col w-2/4 gap-5 pb-52">
@@ -123,4 +123,4 @@ const ImageSequenceScroll = () => {
   );
 };
 
-export default ImageSequenceScrol
+export default ImageSequenceScroll

@@ -15,7 +15,7 @@ interface ClientLayoutProps {
 export default function ClientLayout({ children }: ClientLayoutProps) {
   return (
     <>
-      <MobileMenu />
+      {/* <MobileMenu /> */}
       <Header1 />
       {children}
       <Footer2 />      
