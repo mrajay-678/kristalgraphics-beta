@@ -9,8 +9,10 @@ import Image from "next/image";
 
 export default function MarqueeSlider({
   items,
+  className,
 }: {
   items: string[];
+  className?: string;
 }): React.JSX.Element {
   return (
     <div className="mxd-section padding-mtext-pre-grid">
@@ -39,7 +41,7 @@ export default function MarqueeSlider({
               >
                 <div className="marquee__item one-line item-regular text flex items-center">
                   <p
-                    className="text-black marquee__text font-heading"
+                    className={`text-black marquee__text font-heading ${className}`}
                     dangerouslySetInnerHTML={{ __html: item }}
                   />
 

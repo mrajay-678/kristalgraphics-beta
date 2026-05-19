@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 
 export default function ThemeSwitcherButton({}) {
   const [showSwitcher, setShowSwitcher] = useState(false);
-  const [colorScheme, setColorScheme] = useState<"light" | "dark">(() => {
+  const [colorScheme, setColorScheme] = useState<"light" | "light">(() => {
     if (typeof window !== "undefined") {
       return (
-        (localStorage.getItem("color-scheme") as "light" | "dark") || "light"
+        (localStorage.getItem("color-scheme") as "light" | "light") || "light"
       );
     }
     return "light";
@@ -27,7 +27,7 @@ export default function ThemeSwitcherButton({}) {
   }, [colorScheme]);
 
   const handleColorSwitch = () => {
-    setColorScheme((prev) => (prev === "light" ? "dark" : "light"));
+    setColorScheme((prev) => (prev === "light" ? "light" : "light"));
   };
   return (
     <>
@@ -38,12 +38,12 @@ export default function ThemeSwitcherButton({}) {
           type="button"
           role="switch"
           aria-label="light/dark mode"
-          aria-checked={colorScheme === "dark"}
+          aria-checked={colorScheme === "light"}
           onClick={handleColorSwitch}
         >
           <i
             className={
-              colorScheme === "dark"
+              colorScheme === "light"
                 ? "ph-bold ph-sun-horizon"
                 : "ph-bold ph-moon-stars "
             }

@@ -37,8 +37,8 @@ export default function BrandsMarquee({ items, direction = "left" }: { items: st
                   <Image
                     src={`/img/kg/brands/${item}`}
                     alt={item.replace(/\.[^.]+$/, "").replace(/-/g, " ")}
-                    width={170}
-                    height={80}
+                    width={250}
+                    height={90}
                     style={{ objectFit: "contain" }}
                   />
                 </div>

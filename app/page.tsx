@@ -29,7 +29,7 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
         <ImageSequenceScroll />
         <Instagram />
         <section className="mt-52">
-          <MarqueeSlider items={["Brands that trust us", "Brands that trust us", "Brands that trust us", "Brands that trust us"]} />
+          <MarqueeSlider className="text-[#D9D9D9]" items={["Brands that trust us", "Brands that trust us", "Brands that trust us", "Brands that trust us"]} />
         </section>
         <BrandsMarquee direction="left" items={["brand-1.png", "brand-2.png", "brand-3.png", "brand-4.png", "brand-5.png", "brand-6.png", "brand-7.png", "brand-8.png", "brand-9.png", "brand-11.png"]} />
         <BrandsMarquee direction="right" items={[  "brand-11.png","brand-9.png","brand-8.png","brand-7.png","brand-6.png","brand-5.png","brand-4.png","brand-3.png","brand-2.png","brand-1.png",]} />
