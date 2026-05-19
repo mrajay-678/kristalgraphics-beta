@@ -12,7 +12,7 @@ const ImageSequenceScroll = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    const frameCount = 190; // total PNG frames
+    const frameCount = 172; // total PNG frames
 
     const currentFrame = index => `/img/kg/sequence/Sequen_0${String(index).padStart(4, "0")}.png`;
 
