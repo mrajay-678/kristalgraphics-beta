@@ -15,9 +15,9 @@ export default function Hero() {
       <div className="mxd-hero-03">
         <div className="mxd-hero-03__wrap loading-wrap">
           {/* top part */}
-          <div className="mxd-hero-03__top">
+          <div className="mxd-hero-03__top !p-0">
             {/* marquee */}
-            <div className="mxd-hero-03__marquee loading__item pt-96">
+            <div className="mxd-hero-03__marquee loading__item">
               {/* Marquee Start */}
               <VelocityMarquee className="marquee marquee-right--gsap">
                 {/* item */}

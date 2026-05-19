@@ -8380,20 +8380,20 @@ form textarea:required:valid {
   position: relative;
 }
 .mxd-hero-03__marquee {
-  position: absolute;
-  left: 0;
-  top: 30%;
-  bottom: auto;
+  /* position: absolute; */
+  /* left: 0; */
+  /* top: 30%; */
+  /* bottom: auto;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
   width: 100%;
   overflow: hidden;
 }
 @media only screen and (min-width: 1600px) {
   .mxd-hero-03__marquee {
-    top: 35%;
+    /* top: -20%; */
   }
 }
 .mxd-hero-03__marquee .marquee__item {
