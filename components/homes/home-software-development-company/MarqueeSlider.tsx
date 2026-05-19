@@ -39,7 +39,7 @@ export default function MarqueeSlider({
                 key={index}
                 style={{ width: "auto" }}
               >
-                <div className="marquee__item one-line item-regular text flex items-center">
+                <div className="marquee__item one-line item-regular text flex items-center !m-0">
                   <p
                     className={`text-black marquee__text font-heading ${className}`}
                     dangerouslySetInnerHTML={{ __html: item }}

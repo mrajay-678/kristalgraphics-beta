@@ -26,7 +26,7 @@ export default function Footer2({
 
           <div className="pt-12 md:pt-20 lg:pt-40">
             <h3 className="font-heading text-5xl font-medium text-white sm:text-6xl md:text-7xl lg:text-[5vw]">
-              Get a <span className="text-[#FFD700]">quote!</span>
+              Get a <span className="text-[#FEBB12]">quote!</span>
             </h3>
           </div>
 
@@ -59,14 +59,14 @@ export default function Footer2({
             <div className="space-y-2">
               <Link
                 href="mailto:info@kristalgraphics.com"
-                className="block font-body text-2xl text-white/90 transition hover:text-[#FFD700] sm:text-lg lg:text-2xl"
+                className="block font-body text-2xl text-white/90 transition hover:text-[#FEBB12] sm:text-lg lg:text-2xl"
               >
                 info@kristalgraphics.com
               </Link>
 
               <Link
                 href="tel:+18183427822"
-                className="block font-body text-2xl text-white/90 transition hover:text-[#FFD700] sm:text-lg lg:text-2xl"
+                className="block font-body text-2xl text-white/90 transition hover:text-[#FEBB12] sm:text-lg lg:text-2xl"
               >
                 +1 (818) 342-7822
               </Link>
