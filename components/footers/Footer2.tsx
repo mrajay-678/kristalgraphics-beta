@@ -33,7 +33,7 @@ export default function Footer2({
         </div>
 
         {/* Right Content */}
-        <div className="flex w-full flex-col gap-10 lg:w-5/12 lg:flex-row lg:justify-between lg:pb-10">
+        <div className="flex w-full flex-col gap-10 lg:w-5/12 lg:flex-row lg:justify-between">
           
           {/* Address */}
           <div>

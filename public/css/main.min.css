@@ -17811,7 +17811,7 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 768px) {
   .marquee__text {
-    font-size: 12rem;
+    font-size: 80px;
   }
   .marquee__text.text-xl {
     font-size: 30rem;
@@ -17819,7 +17819,7 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1200px) {
   .marquee__text {
-    font-size: 12rem;
+    font-size: 80px;
   }
 }
 @media only screen and (min-width: 1400px) {

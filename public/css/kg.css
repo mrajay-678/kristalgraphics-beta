@@ -15,3 +15,12 @@
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }
+.brands-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+  align-items: center;
+}
+
+.brands-swiper.reverse .swiper-wrapper {
+  transition-timing-function: linear !important;
+  flex-direction: row-reverse;
+}

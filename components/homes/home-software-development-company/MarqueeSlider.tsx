@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import logo from "@/public/img/kg/logo.svg";
+import roundLogo from "@/public/img/kg/round-logo.svg";
 import "swiper/css";
 import "swiper/css/free-mode";
 import Image from "next/image";
@@ -10,9 +11,11 @@ import Image from "next/image";
 export default function MarqueeSlider({
   items,
   className,
+  img,
 }: {
   items: string[];
   className?: string;
+  img: string;
 }): React.JSX.Element {
   return (
     <div className="mxd-section padding-mtext-pre-grid">
@@ -45,8 +48,9 @@ export default function MarqueeSlider({
                     dangerouslySetInnerHTML={{ __html: item }}
                   />
 
-                  <div className="p-5 marquee__image mt-5">
-                    <Image src={logo} alt="Logo" />
+                  <div className="p-5 marquee__image mt-12">
+                    {img == "logo" && <Image src={logo} alt="Logo" />}
+                    {img == "round-logo" && <Image src={roundLogo} width={55} height={55} alt="Logo" />}
                   </div>
                 </div>
               </SwiperSlide>
