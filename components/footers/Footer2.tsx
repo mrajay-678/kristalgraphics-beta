@@ -37,11 +37,11 @@ export default function Footer2({
           
           {/* Address */}
           <div>
-            <h4 className="mb-3 font-body text-2xl text-white sm:text-2xl lg:text-3xl">
+            <h4 className="mb-3 font-body text-5xl text-white sm:text-2xl lg:text-3xl">
               Address:
             </h4>
 
-            <p className="font-body text-2xl leading-relaxed text-white/90 sm:text-lg lg:text-2xl">
+            <p className="font-body text-2xl leading-relaxed text-white/90 sm:text-lg lg:text-3xl">
               9607 Canoga Ave,
               <br />
               Woodland Hills,
@@ -59,14 +59,14 @@ export default function Footer2({
             <div className="space-y-2">
               <Link
                 href="mailto:info@kristalgraphics.com"
-                className="block font-body text-2xl text-white/90 transition hover:text-[#FEBB12] sm:text-lg lg:text-2xl"
+                className="block font-body text-2xl text-white/90 transition hover:text-[#FEBB12] sm:text-lg lg:text-3xl"
               >
                 info@kristalgraphics.com
               </Link>
 
               <Link
                 href="tel:+18183427822"
-                className="block font-body text-2xl text-white/90 transition hover:text-[#FEBB12] sm:text-lg lg:text-2xl"
+                className="block font-body text-2xl text-white/90 transition hover:text-[#FEBB12] sm:text-lg lg:text-3xl"
               >
                 +1 (818) 342-7822
               </Link>
