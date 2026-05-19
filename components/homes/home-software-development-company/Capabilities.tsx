@@ -43,7 +43,7 @@ export default function Capabilities() {
               <div className="row g-0">
                 <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrtitle">
-                    <RevealText as="h2" className="font-light reveal-type font-heading text-9xl" >
+                    <RevealText as="h2" className="font-light reveal-type font-heading text-9xl font-black" >
                       Our capabilities
                     </RevealText>
                   </div>

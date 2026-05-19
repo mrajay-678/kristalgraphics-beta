@@ -52,7 +52,7 @@
   --fw-regular-opp--light: 300;
   --fw-medium-opp--light: 500;
   --t-bright--light: #161616;
-  --t-medium--light: #303030;
+  --t-medium--light: #000000;
   --t-muted--light: #585858;
   --t-muted-extra--light: #b2aead;
   --t-opp-bright--light: #ffffff;
@@ -93,7 +93,7 @@
   --t-muted--dark: #838383;
   --t-muted-extra--dark: #535151;
   --t-opp-bright--dark: #161616;
-  --t-opp-medium--dark: #303030;
+  --t-opp-medium--dark: #000000;
   --t-opp-muted--dark: #969696;
   --bg-demo-screen-01--dark: url(/img/demo/screens/01-d.html);
   --bg-demo-screen-02--dark: url(/img/demo/screens/02-d.html);

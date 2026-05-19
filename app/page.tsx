@@ -24,7 +24,7 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
     <>
       <main id="mxd-page-content" className="mxd-page-content">
         <Hero />
-        <MarqueeSlider items={["Design", "Development", "Branding", "Strategy"]} />
+        <MarqueeSlider items={["Design", "Development", "Branding", "Strategy","Design", "Development", "Branding", "Strategy","Design", "Development", "Branding", "Strategy","Design", "Development", "Branding", "Strategy"]} />
         <Capabilities />
         <ImageSequenceScroll />
         <Instagram />

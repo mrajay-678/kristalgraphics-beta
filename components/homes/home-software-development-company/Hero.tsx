@@ -1,5 +1,13 @@
 import VelocityMarquee from "@/components/animation/VelocityMarquee";
 import Image from "next/image";
+import marquee1 from "@/public/img/kg/marquee-1.png";
+import marquee2 from "@/public/img/kg/marquee-2.png";
+import marquee3 from "@/public/img/kg/marquee-3.png";
+import marquee4 from "@/public/img/kg/marquee-4.png";
+import marquee5 from "@/public/img/kg/marquee-5.png";
+import marquee6 from "@/public/img/kg/marquee-6.png";
+
+const marqueeImages = [marquee1, marquee2, marquee3, marquee4, marquee5, marquee6];
 
 export default function Hero() {
   return (
@@ -15,16 +23,14 @@ export default function Hero() {
                 {/* item */}
                 {
                   Array.from({ length: 6 }, (_, i) => (
-                    Array.from({ length: 6 }, (_, i) => (
-                      <div key={i} className="marquee__item one-line">
+                    marqueeImages.map((image, index) => (
+                      <div key={index} className="marquee__item one-line">
                         <div className="hero-03-marquee__image">
                           <Image
                             className="mxd-move"
                             alt="Image"
-                            src={`/img/kg/marquee-${i + 1}.png`}
+                            src={image}
                             priority
-                            width={485}
-                            height={485}
                           />
                         </div>
                       </div>

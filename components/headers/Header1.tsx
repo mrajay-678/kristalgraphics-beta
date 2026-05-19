@@ -57,7 +57,7 @@ export default function Header1() {
         </li>
       </ul>
       <div className="mxd-header__controls loading__fade">
-        {/* <ThemeSwitcherButton /> */}
+        <ThemeSwitcherButton />
         <AnimatedButton
           text="Say Hello"
           className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"

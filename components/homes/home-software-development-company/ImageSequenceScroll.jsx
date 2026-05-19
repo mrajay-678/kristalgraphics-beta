@@ -64,7 +64,7 @@ const ImageSequenceScroll = () => {
           <div className="flex flex-col w-2/4 gap-5 pb-52">
             <div className="flex items-center gap-7">
               <RevealText className="reveal-type">
-                <div className="text-[14vw] leading-none font-bold font-heading reveal-type">
+                <div className="text-[12vw] leading-none font-bold font-heading reveal-type">
                   4
                 </div>
               </RevealText>
