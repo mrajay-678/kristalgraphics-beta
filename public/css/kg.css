@@ -12,6 +12,11 @@
 .font-40 {
     font-size: 40px;
 }
+
+.hero-section-marquee  .swiper-wrapper {
+  transition-timing-function: linear !important;
+  align-items: center;
+}
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }

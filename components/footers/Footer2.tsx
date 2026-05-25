@@ -1,8 +1,4 @@
 import Link from "next/link";
-import footerNav from "@/data/footer-nav.json";
-import socials from "@/data/socials.json";
-import AnimatedButton from "../animation/AnimatedButton";
-import SubscribeForm from "./SubscribeForm";
 
 export default function Footer2({
   text = "rayosttudio",
