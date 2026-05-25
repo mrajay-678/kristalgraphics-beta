@@ -1158,6 +1158,9 @@ html.lenis body {
   .mxd-container.grid-l-container {
     padding: 0 4.5rem;
   }
+  .mxd-container {
+    max-width: 1200px
+  }
 }
 @media only screen and (min-width: 1200px) {
   .mxd-container.grid-container.no-padding-right {
@@ -1165,6 +1168,9 @@ html.lenis body {
   }
   .mxd-container.grid-l-container {
     padding: 0 3rem;
+  }
+  .mxd-container {
+    max-width: 1200px
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -1176,6 +1182,9 @@ html.lenis body {
   }
   .mxd-container.grid-l-container {
     padding: 0 4.5rem;
+  }
+  .mxd-container {
+    max-width: 1920px
   }
 }
 .mxd-container__circle {

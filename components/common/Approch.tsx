@@ -6,7 +6,7 @@ import RevealText from "../animation/RevealText";
 export default function Approch() {
   return (
     <div className="mxd-section padding-pre-grid mobile-grid-s pt-52">
-      <div className="mxd-container grid-container">
+      <div className="container mx-auto">
         {/* Block - Section Title Start */}
         <div className="mxd-block">
           <div className="mxd-section-title">

@@ -6,9 +6,9 @@ import Approch from "@/components/common/Approch";
 
 export const page = () => {
   return (
-    <main>
+    <main className="bg-[#FEFEFE]">
       <TimelineSection />
-      <section className="flex w-8/12 gap-20 mx-auto pt-96">
+      <section className="flex container gap-20 mx-auto pt-96">
           <div className="w-2/4">
             <Image src={aboutOne} alt="Murtuza" className="object-cover h-3/4"/>
             <div className="pt-20">
