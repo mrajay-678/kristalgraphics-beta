@@ -451,7 +451,7 @@ export default function ContactForm() {
             <span>Yes, I need this faster than standard production time (7-14 business days)</span>
           </label>
           {form.rushService && (
-            <p className="mt-4 max-w-3xl pl-16 text-base leading-snug text-white">
+            <p className="mt-4 pl-16 text-2xl leading-snug text-black">
               Rush orders available based on current production schedule. We&apos;ll confirm the timeline in your quote based on our team&apos;s availability and current backlog.
             </p>
           )}

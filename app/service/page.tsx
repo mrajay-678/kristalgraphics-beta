@@ -1,18 +1,19 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import ScreenPrintingSection from '@/components/service/ScreenPrintingSection'
-import EmbroiderySection from '@/components/service/EmbroiderySection'
-import PromotionalProductsSection from '@/components/service/PromotionalProductsSection'
-import PackagingSection from '@/components/service/PackagingSection'
-import FulfillmentSection from '@/components/service/FulfillmentSection'
-import LabelsSection from '@/components/service/LabelsSection'
+import { useState } from "react";
+import ScreenPrintingSection from "@/components/service/ScreenPrintingSection";
+import EmbroiderySection from "@/components/service/EmbroiderySection";
+import PromotionalProductsSection from "@/components/service/PromotionalProductsSection";
+import PackagingSection from "@/components/service/PackagingSection";
+import FulfillmentSection from "@/components/service/FulfillmentSection";
+import LabelsSection from "@/components/service/LabelsSection";
+import Image from "next/image";
 
 type FAQItem = {
-  question: string
-  description: string
-  answer: React.ReactNode
-}
+  question: string;
+  description: string;
+  answer: React.ReactNode;
+};
 
 const faqs: FAQItem[] = [
   {
@@ -53,12 +54,38 @@ const faqs: FAQItem[] = [
   },
 ];
 
+type HoverState = {
+  activeIndex: number | null;
+  x: number;
+};
+
 const Page = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
-    setOpenIndex(prev => (prev === index ? null : index))
-  }
+    setOpenIndex((prev) => (prev === index ? null : index));
+  };
+
+  const [hoverState, setHoverState] = useState<HoverState>({
+      activeIndex: null,
+      x: 0,
+    });
+  
+    const handleMouseMove = (e: React.MouseEvent<HTMLElement>, index: number) => {
+      setHoverState({
+        activeIndex: index,
+        x: e.clientX,
+      });
+    };
+  
+    const handleMouseLeave = () => {
+      setHoverState((pre) => {
+        return {
+          activeIndex: null,
+          x: pre.x,
+        };
+      });
+    };
 
   return (
     <main className="pt-60">
@@ -68,10 +95,38 @@ const Page = () => {
           <div className="relative min-h-screen overflow-hidde">
             <div className="mx-auto w-full px-4 py-24 md:px-6">
               {faqs.map((faq, index) => {
-                const isOpen = openIndex === index
+                const isOpen = openIndex === index;
 
                 return (
-                  <div key={index} className="py-2 border-y border-black-300 hover:border-black">
+                  <div
+                    key={index}
+                    className="py-2 border-y border-black-300 hover:border-black"
+                  >
+                    <div
+                      style={{
+                        transform: "translate(-80%, -50%)",
+                        left: hoverState.x,
+
+                        pointerEvents: "none",
+                        transition: "opacity 0.3s ease",
+                      }}
+                      className="hover-reveal__content overflow-visible hover-reveal-260x260"
+                    >
+                      {/* <Image
+                        className="hover-reveal__image"
+                        style={{
+                          transform:
+                            hoverState.activeIndex === idx
+                              ? "scale(1,1)"
+                              : "scale(1,1.4)",
+                          transition: "transform 0.3s ease",
+                        }}
+                        alt="Project Preview"
+                        src={item.image}
+                        width={item.imageWidth}
+                        height={item.imageHeight}
+                      /> */}
+                    </div>
                     <button
                       type="button"
                       onClick={() => toggleFAQ(index)}
@@ -80,10 +135,14 @@ const Page = () => {
                       id={`faq-title-${index}`}
                       className="flex w-full items-center justify-between py-10 text-left font-semibold opacity-30 transition-opacity duration-200 hover:opacity-100 "
                     >
-                      <h2 className='w-2/4 font-heading text-7xl'>{faq.question}</h2>
+                      <h2 className="w-2/4 font-heading text-7xl">
+                        {faq.question}
+                      </h2>
 
                       {!isOpen && (
-                        <p className='w-2/4 text-5xl font-body font-light'>{faq.description}</p>
+                        <p className="w-2/4 text-5xl font-body font-light">
+                          {faq.description}
+                        </p>
                       )}
                     </button>
 
@@ -91,24 +150,23 @@ const Page = () => {
                       id={`faq-content-${index}`}
                       role="region"
                       aria-labelledby={`faq-title-${index}`}
-                      className={`grid overflow-hidden text-sm text-slate-600 transition-all duration-300 ease-in-out ${isOpen
-                        ? 'grid-rows-[1fr] opacity-100'
-                        : 'grid-rows-[0fr] opacity-0'
-                        }`}
+                      className={`grid overflow-hidden text-sm text-slate-600 transition-all duration-300 ease-in-out ${
+                        isOpen
+                          ? "grid-rows-[1fr] opacity-100"
+                          : "grid-rows-[0fr] opacity-0"
+                      }`}
                     >
-                      <div className="overflow-hidden">
-                        {faq.answer}
-                      </div>
+                      <div className="overflow-hidden">{faq.answer}</div>
                     </div>
                   </div>
-                )
+                );
               })}
             </div>
           </div>
         </div>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
