@@ -320,7 +320,7 @@ export default function ContactForm() {
       {/* additional notes */}
       <div className="w-full mb-5">
         <label htmlFor="serviceType" className="relative block">
-          <PencilLin
+          <PencilLine
             aria-hidden="true"
             className="absolute left-0 top-5 h-10 w-10 text-black"
             strokeWidth={1.8}
