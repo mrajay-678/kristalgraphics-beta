@@ -1,4 +1,5 @@
 import Link from "next/link";
+import QuoteForm from "../../components/kg/QuoteForm";
 import ContactForm from "../../components/kg/ContactForm";
 
 export const page = () => {
@@ -56,6 +57,7 @@ export const page = () => {
           out!
         </div>
       </section>
+      {/* <QuoteForm /> */}
       <ContactForm />
     </main>
   );
