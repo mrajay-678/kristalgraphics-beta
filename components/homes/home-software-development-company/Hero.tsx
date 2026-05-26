@@ -1,18 +1,26 @@
 "use client";
-
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 
-import Image from "next/image";
+import "swiper/css";
+import "swiper/css/free-mode";
+
 import marquee1 from "@/public/img/kg/marquee-1.png";
 import marquee2 from "@/public/img/kg/marquee-2.png";
 import marquee3 from "@/public/img/kg/marquee-3.png";
 import marquee4 from "@/public/img/kg/marquee-4.png";
 import marquee5 from "@/public/img/kg/marquee-5.png";
 import marquee6 from "@/public/img/kg/marquee-6.png";
-import "swiper/css";
-import "swiper/css/free-mode";
-const marqueeImages = [marquee1, marquee2, marquee3, marquee4, marquee5, marquee6];
+
+const marqueeImages = [
+  marquee1,
+  marquee2,
+  marquee3,
+  marquee4,
+  marquee5,
+  marquee6,
+];
 
 export default function Hero() {
   return (
@@ -79,11 +87,11 @@ export default function Hero() {
             </div>
           </div>
           {/* bottom part */}
-          <div className="mxd-hero-03__bottom px-[4.5rem]">
+          <div className="mxd-hero-03__bottom px-[7.5rem]">
             <div className="">
               {/* video divider */}
               <div className="mxd-divider">
-                <div className="mxd-divider__video max-w-[1920px] mx-auto">
+                <div className="mxd-divider__video mxd-container grid-container mx-auto">
                   <Image
                     className="l"
                     alt="Image"

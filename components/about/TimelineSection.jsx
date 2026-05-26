@@ -107,59 +107,62 @@ export default function Timeline() {
   return (
     <section
       ref={containerRef}
-      className="h-screen w-full flex bg-[#f5f5f5] overflow-hidden pt-96"
+      className="h-screen overflow-hidden pt-80"
     >
-      {/* LEFT YEARS */}
-      <div className="relative flex items-center justify-center w-1/4 pl-10">
-        {/* vertical line */}
-        <div className="absolute left-[0] top-0 h-full w-[2px] bg-gray-300 flex" />
-
-        <div className="space-y-4">
-          {years.map((year, i) => (
-            <div
-              key={i}
-              ref={(el) => (yearRefs.current[i] = el)}
-              className="text-5xl transition cursor-pointer opacity-30"
-              onClick={() => goTo(i)}
-            >
-              {year}
-            </div>
-          ))}
-        </div>
+      <div className="text-9xl font-heading font-thin kg-width pb-24">
+        40 years of print, perfect, repeat
       </div>
-
-      {/* RIGHT CONTENT */}
-      <div className="relative flex flex-col justify-between w-3/4 px-16 pt-20 right-section pb-20">
-        {/* TOP LINE */}
-        <div>
-          <div className="absolute top-0 left-0 w-full h-[2px] bg-gray-300" />
-
-          {/* MOVING DOT */}
-          <div
-            ref={dotRef}
-            className="absolute top-0 left-0 w-4 h-4 -translate-y-1/2 bg-yellow-400 border-2 border-black rounded-full"
-          />
-
-          {/* BIG YEAR */}
-          <div className="text-[120px] leading-none font-light tracking-tight mb-10">
-            {years[active]}
+      <div className="flex kg-width justify-between">
+        {/* LEFT YEARS */}
+        <div className="relative flex items-center justify-center w-1/12 pl-10">
+          {/* vertical line */}
+          <div className="space-y-4">
+            {years.map((year, i) => (
+              <div
+                key={i}
+                ref={(el) => (yearRefs.current[i] = el)}
+                className="text-5xl transition cursor-pointer opacity-30 py-2"
+                onClick={() => goTo(i)}
+              >
+                {year}
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* CONTENT */}
-        <div className="relative w-3/4 content">
-          <Image
-            src={year}
-            alt="Year"
-            className="absolute w-5/12 -translate-x-1/4 -translate-y-2/4 -top-3/4 left-1/2 ms-auto"
-          />
-          <h2 className="mb-4 font-semibold text-9xl font-heading">
-            Humble beginnings
-          </h2>
-          <p className="max-w-xl text-gray-600">
-            Kristal Graphics has been around since 1977. Trusted for our
-            quality, partnered with for our expertise.
-          </p>
+        {/* RIGHT CONTENT */}
+        <div className="relative flex flex-col justify-between w-10/12 px-16 pt-20 right-section pb-20">
+          {/* TOP LINE */}
+          <div>
+            <div className="absolute top-0 left-0 w-full h-[2px] bg-gray-300" />
+
+            {/* MOVING DOT */}
+            <div
+              ref={dotRef}
+              className="absolute top-0 left-0 w-4 h-4 -translate-y-1/2 bg-yellow-400 border-2 border-black rounded-full"
+            />
+
+            {/* BIG YEAR */}
+            <div className="text-[120px] leading-none font-light tracking-tight mb-10">
+              {years[active]}
+            </div>
+          </div>
+
+          {/* CONTENT */}
+          <div className="relative w-3/4 content">
+            <Image
+              src={year}
+              alt="Year"
+              className="absolute w-5/12 -translate-x-1/4 -translate-y-2/4 -top-3/4 left-1/2 ms-auto"
+            />
+            <h2 className="mb-4 font-semibold text-9xl font-heading">
+              Humble beginnings
+            </h2>
+            <p className="max-w-xl text-gray-600">
+              Kristal Graphics has been around since 1977. Trusted for our
+              quality, partnered with for our expertise.
+            </p>
+          </div>
         </div>
       </div>
     </section>

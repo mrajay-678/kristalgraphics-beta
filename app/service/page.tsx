@@ -54,7 +54,7 @@ const faqs: FAQItem[] = [
 ];
 
 const Page = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0)
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(prev => (prev === index ? null : index))
@@ -63,7 +63,7 @@ const Page = () => {
   return (
     <main className="pt-60">
       <div className="mxd-container grid-container">
-        <h1 className="font-heading font-light">Our Service</h1>
+        {/* <h1 className="font-heading font-light">Our Service</h1> */}
         <div className="relative font-inter antialiased">
           <div className="relative min-h-screen overflow-hidde">
             <div className="mx-auto w-full px-4 py-24 md:px-6">

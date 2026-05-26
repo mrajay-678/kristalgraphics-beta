@@ -11,7 +11,7 @@ export default function Footer2({
       className="mt-24 md:mt-32 lg:mt-52 bg-[url('/img/kg/footer-bg.svg')] bg-cover bg-top bg-no-repeat"
     >
       {/* Main Content */}
-      <div className="relative mx-auto flex w-11/12 max-w-[1400px] flex-col gap-16 pt-32 pb-20 md:pt-48 lg:flex-row lg:items-end lg:gap-10 lg:pt-72">
+      <div className="relative mx-auto w-12/12 max-w-[1920px] px-28 gap-16 pt-32 pb-20 md:pt-48 lg:flex-row lg:items-end lg:gap-10 lg:pt-72">
         
         {/* Left Content */}
         <div className="flex w-full flex-col justify-between lg:w-7/12">
@@ -20,17 +20,15 @@ export default function Footer2({
             Ready to print something people keep forever?
           </h2>
 
-          <div className="pt-12 md:pt-20 lg:pt-40">
-            <h3 className="font-heading text-5xl font-medium text-white sm:text-6xl md:text-7xl lg:text-[5vw]">
-              Get a <span className="text-[#FEBB12]">quote!</span>
-            </h3>
-          </div>
 
         </div>
 
         {/* Right Content */}
-        <div className="flex w-full flex-col gap-10 lg:w-5/12 lg:flex-row lg:justify-between">
+        <div className="flex w-full items-end flex-col gap-10 lg:flex-row lg:justify-between pt-12 md:pt-20 lg:pt-40">
           
+          <h3 className="font-heading text-5xl font-medium text-white sm:text-6xl md:text-7xl lg:text-[5vw]">
+            Get a <span className="text-[#FEBB12]">quote!</span>
+          </h3>
           {/* Address */}
           <div>
             <h4 className="mb-3 font-body text-5xl text-white sm:text-2xl lg:text-3xl">
@@ -73,7 +71,7 @@ export default function Footer2({
       </div>
 
       {/* Bottom Bar */}
-      <div className="mx-auto w-11/12 max-w-[1400px] pb-10 md:pb-16 lg:pb-24">
+      <div className="mx-auto w-11/12 max-w-[1920px] px-32 pb-10 md:pb-16 lg:pb-24">
         
         <div className="flex flex-col gap-6 border-t border-white/30 pt-8 md:flex-row md:items-center md:justify-between">
           
