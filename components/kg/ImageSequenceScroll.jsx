@@ -79,7 +79,7 @@ const ImageSequenceScroll = () => {
 
       scrollTrigger: {
         trigger: ".mid-animation",
-        start: "top 10px",
+        start: "25% top",
         end: "400% top",
         scrub: true,
         pin: true,

@@ -7,8 +7,8 @@ import divider from "@/public/img/kg/get-a-quote-divider.svg";
 
 export const page = () => {
   return (
-    <main className="container mx-auto px-4 py-8">
-      <section className="py-52">
+    <main className=" px-4 py-8">
+      <section className="py-52 container mx-auto">
         <h1 className="font-heading">
           Let's talk <br /> about your project!
         </h1>
@@ -20,9 +20,13 @@ export const page = () => {
         </div>
       </section>
       {/* <QuoteForm /> */}
-      <ContactForm />
+      <section className="container mx-auto">
+        <ContactForm />
+      </section>
       <Image src={divider} alt="divider" className="w-full pt-52 pb-52" />
-      <ContactDetails />
+      <section className="container mx-auto">
+        <ContactDetails />
+      </section>
     </main>
   );
 };

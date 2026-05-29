@@ -105,11 +105,11 @@ export default function Timeline() {
   }, []);
 
   return (
-    <section
+    <div
       ref={containerRef}
-      className="h-screen overflow-hidden pt-80"
+      className="h-screen container mx-auto overflow-hidden"
     >
-      <div className="text-9xl font-heading font-thin kg-width pb-24">
+      <div className="text-6xl md:text-9xl font-heading font-thin kg-width pb-24">
         40 years of print, perfect, repeat
       </div>
       <div className="flex kg-width justify-between">
@@ -121,7 +121,7 @@ export default function Timeline() {
               <div
                 key={i}
                 ref={(el) => (yearRefs.current[i] = el)}
-                className="text-5xl transition cursor-pointer opacity-30 py-2"
+                className="text-3xl md:text-5xl transition cursor-pointer opacity-30 py-2"
                 onClick={() => goTo(i)}
               >
                 {year}
@@ -139,32 +139,40 @@ export default function Timeline() {
             {/* MOVING DOT */}
             <div
               ref={dotRef}
-              className="absolute top-0 left-0 w-4 h-4 -translate-y-1/2 bg-yellow-400 border-2 border-black rounded-full"
-            />
+              className="absolute top-0 left-0 w-10 h-10 -translate-y-1/2 bg-yellow-1000"
+            >
+              <Image
+                src="/img/kg/time-logo.svg"
+                alt="Time Logo"
+                width={16}
+                height={16}
+              />
+            </div>
 
             {/* BIG YEAR */}
-            <div className="text-[120px] leading-none font-light tracking-tight mb-10">
-              {years[active]}
+            <div className="relative md:flex">
+              <div className="text-6xl md:text-9xl leading-none font-light mb-10">
+                {years[active]}
+                <div className="relative w-4/4 content">
+                  <h2 className="mb-4 font-semibold text-6xl md:text-9xl font-heading">
+                    Humble beginnings
+                  </h2>
+                  <p className="pt-10 text-gray-600">
+                    Kristal Graphics has been around since 1977. Trusted for our
+                    quality, partnered with for our expertise.
+                  </p>
+                </div>
+              </div>
+              <Image
+                src={year}
+                alt="Year"
+                className="md:w-2/4 ms-auto content"
+                style={{ objectFit: "contain" }}
+              />
             </div>
-          </div>
-
-          {/* CONTENT */}
-          <div className="relative w-3/4 content">
-            <Image
-              src={year}
-              alt="Year"
-              className="absolute w-5/12 -translate-x-1/4 -translate-y-2/4 -top-3/4 left-1/2 ms-auto"
-            />
-            <h2 className="mb-4 font-semibold text-9xl font-heading">
-              Humble beginnings
-            </h2>
-            <p className="max-w-xl text-gray-600">
-              Kristal Graphics has been around since 1977. Trusted for our
-              quality, partnered with for our expertise.
-            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

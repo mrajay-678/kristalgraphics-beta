@@ -7,15 +7,17 @@ import Approch from "@/components/common/Approch";
 export const page = () => {
   return (
     <main className="bg-[#FEFEFE]">
+      <section className="pt-60">
       <TimelineSection />
-      <section className="flex container gap-20 mx-auto pt-96">
-          <div className="w-2/4">
+      </section>
+      <section className="md:flex container gap-20 mx-auto pt-96">
+          <div className="md:w-2/4">
             <Image src={aboutOne} alt="Murtuza" className="object-cover h-3/4"/>
             <div className="pt-20">
               <p className="text-5xl font-thin font-body">For four decades, we've partnered with businesses, event planners, agencies, and brands who need reliable quality and honest timelines. With an in-house design team for support, we don't just print what you ask for, we guide you to what actually works for your project, budget, and goals.</p>
             </div>
           </div>
-          <div className="w-2/4">
+          <div className="md:w-2/4">
             <div className="pb-20">
               <p className="pb-10 text-5xl font-thin font-body">Kristal Graphics has been around since 1977. Trusted for our quality, partnered with for our expertise.</p>
               <p className="text-5xl font-thin font-body">
