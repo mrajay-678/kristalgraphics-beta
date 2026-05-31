@@ -43,13 +43,13 @@ export default function BrandsMarquee({
          
         {slides.map((item, index) => (
           <SwiperSlide key={`${item}-${index}`} className="!w-auto">
-            <div className="marquee__item item-partners">
+            <div className="">
               <Image
                 src={`/img/kg/brands/${item}`}
                 alt={item}
                 width={250}
                 height={90}
-                style={{ objectFit: "contain" }}
+                style={{ objectFit: "contain", borderRadius: "40px" }}
               />
             </div>
           </SwiperSlide>

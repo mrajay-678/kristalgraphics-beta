@@ -11,7 +11,6 @@ import marquee2 from "@/public/img/kg/marquee-2.png";
 import marquee3 from "@/public/img/kg/marquee-3.png";
 import marquee4 from "@/public/img/kg/marquee-4.png";
 import marquee5 from "@/public/img/kg/marquee-5.png";
-import marquee6 from "@/public/img/kg/marquee-6.png";
 
 const marqueeImages = [
   marquee1,
@@ -19,7 +18,6 @@ const marqueeImages = [
   marquee3,
   marquee4,
   marquee5,
-  marquee6,
 ];
 
 export default function Hero() {
@@ -34,23 +32,23 @@ export default function Hero() {
               {/* Marquee Start */}
 
               <Swiper
-                modules={[Autoplay, FreeMode]}
+                modules={[Autoplay]}
                 slidesPerView="auto"
-                freeMode={{
-                  enabled: true,
-                  momentum: false,
-                }}
-                loop
-                spaceBetween={40}
+                loop={true}
                 speed={5000}
-                grabCursor
-                dir="rtl"
-                allowTouchMove
+                allowTouchMove={false} // marquee usually doesn't need dragging
                 autoplay={{
                   delay: 0,
                   disableOnInteraction: false,
-                  pauseOnMouseEnter: true,
+                  pauseOnMouseEnter: false,
                 }}
+                onTouchEnd={(swiper) => {
+                  swiper.autoplay.start();
+                }}
+                onClick={(swiper) => {
+                  swiper.autoplay.start();
+                }}  
+                dir="rtl"
               >
                 {marqueeImages.map((item, index) => (
                   <SwiperSlide key={`${item}-${index}`} className="!w-auto">
