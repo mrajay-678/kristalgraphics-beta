@@ -9,18 +9,86 @@ import year from "@/public/img/kg/year-1977.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const years = [
-  "1977",
-  "1980",
-  "1982",
-  "1991",
-  "1995",
-  "1998",
-  "2001",
-  "2003",
-  "2006",
-  "2015",
-  "2021",
-  "2026",
+  {
+    year: "1977",
+    image: year,
+    title: "Humble beginnings",
+    description:
+      "Kristal Graphics has been around since 1977. Trusted for our quality, partnered with for our expertise."
+  },
+  {
+    year: "1988",
+    image: year,
+    title: "New Chapter",
+    description:
+      "The business transitioned to new ownership under the Saifee family, continuing the legacy as a trusted union print shop."
+  },
+  {
+    year: "2003",
+    image: year,
+    title: "Increasing Accessibility",
+    description:
+      "We moved from a commercial space to a retail storefront, making quality printing more accessible to the local community."
+  },
+  {
+    year: "2007",
+    image: year,
+    title: "Evolving to Digital",
+    description:
+      "By investing in advanced digital equipment, we expanded our capabilities and speed without compromising on quality."
+  },
+  {
+    year: "2012",
+    image: year,
+    title: "Growing the Portfolio",
+    description:
+      "Opened our second retail location and added screen printing and wide-format technology to serve more clients with new customization services."
+  },
+  {
+    year: "2017",
+    image: year,
+    title: "Expanding Services",
+    description:
+      "Acquired a mailing house and packaging house."
+  },
+  {
+    year: "2020",
+    image: year,
+    title: "The Pandemic Pivot",
+    description:
+      "Print retail was slow and eventually obsolete. Healthcare essentials were in high-demand. We pivoted from B2C to B2B, printing for essential supplies when they mattered most."
+  },
+  {
+    year: "2021",
+    image: year,
+    title: "Labels at Scale",
+    description:
+      "Added our first digital label press, bringing speed and precision to custom label production."
+  },
+  {
+    year: "2022",
+    image: year,
+    title: "Speed Meets Volume",
+    description:
+      "Installed high-speed digital equipment for postcards and flyers, handling bulk orders faster and delivering rush services at lightning speed."
+  },
+  {
+    year: "2023",
+    image: year,
+    title: "Adding Texture with Embroidery",
+    description: "Brought embroidery in-house, giving clients another way to make their brand feel premium and permanent."  },
+  {
+    year: "2025",
+    image: year,
+    title: "Expanding Capabilities",
+    description: "Added digital cup-printing and corrugated box-printing machines to increase our packaging and promotional product offerings."
+  },
+  {
+    year: "2026",
+    image: year,
+    title: "Perpetually Evolving",
+    description: "Currently in the process of adding advanced UV label technology and foil embellishments, because print keeps evolving and so do we."
+  }
 ];
 
 export default function Timeline() {
@@ -124,7 +192,7 @@ export default function Timeline() {
                 className="text-3xl md:text-5xl transition cursor-pointer opacity-30 py-2"
                 onClick={() => goTo(i)}
               >
-                {year}
+                {year.year}
               </div>
             ))}
           </div>
@@ -151,20 +219,19 @@ export default function Timeline() {
 
             {/* BIG YEAR */}
             <div className="relative md:flex">
-              <div className="text-6xl md:text-9xl leading-none font-light mb-10">
-                {years[active]}
+              <div className="text-6xl md:text-9xl leading-none font-light mb-10 w-2/4 content">
+                {years[active]?.year}
                 <div className="relative w-4/4 content">
                   <h2 className="mb-4 font-semibold text-6xl md:text-9xl font-heading">
-                    Humble beginnings
+                    {years[active]?.title}
                   </h2>
                   <p className="pt-10 text-gray-600">
-                    Kristal Graphics has been around since 1977. Trusted for our
-                    quality, partnered with for our expertise.
+                    {years[active]?.description}
                   </p>
                 </div>
               </div>
               <Image
-                src={year}
+                src={years[active]?.image}
                 alt="Year"
                 className="md:w-2/4 ms-auto content"
                 style={{ objectFit: "contain" }}

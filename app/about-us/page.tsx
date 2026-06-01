@@ -3,7 +3,7 @@ import Image from "next/image";
 import aboutOne from "@/public/img/kg/about-1.png"
 import aboutTwo from "@/public/img/kg/about-2.png"
 import Approch from "@/components/common/Approch";
-
+import Teams from "@/components/kg/Teams";
 export const page = () => {
   return (
     <main className="bg-[#FEFEFE]">
@@ -28,6 +28,7 @@ export const page = () => {
           </div>
       </section>
       <Approch />
+      <Teams/>
     </main>
   )
 }
