@@ -76,12 +76,12 @@ export default function Header1() {
         </ul>
 
         {/* Right Controls */}
-        <div className="hidden items-center w-2/12 gap-4 xl:flex">
+        <div className="hidden items-center w-3/12 gap-4 xl:flex">
           {/* <ThemeSwitcherButton /> */}
 
           <AnimatedButton
             text="Get a Quote!"
-            className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"
+            className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right !text-3xl !font-heading"
             href="/get-a-quote"
           >
             <i className="ph-bold ph-arrow-up-right" />
