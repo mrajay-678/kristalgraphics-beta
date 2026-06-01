@@ -146,7 +146,7 @@ const ImageSequenceScroll = () => {
 
       <canvas
         ref={canvasRef}
-        className="mx-auto"
+        className="mx-auto w-full"
       />
 
     </section>

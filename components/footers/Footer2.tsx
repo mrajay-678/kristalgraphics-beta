@@ -35,7 +35,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
         </div>
 
         {/* Right Content */}
-        <div className="flex w-full items-end flex-col gap-10 lg:flex-row lg:justify-between pt-52">
+        <div className="flex w-full items-end flex-col gap-10 lg:flex-row lg:justify-between pt-72">
           <h3 className="font-heading text-5xl w-6/12 font-medium text-white sm:text-6xl md:text-7xl lg:text-[5vw]">
             Get a <span className="text-[#FEBB12]">quote!</span>
           </h3>
