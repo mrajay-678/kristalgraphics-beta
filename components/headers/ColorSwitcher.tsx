@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 
 export default function ThemeSwitcherButton({}) {
   const [showSwitcher, setShowSwitcher] = useState(false);
-  const [colorScheme, setColorScheme] = useState<"light" | "light">(() => {
+  const [colorScheme, setColorScheme] = useState<"light" | "dark">(() => {
     if (typeof window !== "undefined") {
       return (
-        (localStorage.getItem("color-scheme") as "light" | "light") || "light"
+        (localStorage.getItem("color-scheme") as "light" | "dark") || "light"
       );
     }
     return "light";

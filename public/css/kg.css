@@ -30,6 +30,3 @@
   flex-direction: row-reverse;
 }
 
-.kg-width {
-  @apply 2xl:w-full xl:w-10/12 mx-auto;
-}

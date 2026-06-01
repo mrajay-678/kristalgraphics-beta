@@ -38,9 +38,6 @@ export default function Capabilities() {
   return (
     <div className="overflow-hidden mxd-section padding-grid-pre-pinned">
       <div className="mxd-container grid-container">
-        <div className="flex items-center justify-end">
-          <Image src={blackLogo} alt="capabilities" className="w-52" />
-        </div>
         {/* Block - Section Title Start */}
         <div className="mxd-block">
           <div className="mxd-section-title">

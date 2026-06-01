@@ -80,7 +80,7 @@ const ImageSequenceScroll = () => {
       scrollTrigger: {
         trigger: ".mid-animation",
         start: "25% top",
-        end: "400% top",
+        end: "200% bottom",
         scrub: true,
         pin: true,
         markers: true,
@@ -123,13 +123,13 @@ const ImageSequenceScroll = () => {
 
             </div>
 
-            <RevealText className="pt-10 text-5xl font-body reveal-type">
+            <div className="pt-10 text-5xl font-body reveal-type w-10/12">
               We're a full-service print and promo shop in
               Chatsworth, California. We handle it all
               in-house with an experienced crew,
               committed to delivering quality that lasts
-              and timelines you can actually count on
-            </RevealText>
+              and timelines you can actually count on.
+            </div>
 
           </div>
 
@@ -137,7 +137,7 @@ const ImageSequenceScroll = () => {
             <Image
               src={expertiesLogo}
               alt="experties logo"
-              className="w-10/12"
+              className="w-10/12 pt-20"
             />
           </div>
 

@@ -20,7 +20,7 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
       {children}
       <Footer2 />      
       <InitScroll />
-      <ScrollTop />
+      {/* <ScrollTop /> */}
       <LenisSmoothScroll />
       <ScrollToTopOnRouteChange />
     </>

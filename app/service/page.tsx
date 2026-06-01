@@ -50,7 +50,7 @@ const faqs: FAQItem[] = [
     question: "Fulfillment & Delivery",
     description:
       "Fulfillment & Delivery is another service we offer here at our Chatsworth, CA facility. Printing is ...",
-    hoverImage: "/img/kg/screen-hover.svg",
+    hoverImage: "/img/kg/fulfillment-hover.svg",
     answer: <FulfillmentSection />,
   },
   {
@@ -143,6 +143,9 @@ const Page = () => {
                               />
                             </div>
                             <div className="mxd-cpb-list__content anim-uni-in-up justify-between">
+                              <div className="mxd-awards-list__icon">
+                                <i className="ph ph-arrow-right"> →</i>
+                              </div>
                               <h6 className="m-0 w-2/4 mxd-cpb-list__title font-40 font-heading">{item.question}</h6>
                               <div className="mxd-cpb-list__num w-2/4 font-heading">
                                 {!isOpen && (

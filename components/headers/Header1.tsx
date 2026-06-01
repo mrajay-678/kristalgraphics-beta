@@ -31,7 +31,7 @@ export default function Header1() {
     { name: "Services", path: "/service" },
     { name: "Portfolio", path: "/portfolio" },
     { name: "About us", path: "/about-us" },
-    { name: "Get a Quote", path: "/get-a-quote" },
+    { name: "Catalog", path: "https://www.promoplace.com/kristalgraphics" },
   ];
 
   return (
@@ -80,9 +80,9 @@ export default function Header1() {
           {/* <ThemeSwitcherButton /> */}
 
           <AnimatedButton
-            text="Say Hello"
+            text="Get a Quote!"
             className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"
-            href="/contact"
+            href="/get-a-quote"
           >
             <i className="ph-bold ph-arrow-up-right" />
           </AnimatedButton>
@@ -130,13 +130,14 @@ export default function Header1() {
           <div className="mt-8 flex items-center justify-between gap-4">
             <ThemeSwitcherButton />
 
-            <AnimatedButton
-              text="Say Hello"
+            {/* <AnimatedButton
+              text="Get a Quote!"
               className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"
-              href="/contact"
+              href="/get-a-quote"
             >
+              Get a Quote!
               <i className="ph-bold ph-arrow-up-right" />
-            </AnimatedButton>
+            </AnimatedButton> */}
           </div>
 
         </div>
