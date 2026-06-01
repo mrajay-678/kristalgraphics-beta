@@ -97,7 +97,7 @@ const Page = () => {
 
   return (
     <main className="pt-60">
-      <div className="mxd-container grid-container">
+      <div className="w-11/12 mx-auto">
         <ServiceHero />
         <div className="relative font-inter antialiased">
           <div className="relative min-h-screen overflow-hidde">
