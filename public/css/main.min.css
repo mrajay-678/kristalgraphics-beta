@@ -7342,7 +7342,8 @@ form textarea:required:valid {
 }
 .mxd-hero-01__marquee {
   position: absolute;
-  top: 7.6rem;
+  top: unset;
+  bottom: 0;
   right: 0;
   width: 100%;
   background-color: var(--accent);
@@ -7386,9 +7387,10 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 768px) {
   .mxd-hero-01__marquee {
-    top: 0;
+    top: unset;
+    bottom: 0;
     right: 7rem;
-    width: 265px;
+    width: 250px;
     height: 88px;
     -moz-border-radius: 4.4rem;
     border-radius: 4.4rem;
@@ -7409,9 +7411,11 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1200px) {
   .mxd-hero-01__marquee {
-    right: 11rem;
-    width: 389px;
-    height: 132px;
+    top: unset;
+    bottom: 0;
+    right: 18rem;
+    width: 250px;
+    height: 82px;
     -moz-border-radius: 6.6rem;
     border-radius: 6.6rem;
   }
@@ -7429,6 +7433,8 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1600px) {
   .mxd-hero-01__marquee {
+    top: unset;
+    bottom: 0;
     right: 13.3rem;
     width: 430px;
     height: 154px;

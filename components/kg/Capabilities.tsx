@@ -101,7 +101,7 @@ export default function Capabilities() {
                       <div className="mxd-cpb-list__content anim-uni-in-up">
                         <h6 className="m-0 mxd-cpb-list__title font-40 font-heading">{item.title}</h6>
                         <div className="mxd-cpb-list__num font-heading"> 
-                          <h6>{item.title}</h6>
+                          <h6 className="font-bold">/0{idx + 1}</h6>
                         </div>
                       </div>
                       <div className="mxd-cpb-list__image anim-uni-in-up">
