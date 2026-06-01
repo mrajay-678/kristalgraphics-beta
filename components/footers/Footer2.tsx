@@ -8,10 +8,10 @@ export default function Footer2({
   return (
     <footer
       id="mxd-footer"
-      className="mt-24 md:mt-32 lg:mt-52 bg-[url('/img/kg/footer-bg.svg')] bg-cover bg-top bg-no-repeat"
+      className="mt-24 md:mt-32 lg:mt-52 bg-[url('/img/kg/footer-bg.svg')] bg-cover bg-top bg-no-repeat min-h-screen flex flex-col justify-end gap-20"
     >
       {/* Main Content */}
-      <div className="relative mx-auto w-12/12 max-w-[1920px] px-28 gap-16 pt-32 pb-20 md:pt-48 lg:flex-row lg:items-end lg:gap-10 lg:pt-72">
+      <div className="relative mx-auto mxd-container grid-container py-16 md:py-24 px-28 gap-16 pt-32 pb-20 md:pt-48 lg:flex-row lg:items-end lg:gap-10 lg:pt-72">
         
         {/* Left Content */}
         <div className="flex w-full flex-col justify-between lg:w-7/12">
