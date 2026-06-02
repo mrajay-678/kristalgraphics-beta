@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
+
 
 import instagram1 from "@/public/img/kg/instagram-1.png";
 import instagram2 from "@/public/img/kg/instagram-2.png";
@@ -20,35 +20,55 @@ const fallbackPosts = [
 ];
 
 const InstagramCard = ({ post, index }) => {
+  const isVideo =
+    post.media_type === "VIDEO" || post.type === "VIDEO" || !!post.videoUrl;
+
   return (
     <a
       href={post.permalink || "https://www.instagram.com/"}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener noreferrer"
       aria-label={`Open Instagram post ${index + 1}`}
-      className="block overflow-hidden"
+      className="block overflow-hidden group"
     >
-      {post.imageUrl ? (
-        <Image
-          src={post.imageUrl}
-          alt={post.caption || `Instagram post ${index + 1}`}
-          width={500}
-          height={500}
-          unoptimized
-          className=" h-full w-full object-cover transition duration-500 hover:scale-105"
-        />
-      ) : (
-        <Image
-          src={post.image}
-          alt={post.alt}
-          className=" h-full w-full object-cover transition duration-500 hover:scale-105"
-        />
-      )}
+      <div className="relative overflow-hidden">
+        {isVideo ? (
+          <video
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="h-3/4 w-full object-cover transition duration-500 group-hover:scale-105"
+            onMouseEnter={(e) => e.currentTarget.play()}
+            onMouseLeave={(e) => {
+              e.currentTarget.pause();
+              e.currentTarget.currentTime = 0;
+            }}
+          >
+            <source src={post.videoUrl || post.media_url} type="video/mp4" />
+          </video>
+        ) : post.imageUrl ? (
+          <Image
+            src={post.imageUrl}
+            alt={post.caption || `Instagram post ${index + 1}`}
+            width={500}
+            height={500}
+            unoptimized
+            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <Image
+            src={post.image}
+            alt={post.alt}
+            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          />
+        )}
+      </div>
     </a>
   );
 };
 
-export const Instagram = () => {
+export default function Instagram() {
   const [posts, setPosts] = useState(fallbackPosts);
 
   useEffect(() => {
@@ -76,7 +96,6 @@ export const Instagram = () => {
 
   return (
     <section className="mxd-container grid-container py-16 md:py-24">
-      {/* Top Content */}
       <div className="flex flex-col gap-8 lg:flex-row lg:items-end">
         <h2 className="lg:w-6/12 font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
           We're highly <br />
@@ -89,56 +108,34 @@ export const Instagram = () => {
         </p>
       </div>
 
-      {/* Instagram Feed */}
       <div className="pt-12 md:pt-20">
-        {posts.length <= 6 ? (
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-6">
-            {posts.map((post, index) => (
-              <div
-                key={post.id}
-                className={index > 1 ? "sm:col-span-2 lg:col-span-1" : ""}
-              >
-                <InstagramCard post={post} index={index} />
-              </div>
-            ))}
-          </div>
-        ) : (
-          <Swiper
-            modules={[Autoplay]}
-            loop={true}
-            spaceBetween={20}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              320: {
-                slidesPerView: 1.2,
-              },
-              640: {
-                slidesPerView: 2,
-              },
-              768: {
-                slidesPerView: 3,
-              },
-              1024: {
-                slidesPerView: 4,
-              },
-              1280: {
-                slidesPerView: 6,
-              },
-            }}
-          >
-            {posts.map((post, index) => (
-              <SwiperSlide key={post.id}>
-                <InstagramCard post={post} index={index} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        )}
+        <Swiper
+          spaceBetween={20}
+          breakpoints={{
+            320: {
+              slidesPerView: 1.2,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
+            1280: {
+              slidesPerView: 6,
+            },
+          }}
+        >
+          {posts.map((post, index) => (
+            <SwiperSlide key={post.id}>
+              <InstagramCard post={post} index={index} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
-};
-
-export default Instagram;
+}
