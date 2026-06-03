@@ -40,11 +40,3 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
     </>
   );
 }
-
-{/* <TechStacks />
-<Projects />
-<MarqueeSlider2 />
-<Facts />
-<ParallaxDivider />
-<Blogs />
-<Cta /> */}

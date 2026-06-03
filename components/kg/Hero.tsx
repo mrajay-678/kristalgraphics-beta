@@ -11,14 +11,7 @@ import marquee2 from "@/public/img/kg/marquee-2.png";
 import marquee3 from "@/public/img/kg/marquee-3.png";
 import marquee4 from "@/public/img/kg/marquee-4.png";
 import marquee5 from "@/public/img/kg/marquee-5.png";
-
-const marqueeImages = [
-  marquee1,
-  marquee2,
-  marquee3,
-  marquee4,
-  marquee5,
-];
+import src from "gsap/src";
 
 export default function Hero() {
   return (
@@ -47,23 +40,111 @@ export default function Hero() {
                 }}
                 onClick={(swiper) => {
                   swiper.autoplay.start();
-                }}  
+                }}
                 dir="rtl"
               >
-                {marqueeImages.map((item, index) => (
-                  <SwiperSlide key={`${item}-${index}`} className="!w-auto">
-                    <div key={index} className="marquee__item one-line">
-                      <div className="hero-03-marquee__image">
-                        <Image
-                          className="mxd-move"
-                          alt="Image"
-                          src={item}
-                          priority
-                        />
-                      </div>
+                <SwiperSlide className="!w-auto">
+                  <div className="marquee__item one-line">
+                    <div className="hero-03-marquee__image">
+                      <video
+                        preload="auto"
+                        autoPlay
+                        loop
+                        muted
+                        src={"/video/kg/video1.mp4"}
+                        className={"rounded-[800px]"}
+                      />
                     </div>
-                  </SwiperSlide>
-                ))}
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="!w-auto">
+                  <div className="marquee__item one-line">
+                    <div className="hero-03-marquee__image">
+                      <Image
+                        className="mxd-move"
+                        alt="Image"
+                        src={marquee1}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="!w-auto">
+                  <div className="marquee__item one-line">
+                    <div className="hero-03-marquee__image">
+                      <Image
+                        className="mxd-move"
+                        alt="Image"
+                        src={marquee2}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="!w-auto">
+                  <div className="marquee__item one-line">
+                    <div className="hero-03-marquee__image">
+                      <video
+                        preload="auto"
+                        autoPlay
+                        loop
+                        muted
+                        src={"/video/kg/video2.mp4"}
+                        className={"rounded-[800px]"}
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="!w-auto">
+                  <div className="marquee__item one-line">
+                    <div className="hero-03-marquee__image">
+                      <Image
+                        className="mxd-move"
+                        alt="Image"
+                        src={marquee3}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="!w-auto">
+                  <div className="marquee__item one-line">
+                    <div className="hero-03-marquee__image">
+                      <video
+                        preload="auto"
+                        autoPlay
+                        loop
+                        muted
+                        src={"/video/kg/video1.mp4"}
+                        className={"rounded-[800px]"}
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="!w-auto">
+                  <div className="marquee__item one-line">
+                    <div className="hero-03-marquee__image">
+                      <Image
+                        className="mxd-move"
+                        alt="Image"
+                        src={marquee4}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="!w-auto">
+                  <div className="marquee__item one-line">
+                    <div className="hero-03-marquee__image">
+                      <Image
+                        className="mxd-move"
+                        alt="Image"
+                        src={marquee5}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </SwiperSlide>
               </Swiper>
               {/* Marquee End */}
             </div>

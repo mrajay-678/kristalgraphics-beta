@@ -8,22 +8,41 @@ import ThemeSwitcherButton from "./ColorSwitcher";
 import Image from "next/image";
 
 import logo from "@/public/img/kg/Vector.svg";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Header1() {
   const pathname = usePathname();
 
-  const [isHidden, setIsHidden] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
 
   useEffect(() => {
+    let lastScrollY = 0;
+
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      setIsHidden(currentScrollPos > 10);
+      const currentScrollY = window.scrollY;
+
+      setIsSticky(currentScrollY > 100);
+
+      if (currentScrollY < lastScrollY) {
+        setShowHeader(true);
+      } else if (
+        currentScrollY > lastScrollY &&
+        currentScrollY > 100
+      ) {
+        setShowHeader(false);
+      }
+
+      lastScrollY = currentScrollY;
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () =>
+      window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
@@ -31,18 +50,34 @@ export default function Header1() {
     { name: "Services", path: "/service" },
     { name: "Portfolio", path: "/portfolio" },
     { name: "About us", path: "/about-us" },
-    { name: "Catalog", path: "https://www.promoplace.com/kristalgraphics" },
+    {
+      name: "Catalog",
+      path: "https://www.promoplace.com/kristalgraphics",
+    },
   ];
 
   return (
     <header
       id="header"
-      className={`mxd-header fixed left-0 top-0 z-50 w-full transition-all duration-300 ${
-        isHidden ? "py-3" : "py-5"
-      }`}
-    >
-      <div className="flex items-center justify-between w-full">
-        
+      className={`
+        left-0
+        right-0
+        z-50
+        !pt-5
+        w-full
+        transition-all
+        duration-500
+        ease-[cubic-bezier(0.4,0,0.2,1)]
+        ${
+          isSticky
+            ? "fixed top-0 bg-white/40 backdrop-blur-md"
+            : "absolute top-0 bg-transparent"
+        }
+        ${showHeader ? "translate-y-0" : "-translate-y-full"}
+        ${isSticky ? "py-10" : "py-5"}
+      `}
+    > 
+      <div className="flex items-center justify-between w-[90vw] mx-auto">
         {/* Logo */}
         <div className="mxd-header__logo loading__fade">
           <Link href="/" className="mxd-logo">
@@ -75,16 +110,14 @@ export default function Header1() {
           ))}
         </ul>
 
-        {/* Right Controls */}
-        <div className="hidden items-center w-3/12 gap-4 xl:flex">
-          {/* <ThemeSwitcherButton /> */}
-
+        {/* Desktop Right */}
+        <div className="hidden items-center justify-center w-3/12 gap-4 xl:flex">
           <AnimatedButton
             text="Get a Quote!"
             className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right !text-3xl !font-heading"
             href="/get-a-quote"
           >
-            <i className="ph-bold ph-arrow-up-right" />
+            <ArrowUpRight />
           </AnimatedButton>
         </div>
 
@@ -92,11 +125,12 @@ export default function Header1() {
         <button
           onClick={() => setMobileMenu(!mobileMenu)}
           className="flex h-10 w-10 items-center justify-center xl:hidden"
+          aria-label="Toggle Menu"
         >
           <div className="space-y-1.5">
-            <span className="block h-[2px] w-6 bg-white"></span>
-            <span className="block h-[2px] w-6 bg-white"></span>
-            <span className="block h-[2px] w-6 bg-white"></span>
+            <span className="block h-[2px] w-6 bg-white" />
+            <span className="block h-[2px] w-6 bg-white" />
+            <span className="block h-[2px] w-6 bg-white" />
           </div>
         </button>
       </div>
@@ -104,11 +138,12 @@ export default function Header1() {
       {/* Mobile Menu */}
       <div
         className={`overflow-hidden transition-all duration-500 xl:hidden ${
-          mobileMenu ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          mobileMenu
+            ? "max-h-[500px] opacity-100"
+            : "max-h-0 opacity-0"
         }`}
       >
         <div className="border-t border-white/10 bg-black px-5 py-6">
-          
           <ul className="flex flex-col gap-5">
             {navLinks.map((link) => (
               <li key={link.path}>
@@ -129,17 +164,7 @@ export default function Header1() {
 
           <div className="mt-8 flex items-center justify-between gap-4">
             <ThemeSwitcherButton />
-
-            {/* <AnimatedButton
-              text="Get a Quote!"
-              className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"
-              href="/get-a-quote"
-            >
-              Get a Quote!
-              <i className="ph-bold ph-arrow-up-right" />
-            </AnimatedButton> */}
           </div>
-
         </div>
       </div>
     </header>

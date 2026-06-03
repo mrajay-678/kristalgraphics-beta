@@ -5394,9 +5394,6 @@ form textarea:required:valid {
   }
 }
 .mxd-header {
-  position: absolute;
-  top: 0;
-  left: 3rem;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -5410,14 +5407,11 @@ form textarea:required:valid {
   width: calc(100% - 11.6rem);
   padding-top: 3rem;
   z-index: 101;
-  -webkit-transform: scaleY(1);
-  -moz-transform: scaleY(1);
-  -ms-transform: scaleY(1);
-  transform: scaleY(1);
   opacity: 1;
   -webkit-transition: all var(--_animspeed-medium) var(--_animbezier);
   -moz-transition: all var(--_animspeed-medium) var(--_animbezier);
   transition: all var(--_animspeed-medium) var(--_animbezier);
+  margin: 0 auto;
 }
 .mxd-header.is-hidden {
   -webkit-transform: scaleY(1.2);
@@ -5431,7 +5425,6 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 768px) {
   .mxd-header {
-    left: 6rem;
     width: -moz-calc(100% - 19.6rem);
     width: calc(100% - 19.6rem);
     padding-top: 4rem;
@@ -5439,7 +5432,6 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 1600px) {
   .mxd-header {
-    left: 9rem;
     width: -moz-calc(100% - 25.6rem);
     width: calc(100% - 25.6rem);
   }
