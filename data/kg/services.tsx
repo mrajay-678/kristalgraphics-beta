@@ -18,7 +18,7 @@ export const services = [
     slug: "embroidery",
     question: "Embroidery",
     description:
-      "Embroidery takes patience and expertise. Thread tension has to be just ...",
+      "Embroidery takes patience and expertise. Thread tension has to be just...",
     hoverImage: "/img/kg/embroidery-hover.svg",
     answer: <EmbroiderySection />,
   },
