@@ -7,11 +7,9 @@ import "swiper/css";
 import "swiper/css/free-mode";
 
 import marquee1 from "@/public/img/kg/marquee-1.png";
-import marquee2 from "@/public/img/kg/marquee-2.png";
 import marquee3 from "@/public/img/kg/marquee-3.png";
 import marquee4 from "@/public/img/kg/marquee-4.png";
 import marquee5 from "@/public/img/kg/marquee-5.png";
-import src from "gsap/src";
 
 export default function Hero() {
   return (
@@ -72,18 +70,6 @@ export default function Hero() {
                 <SwiperSlide className="!w-auto">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
-                      <Image
-                        className="mxd-move"
-                        alt="Image"
-                        src={marquee2}
-                        priority
-                      />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className="!w-auto">
-                  <div className="marquee__item one-line">
-                    <div className="hero-03-marquee__image">
                       <video
                         preload="auto"
                         autoPlay
@@ -115,7 +101,7 @@ export default function Hero() {
                         autoPlay
                         loop
                         muted
-                        src={"/video/kg/video1.mp4"}
+                        src={"/video/kg/video3.mp4"}
                         className={"rounded-[800px]"}
                       />
                     </div>
