@@ -23,6 +23,14 @@ export const services = [
     answer: <EmbroiderySection />,
   },
   {
+    slug: "labels",
+    question: "Labels",
+    description:
+      "Labels seem simple until you need them to have the perfect finish...",
+    hoverImage: "/img/kg/labels-hover.svg",
+    answer: <LabelsSection />,
+  },
+  {
     slug: "promotional-products",
     question: "Promotional Products",
     description:
@@ -45,13 +53,5 @@ export const services = [
       "Fulfillment & Delivery is another service we offer here at our Chatsworth, CA facility...",
     hoverImage: "/img/kg/fulfillment-hover.svg",
     answer: <FulfillmentSection />,
-  },
-  {
-    slug: "labels",
-    question: "Labels",
-    description:
-      "Labels seem simple until you need them to have the perfect finish...",
-    hoverImage: "/img/kg/labels-hover.svg",
-    answer: <LabelsSection />,
   },
 ];
