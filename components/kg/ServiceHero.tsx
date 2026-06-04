@@ -37,7 +37,7 @@ const ServiceHero = () => {
             modules={[Autoplay]}
             slidesPerView="auto"
             loop={true}
-            speed={5000}
+            speed={3000}
             allowTouchMove={false} // marquee usually doesn't need dragging
             autoplay={{
               delay: 0,
@@ -50,12 +50,12 @@ const ServiceHero = () => {
             onClick={(swiper) => {
               swiper.autoplay.start();
             }}
-            dir="rtl"
+            dir="ltr"
           >
             <div className="flex gap-8">
               {marqueeItems.map((item, index) => (
                 <SwiperSlide key={index} style={{ width: "auto" }}>
-                  <p className="text-7xl py-3 font-heading leading-tight" key={index} >{`${item} ✦`}</p>
+                  <p className="text-7xl py-3 px-3 font-heading leading-tight" key={index} >{` ${item} ✦ `}</p>
                 </SwiperSlide>
               ))}
             </div>
