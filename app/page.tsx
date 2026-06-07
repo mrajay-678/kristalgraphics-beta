@@ -22,7 +22,7 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
     <>
       <main id="mxd-page-content" className="mxd-page-content">
         <Hero />
-        <MarqueeSlider img="logo" className="" items={["Fast timelines", "Union-made quality", "Zero compromises", "Fast timelines", "Union-made quality", "Zero compromises", "Fast timelines", "Union-made quality", "Zero compromises"]} />
+        <MarqueeSlider img="logo" className="text-5xl" items={["Fast timelines", "Union-made quality", "Zero compromises", "Fast timelines", "Union-made quality", "Zero compromises", "Fast timelines", "Union-made quality", "Zero compromises"]} />
         <Capabilities />
         <ImageSequenceScroll />
         <Instagram />

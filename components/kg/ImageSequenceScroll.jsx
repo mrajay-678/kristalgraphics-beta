@@ -70,22 +70,24 @@ const ImageSequenceScroll = () => {
       render();
     };
 
-    const tween = gsap.to(imageSeq, {
-      frame: frameCount - 1,
-      snap: "frame",
-      ease: "none",
-
-      onUpdate: render,
-
-      scrollTrigger: {
-        trigger: ".mid-animation",
-        start: "25% top",
-        end: "200% bottom",
-        scrub: true,
-        pin: true,
-        markers: false,
-      },
-    });
+    if (window.innerWidth >= 768) {
+      const tween = gsap.to(imageSeq, {
+        frame: frameCount - 1,
+        snap: "frame",
+        ease: "none",
+        
+        onUpdate: render,
+        
+        scrollTrigger: {
+          trigger: ".mid-animation",
+          start: "25% top",
+          end: "200% bottom",
+          scrub: true,
+          pin: true,
+          markers: false,
+        },
+      });
+    };
 
     return () => {
 
@@ -103,27 +105,25 @@ const ImageSequenceScroll = () => {
       style={{ minHeight: "100vh" }}
     >
       <div>
-        <div className="flex justify-between mx-auto mxd-container grid-container">
+        <div className="flex flex-col md:flex-row justify-between mx-auto mxd-container grid-container">
 
-          <div className="flex flex-col w-2/4 gap-5 pb-52">
-
+          <div className="flex flex-col md:w-2/4 gap-2 md:gap-5 pb-10 md:pb-52">
             <div className="flex items-center gap-7">
-
               <RevealText className="reveal-type">
-                <div className="text-[12vw] leading-none font-bold font-heading">
+                <div className="md:text-[12vw] text-9xl leading-none font-bold font-heading">
                   4
                 </div>
               </RevealText>
 
               <RevealText className="reveal-type">
-                <div className="font-light leading-none text-[4.5vw] font-heading">
+                <div className="font-light leading-none md:text-[4.5vw] text-7xl font-heading">
                   decades of expertise
                 </div>
               </RevealText>
 
             </div>
 
-            <div className="pt-10 text-5xl font-body reveal-type w-10/12">
+            <div className="pt-10 text-5xl font-body reveal-type md:w-10/12">
               We're a full-service print and promo shop in
               Chatsworth, California. We handle it all
               in-house with an experienced crew,
@@ -137,7 +137,7 @@ const ImageSequenceScroll = () => {
             <Image
               src={expertiesLogo}
               alt="experties logo"
-              className="w-10/12 pt-20"
+              className="md:w-10/12 pt-20 md:pb-0 pb-24"
             />
           </div>
 
@@ -146,11 +146,11 @@ const ImageSequenceScroll = () => {
 
       <canvas
         ref={canvasRef}
-        className="mx-auto w-full"
+        className="mx-auto w-full hidden md:block"
       />
 
     </section>
   );
 };
 
-export default ImageSequenceScroll;
+export default ImageSequenceScroll; 

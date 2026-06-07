@@ -1,32 +1,37 @@
 [
   {
+    "slug": "screen-printing",
     "title": "Screen printing",
     "num": "/ 01",
     "hoverImage": "/img/kg/screen-hover.svg",
-    "mainImage": "/img/illustrations/1200x800_cpb-01.webp"
+    "mainImage": "/img/kg/screen-hover.svg"
   },
   {
+    "slug": "labels",
     "title": "Labels & decals",
     "num": "/ 02",
     "hoverImage": "/img/kg/labels-hover.svg",
-    "mainImage": "/img/illustrations/1200x800_cpb-03.webp"
+    "mainImage": "/img/kg/labels-hover.svg"
   },
   {
+    "slug": "embroidery",
     "title": "Embroidery",
     "num": "/ 03",
     "hoverImage": "/img/kg/embroidery-hover.svg",
-    "mainImage": "/img/illustrations/1200x800_cpb-02.webp"
+    "mainImage": "/img/kg/embroidery-hover.svg"
   },
   {
+    "slug": "packaging",
     "title": "Packaging",
     "num": "/ 04",
     "hoverImage": "/img/kg/packing-hover.svg",
-    "mainImage": "/img/illustrations/1200x800_cpb-04.webp"
+    "mainImage": "/img/kg/packing-hover.svg"
   },
   {
+    "slug": "promotional-products",
     "title": "Promotional items",
     "num": "/ 05",
     "hoverImage": "/img/kg/promotional-hover.svg",
-    "mainImage": "/img/illustrations/1200x800_cpb-05.webp"
+    "mainImage": "/img/kg/promotional-hover.svg"
   }
 ]

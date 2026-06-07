@@ -128,9 +128,9 @@ export default function Header1() {
           aria-label="Toggle Menu"
         >
           <div className="space-y-1.5">
-            <span className="block h-[2px] w-6 bg-white" />
-            <span className="block h-[2px] w-6 bg-white" />
-            <span className="block h-[2px] w-6 bg-white" />
+            <span className="block h-[2px] w-6 bg-black" />
+            <span className="block h-[2px] w-6 bg-black" />
+            <span className="block h-[2px] w-6 bg-black" />
           </div>
         </button>
       </div>
@@ -150,7 +150,7 @@ export default function Header1() {
                 <Link
                   href={link.path}
                   onClick={() => setMobileMenu(false)}
-                  className={`block text-lg transition-all duration-300 ${
+                  className={`block text-lg transition-all text-white duration-300 ${
                     pathname === link.path
                       ? "font-bold text-[#FEBB12]"
                       : ""

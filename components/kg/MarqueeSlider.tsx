@@ -48,7 +48,7 @@ export default function MarqueeSlider({
                     dangerouslySetInnerHTML={{ __html: item }}
                   />
 
-                  <div className="p-5 marquee__image mt-12">
+                  <div className="p-5 marquee__image mt-0 md:mt-12">
                     {img == "logo" && <Image src={logo} alt="Logo" />}
                     {img == "round-logo" && <Image src={roundLogo} width={55} height={55} alt="Logo" />}
                   </div>

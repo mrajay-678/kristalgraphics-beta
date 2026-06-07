@@ -11,81 +11,81 @@ gsap.registerPlugin(ScrollTrigger);
 const years = [
   {
     year: "1977",
-    image: year,
+    image: "/img/kg/year-1977.png",
     title: "Humble beginnings",
     description:
       "Kristal Graphics has been around since 1977. Trusted for our quality, partnered with for our expertise."
   },
   {
     year: "1988",
-    image: year,
+    image: "/img/kg/year-1977.png",
     title: "New Chapter",
     description:
       "The business transitioned to new ownership under the Saifee family, continuing the legacy as a trusted union print shop."
   },
   {
     year: "2003",
-    image: year,
+    image: "/img/kg/year-2003.png",
     title: "Increasing Accessibility",
     description:
       "We moved from a commercial space to a retail storefront, making quality printing more accessible to the local community."
   },
   {
     year: "2007",
-    image: year,
+    image: "/img/kg/year-2007.png",
     title: "Evolving to Digital",
     description:
       "By investing in advanced digital equipment, we expanded our capabilities and speed without compromising on quality."
   },
   {
     year: "2012",
-    image: year,
+    image: "/img/kg/year-2012.png",
     title: "Growing the Portfolio",
     description:
       "Opened our second retail location and added screen printing and wide-format technology to serve more clients with new customization services."
   },
   {
     year: "2017",
-    image: year,
+    image: "/img/kg/year-2017.png",
     title: "Expanding Services",
     description:
       "Acquired a mailing house and packaging house."
   },
   {
     year: "2020",
-    image: year,
+    image: "/img/kg/year-2020.png",
     title: "The Pandemic Pivot",
     description:
       "Print retail was slow and eventually obsolete. Healthcare essentials were in high-demand. We pivoted from B2C to B2B, printing for essential supplies when they mattered most."
   },
   {
     year: "2021",
-    image: year,
+    image: "/img/kg/year-2021.png",
     title: "Labels at Scale",
     description:
       "Added our first digital label press, bringing speed and precision to custom label production."
   },
   {
     year: "2022",
-    image: year,
+    image: "/img/kg/year-2022.png",
     title: "Speed Meets Volume",
     description:
       "Installed high-speed digital equipment for postcards and flyers, handling bulk orders faster and delivering rush services at lightning speed."
   },
   {
     year: "2023",
-    image: year,
+    image: "/img/kg/year-2023.png",
     title: "Adding Texture with Embroidery",
     description: "Brought embroidery in-house, giving clients another way to make their brand feel premium and permanent."  },
   {
     year: "2025",
-    image: year,
+    image: "/img/kg/year-2025.png",
     title: "Expanding Capabilities",
     description: "Added digital cup-printing and corrugated box-printing machines to increase our packaging and promotional product offerings."
   },
   {
     year: "2026",
-    image: year,
+    image: "/img/kg/year-2026.png",
     title: "Perpetually Evolving",
     description: "Currently in the process of adding advanced UV label technology and foil embellishments, because print keeps evolving and so do we."
   }
@@ -219,10 +219,10 @@ export default function Timeline() {
 
             {/* BIG YEAR */}
             <div className="relative md:flex">
-              <div className="text-6xl md:text-9xl leading-none font-light mb-10 w-2/4 content">
+              <div className="text-6xl md:text-9xl leading-none font-light mb-10 w-full md:w-2/4 content">
                 {years[active]?.year}
                 <div className="relative w-4/4 content">
-                  <h2 className="mb-4 font-semibold text-6xl md:text-9xl font-heading">
+                  <h2 className="mb-4  text-6xl md:text-9xl font-heading">
                     {years[active]?.title}
                   </h2>
                   <p className="pt-10 text-gray-600">
@@ -235,6 +235,8 @@ export default function Timeline() {
                 alt="Year"
                 className="md:w-2/4 ms-auto content"
                 style={{ objectFit: "contain" }}
+                width={200}
+                height={200}
               />
             </div>
           </div>

@@ -9,9 +9,9 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
   return (
     <footer
       id="mxd-footer"
-      className="mt-24 md:mt-32 lg:mt-52 min-h-screen flex flex-col justify-end gap-10"
+      className="mt-24 md:mt-32 lg:mt-52 min-h-screen flex flex-col justify-end gap-2 md:gap-10"
     >
-      <div className="w-2/4 ms-auto px-32">
+      <div className="md:w-2/4 ms-auto px-8 md:px-32">
         <Image
           src={blacknimonics}
           alt="Black Monics"
@@ -19,7 +19,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
         />
       </div>
       {/* Main Content */}
-      <div className="relative mx-auto grid-container py-16 md:py-24 px-32 gap-16 pb-20  lg:flex-row lg:items-end lg:gap-10 bg-black">
+      <div className="relative mx-auto grid-container py-8 md:py-24 px-8 md:px-32 gap-16 pb-20  lg:flex-row lg:items-end lg:gap-10 bg-black">
         {/* Left Content */}
         <div className="flex w-full justify-between items-end">
           <h2 className="font-heading text-4xl font-light leading-tight text-white w-6/12 sm:text-5xl md:text-6xl lg:text-[5vw]">
@@ -35,12 +35,12 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
         </div>
 
         {/* Right Content */}
-        <div className="flex w-full items-end flex-col gap-10 lg:flex-row lg:justify-between pt-72">
-          <h3 className="font-heading text-5xl w-6/12 font-medium text-white sm:text-6xl md:text-7xl lg:text-[5vw]">
+        <div className="flex w-full items-start md:items-end flex-col gap-10 lg:flex-row lg:justify-between pt-20 md:pt-72">
+          <h3 className="font-heading md:w-6/12 font-medium text-white sm:text-7xl md:text-7xl lg:text-[5vw]">
             Get a <span className="text-[#FEBB12]">quote!</span>
           </h3>
           {/* Address */}
-          <div className="flex w-6/12 justify-between items-start">
+          <div className="flex flex-wrap md:flex-row gap-5 md:w-6/12 justify-between items-start">
             <div className="flex flex-col items-center gap-2">
               <Image src={unionFooter} alt="Union Footer" />
               <Image src={sageFooter} alt="Sage Footer" className="w-3/5" />

@@ -5,6 +5,7 @@ import capabilities from "@/data/capabilities.json";
 import RevealText from "@/components/animation/RevealText";
 import { compatibility } from "@/types/capabilities";
 import blackLogo from "@/public/img/kg/black-logo.svg";
+import Link from "next/link";
 
 type HoverState = {
   activeIndex: number | null;
@@ -18,7 +19,7 @@ export default function Capabilities() {
 
   const handleMouseMove = (
     e: React.MouseEvent<HTMLDivElement>,
-    index: number
+    index: number,
   ) => {
     setHoverState({
       activeIndex: index,
@@ -45,7 +46,10 @@ export default function Capabilities() {
               <div className="row g-0">
                 <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrtitle">
-                    <RevealText as="h2" className="font-light reveal-type font-heading text-9xl font-black" >
+                    <RevealText
+                      as="h2"
+                      className="font-light reveal-type font-heading md:text-9xl text-7xl font-black"
+                    >
                       Our capabilities
                     </RevealText>
                   </div>
@@ -68,48 +72,52 @@ export default function Capabilities() {
                       onMouseLeave={handleMouseLeave}
                       key={idx}
                     >
-                      <div className="mxd-cpb-list__divider anim-uni-in-up" />
-                      <div
-                        className="hover-reveal__content hover-reveal-280x340"
-                        style={{
-                          opacity: hoverState.activeIndex === idx ? 1 : 0,
-                          transform: "translate(-80%, -50%)",
-                          left: hoverState.x,
-
-                          pointerEvents: "none",
-                          transition: "opacity 0.3s ease",
-                        }}
-                      >
-                        <Image
-                          className="hover-reveal__image"
+                      <Link href={`/service/${item.slug}`}>
+                        <div className="mxd-cpb-list__divider anim-uni-in-up" />
+                        <div
+                          className="hover-reveal__content hover-reveal-280x340"
                           style={{
-                            transform:
-                              hoverState.activeIndex === idx
-                                ? "scale(1,1)"
-                                : "scale(1,1.4)",
-                            transition: "transform 0.3s ease",
+                            opacity: hoverState.activeIndex === idx ? 1 : 0,
+                            transform: "translate(-80%, -50%)",
+                            left: hoverState.x,
+
+                            pointerEvents: "none",
+                            transition: "opacity 0.3s ease",
                           }}
-                          alt="Project Preview"
-                          src={item.hoverImage}
-                          width={600}
-                          height={730}
-                        />
-                      </div>
-                      <div className="mxd-cpb-list__content anim-uni-in-up">
-                        <h6 className="m-0 mxd-cpb-list__title font-40 font-heading">{item.title}</h6>
-                        <div className="mxd-cpb-list__num font-heading"> 
-                          <h6 className="font-bold">/0{idx + 1}</h6>
+                        >
+                          <Image
+                            className="hover-reveal__image"
+                            style={{
+                              transform:
+                                hoverState.activeIndex === idx
+                                  ? "scale(1,1)"
+                                  : "scale(1,1.4)",
+                              transition: "transform 0.3s ease",
+                            }}
+                            alt="Project Preview"
+                            src={item.hoverImage}
+                            width={600}
+                            height={730}
+                          />
                         </div>
-                      </div>
-                      <div className="mxd-cpb-list__image anim-uni-in-up">
-                        <Image
-                          alt="Project Preview"
-                          src={item.mainImage}
-                          width={1200}
-                          height={800}
-                        />
-                      </div>
-                      <div className="mxd-cpb-list__divider anim-uni-in-up" />
+                        <div className="mxd-cpb-list__content anim-uni-in-up">
+                          <h6 className="m-0 mxd-cpb-list__title font-40 font-heading">
+                            {item.title}
+                          </h6>
+                          <div className="mxd-cpb-list__num font-heading">
+                            <h6 className="font-bold">/0{idx + 1}</h6>
+                          </div>
+                        </div>
+                        <div className="mxd-cpb-list__image anim-uni-in-up">
+                          <Image
+                            alt="Project Preview"
+                            src={item.mainImage}
+                            width={1200}
+                            height={800}
+                          />
+                        </div>
+                        <div className="mxd-cpb-list__divider anim-uni-in-up" />
+                      </Link>
                     </div>
                   ))}
                 </div>

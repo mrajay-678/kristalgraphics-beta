@@ -1,3 +1,6 @@
+
+import Image from "next/image";
+
 export default function ScreenPrintingSection() {
   return (
     <section className="bg-white text-black">
@@ -6,10 +9,12 @@ export default function ScreenPrintingSection() {
         <div className="grid grid-cols-1 gap-28 md:grid-cols-2">
           {/* Left Image */}
           <div>
-            <img
-              src="https://placehold.co/600x800"
+            <Image
+              src="/img/kg/service/screen01.png"
               alt="Screen printing machine"
-              className="h-full w-full object-cover"
+              className=""
+              width={4000}
+              height={4000}
             />
           </div>
 
@@ -23,10 +28,12 @@ export default function ScreenPrintingSection() {
               hundreds and thousands of pieces.
             </p>
 
-            <img
-              src="https://placehold.co/600x600"
-              alt="Printed apparel"
-              className="w-full object-cover"
+            <Image
+              src="/img/kg/service/screen02.png"
+              alt="Screen printing machine"
+              className="w-full object-cove"
+              width={600}
+              height={600}
             />
           </div>
         </div>
