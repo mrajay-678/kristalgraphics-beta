@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import year from "@/public/img/kg/year-1977.png";
+import scrollDown from "@/public/img/kg/scroll-down.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,81 +14,84 @@ const years = [
     image: "/img/kg/year-1977.png",
     title: "Humble beginnings",
     description:
-      "Kristal Graphics has been around since 1977. Trusted for our quality, partnered with for our expertise."
+      "Kristal Graphics has been around since 1977. Trusted for our quality, partnered with for our expertise.",
   },
   {
     year: "1988",
     image: "/img/kg/year-1977.png",
     title: "New Chapter",
     description:
-      "The business transitioned to new ownership under the Saifee family, continuing the legacy as a trusted union print shop."
+      "The business transitioned to new ownership under the Saifee family, continuing the legacy as a trusted union print shop.",
   },
   {
     year: "2003",
     image: "/img/kg/year-2003.png",
     title: "Increasing Accessibility",
     description:
-      "We moved from a commercial space to a retail storefront, making quality printing more accessible to the local community."
+      "We moved from a commercial space to a retail storefront, making quality printing more accessible to the local community.",
   },
   {
     year: "2007",
     image: "/img/kg/year-2007.png",
     title: "Evolving to Digital",
     description:
-      "By investing in advanced digital equipment, we expanded our capabilities and speed without compromising on quality."
+      "By investing in advanced digital equipment, we expanded our capabilities and speed without compromising on quality.",
   },
   {
     year: "2012",
     image: "/img/kg/year-2012.png",
     title: "Growing the Portfolio",
     description:
-      "Opened our second retail location and added screen printing and wide-format technology to serve more clients with new customization services."
+      "Opened our second retail location and added screen printing and wide-format technology to serve more clients with new customization services.",
   },
   {
     year: "2017",
     image: "/img/kg/year-2017.png",
     title: "Expanding Services",
-    description:
-      "Acquired a mailing house and packaging house."
+    description: "Acquired a mailing house and packaging house.",
   },
   {
     year: "2020",
     image: "/img/kg/year-2020.png",
     title: "The Pandemic Pivot",
     description:
-      "Print retail was slow and eventually obsolete. Healthcare essentials were in high-demand. We pivoted from B2C to B2B, printing for essential supplies when they mattered most."
+      "Print retail was slow and eventually obsolete. Healthcare essentials were in high-demand. We pivoted from B2C to B2B, printing for essential supplies when they mattered most.",
   },
   {
     year: "2021",
     image: "/img/kg/year-2021.png",
     title: "Labels at Scale",
     description:
-      "Added our first digital label press, bringing speed and precision to custom label production."
+      "Added our first digital label press, bringing speed and precision to custom label production.",
   },
   {
     year: "2022",
     image: "/img/kg/year-2022.png",
     title: "Speed Meets Volume",
     description:
-      "Installed high-speed digital equipment for postcards and flyers, handling bulk orders faster and delivering rush services at lightning speed."
+      "Installed high-speed digital equipment for postcards and flyers, handling bulk orders faster and delivering rush services at lightning speed.",
   },
   {
     year: "2023",
     image: "/img/kg/year-2023.png",
     title: "Adding Texture with Embroidery",
-    description: "Brought embroidery in-house, giving clients another way to make their brand feel premium and permanent."  },
+    description:
+      "Brought embroidery in-house, giving clients another way to make their brand feel premium and permanent.",
+  },
   {
     year: "2025",
     image: "/img/kg/year-2025.png",
     title: "Expanding Capabilities",
-    description: "Added digital cup-printing and corrugated box-printing machines to increase our packaging and promotional product offerings."
+    description:
+      "Added digital cup-printing and corrugated box-printing machines to increase our packaging and promotional product offerings.",
   },
   {
     year: "2026",
     image: "/img/kg/year-2026.png",
     title: "Perpetually Evolving",
-    description: "Currently in the process of adding advanced UV label technology and foil embellishments, because print keeps evolving and so do we."
-  }
+    description:
+      "Currently in the process of adding advanced UV label technology and foil embellishments, because print keeps evolving and so do we.",
+  },
 ];
 
 export default function Timeline() {
@@ -238,6 +241,20 @@ export default function Timeline() {
                 width={200}
                 height={200}
               />
+            </div>
+            <div className="absolute bottom-10 right-0" onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>
+              <div className="flex flex-col items-center">
+                <p
+                  className="text-2xl pb-10"
+                  style={{
+                    textOrientation: "mixed",
+                    writingMode: "vertical-lr",
+                  }}
+                >
+                  Scroll down
+                </p>
+                <Image src={scrollDown} alt="Scroll down" className="w-12" />
+              </div>
             </div>
           </div>
         </div>

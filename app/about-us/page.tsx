@@ -10,7 +10,7 @@ export const page = () => {
       <section className="pt-60">
       <TimelineSection />
       </section>
-      <section className="md:flex container gap-20 mx-auto pt-96">
+      <section id="about" className="md:flex container gap-20 mx-auto pt-96">
           <div className="md:w-2/4">
             <Image src={aboutOne} alt="Murtuza" className="object-cover h-3/4"/>
             <div className="pt-20">

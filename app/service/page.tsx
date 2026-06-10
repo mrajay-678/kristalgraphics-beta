@@ -65,42 +65,14 @@ const Page = () => {
                             onMouseLeave={handleMouseLeave}
                             key={idx}
                           >
-                            <Link
-                              href={`/service/${item.slug}`}
-                            >
-                              <div className="mxd-cpb-list__divider anim-uni-in-up" />
-                              <div
-                                className="hover-reveal__content hover-reveal-280x340"
-                                style={{
-                                  opacity:
-                                    hoverState.activeIndex === idx ? 1 : 0,
-                                  transform: "translate(-80%, -50%)",
-                                  left: hoverState.x,
+                            <Link href={`/service/${item.slug}`}>
+                              <div className="mxd-cpb-list__divider" />
 
-                                  pointerEvents: "none",
-                                  transition: "opacity 0.3s ease",
-                                }}
-                              >
-                                <Image
-                                  className="hover-reveal__image"
-                                  style={{
-                                    transform:
-                                      hoverState.activeIndex === idx
-                                        ? "scale(1,1)"
-                                        : "scale(1,1.4)",
-                                    transition: "transform 0.3s ease",
-                                  }}
-                                  alt="Project Preview"
-                                  src={item.hoverImage}
-                                  width={600}
-                                  height={730}
-                                />
-                              </div>
                               <div className="mxd-cpb-list__content anim-uni-in-up justify-between">
                                 <div className="mxd-awards-list__icon">
                                   <i className="ph ph-arrow-right"> →</i>
                                 </div>
-                                <h6 className="m-0 w-2/4 mxd-cpb-list__title font-40 font-heading">
+                                <h6 className="m-0 w-1/4 mxd-cpb-list__title text-7xl font-heading">
                                   {item.question}
                                 </h6>
                                 <div className="mxd-cpb-list__num w-2/4 font-heading">
@@ -109,6 +81,15 @@ const Page = () => {
                                       {item.description}
                                     </p>
                                   )}
+                                </div>
+                                <div className=" ">
+                                  <Image
+                                    className="w-full h-full"
+                                    alt="Project Preview"
+                                    src={item.hoverImage}
+                                    width={300}
+                                    height={430}
+                                  />
                                 </div>
                               </div>
                             </Link>

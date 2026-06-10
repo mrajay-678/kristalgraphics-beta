@@ -91,10 +91,11 @@ const ImageSequenceScroll = () => {
 
     return () => {
 
-      tween.kill();
+       if (window.innerWidth >= 768) {
+        tween.kill();
 
-      ScrollTrigger.getAll().forEach((t) => t.kill());
-
+        ScrollTrigger.getAll().forEach((t) => t.kill());
+      }
     };
 
   }, []);

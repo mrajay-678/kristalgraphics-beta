@@ -19,7 +19,7 @@ export default function Hero() {
           {/* top part */}
           <div className="mxd-hero-03__top !p-0">
             {/* marquee */}
-            <div className="mxd-hero-03__marquee loading__item pt-[10%]">
+            <div className="mxd-hero-03__marquee loading__item pt-[5%]">
               {/* Marquee Start */}
 
               <Swiper

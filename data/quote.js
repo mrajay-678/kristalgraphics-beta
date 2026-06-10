@@ -28,7 +28,7 @@ export const serviceOptions = [
     value: "wide_format_printing"
   },
   {
-    label: "Flyers, Brochures, Menu, Invitations",
+    label: "Marketing Materials (Flyers, Brochures, etc)",
     value: "flyers_brochures"
   },
   {
@@ -131,5 +131,17 @@ export const productOptionsByService = {
       label: "Other (please specify in details below)",
       value: "other"
     }
+  ],
+  flyers_brochures: [
+    {label: "Flyers", value: "flyers"},
+    {label: "Brochures", value: "brochures"},
+    {label: "Menus", value: "menus"},
+    {label: "Invitations", value: "invitations"},
+    {label: "Postcards", value: "postcards"},
+    {label: "Calendars", value: "calendars"},
+    {label: "Envelopes", value: "envelopes"},
+    {label: "Business Cards", value: "business_cards"},
+    {label: "Letterheads", value: "letterheads"},
+    {label: "Event Tickets", value: "event_tickets"}
   ]
 };

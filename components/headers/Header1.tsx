@@ -51,7 +51,7 @@ export default function Header1() {
     { name: "Portfolio", path: "/portfolio" },
     { name: "About us", path: "/about-us" },
     {
-      name: "Catalog",
+      name: "Promo Products",
       path: "https://www.promoplace.com/kristalgraphics",
     },
   ];
