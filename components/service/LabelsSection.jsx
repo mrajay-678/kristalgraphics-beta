@@ -26,7 +26,7 @@ export default function LabelsSection() {
           </div>
 
           {/* Right Content */}
-          <div className="flex flex-col gap-28">
+          <div className="flex flex-col justify-between">
             <img
               src="https://placehold.co/600x600"
               alt="Printed label sample"

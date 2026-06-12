@@ -19,7 +19,7 @@ export default function Hero() {
           {/* top part */}
           <div className="mxd-hero-03__top !p-0">
             {/* marquee */}
-            <div className="mxd-hero-03__marquee loading__item pt-[5%]">
+            <div className="mxd-hero-03__marquee loading__item pt-[3%]">
               {/* Marquee Start */}
 
               <Swiper
@@ -41,7 +41,7 @@ export default function Hero() {
                 }}
                 dir="rtl"
               >
-                <SwiperSlide className="!w-auto">
+                <SwiperSlide className="!w-3/12">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <video
@@ -55,7 +55,7 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="!w-auto">
+                <SwiperSlide className="!w-3/12">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <Image
@@ -67,7 +67,7 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="!w-auto">
+                <SwiperSlide className="!w-3/12">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <video
@@ -81,7 +81,7 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="!w-auto">
+                <SwiperSlide className="!w-3/12">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <Image
@@ -93,7 +93,7 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="!w-auto">
+                <SwiperSlide className="!w-3/12">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <video
@@ -107,7 +107,7 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="!w-auto">
+                <SwiperSlide className="!w-3/12">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <Image
@@ -119,7 +119,7 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="!w-auto">
+                <SwiperSlide className="!w-3/12">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <Image
@@ -143,7 +143,7 @@ export default function Hero() {
                 <br />
                 impossible to ignore
               </p>
-              <div className="text-black hero-03-headline__title loading__item pt-20">
+              <div className="text-black hero-03-headline__title loading__item pt-20 pb-20">
                 <div className="!text-[9vw] font-heading hero-03-headline__svg-mobile">
                   Kristal <span className="">Graphics</span>
                 </div>

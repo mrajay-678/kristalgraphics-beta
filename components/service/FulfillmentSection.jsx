@@ -14,7 +14,7 @@ export default function FulfillmentSection() {
           </div>
 
           {/* Right Content */}
-          <div className="flex flex-col gap-28">
+          <div className="flex flex-col justify-between">
             <p className="text-5xl leading-none font-body font-light">
               Fulfillment &amp; Delivery is another service we offer here at our
               Chatsworth, CA facility. Printing is one thing, but getting it

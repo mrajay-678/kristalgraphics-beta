@@ -18,7 +18,7 @@ export default async function ServicePage({
 
   return (
     <main className="pt-60">
-      <div className="w-10/12 mx-auto">
+      <div className="container mx-auto">
         <h1 className="text-7xl font-heading leading-normal">
           {service.question}
         </h1>

@@ -5,7 +5,7 @@ export default function EmbroiderySection() {
         {/* Top Grid */}
         <div className="grid grid-cols-1 gap-28 md:grid-cols-2">
           {/* Left Column */}
-          <div className="flex flex-col gap-28">
+          <div className="flex flex-col justify-between">
             <p className="text-5xl leading-none font-body font-light">
               Embroidery takes patience and expertise. Thread tension has to be
               just right, placement has to be precise, and there’s no rushing a

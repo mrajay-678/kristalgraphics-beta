@@ -5,7 +5,7 @@ export default function PackagingSection() {
         {/* Top Grid */}
         <div className="grid grid-cols-1 gap-28 md:grid-cols-2">
           {/* Left Content */}
-          <div className="flex flex-col gap-28">
+          <div className="flex flex-col justify-between">
             <img
               src="https://placehold.co/600x600"
               alt="Packaging sample"

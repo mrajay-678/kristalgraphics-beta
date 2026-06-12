@@ -19,7 +19,7 @@ export default function ScreenPrintingSection() {
           </div>
 
           {/* Right Content */}
-          <div className="flex flex-col gap-28">
+          <div className="flex flex-col justify-between">
             <p className="text-5xl leading-none font-body font-light">
               Screen printing is what we’ve been doing the longest, and honestly,
               it’s still our favorite. There’s something satisfying about
