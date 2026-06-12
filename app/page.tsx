@@ -22,13 +22,13 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
     <>
       <main id="mxd-page-content" className="mxd-page-content">
         <Hero />
-        <MarqueeSlider img="logo" className="text-5xl" items={["Fast timelines", "Union-made quality", "Zero compromises", "Fast timelines", "Union-made quality", "Zero compromises", "Fast timelines", "Union-made quality", "Zero compromises"]} />
+        <MarqueeSlider img="logo" className="text-5xl" items={["Fast timelines", "Union-made quality", "Built for scale", "Zero compromises", "Fast timelines", "Union-made quality", "Built for scale", "Zero compromises", "Fast timelines", "Union-made quality", "Built for scale", "Zero compromises"]} />
         <Capabilities />
         <ImageSequenceScroll />
         <Instagram />
         <section className="mt-52">
           <div className="max-w-[1200px] w-full mx-auto mb-40 text-9xl text-black text-center leading-none font-light font-heading opacity-20">
-            Brands that trust us
+            Businesses that trust us
           </div>
         </section>
         <BrandsMarquee direction="rtl" items={brandImage} />

@@ -13,7 +13,6 @@ const ImageSequenceScroll = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-
     const frameCount = 176;
 
     const currentFrame = (index) =>
@@ -27,7 +26,6 @@ const ImageSequenceScroll = () => {
 
     // PRELOAD IMAGES
     for (let i = 1; i <= frameCount; i++) {
-
       const img = new window.Image();
 
       img.src = currentFrame(i);
@@ -48,7 +46,6 @@ const ImageSequenceScroll = () => {
     canvas.height = 310;
 
     const render = () => {
-
       const image = images[imageSeq.frame];
 
       // IMPORTANT FIX
@@ -56,13 +53,7 @@ const ImageSequenceScroll = () => {
 
       context.clearRect(0, 0, canvas.width, canvas.height);
 
-      context.drawImage(
-        image,
-        0,
-        0,
-        canvas.width,
-        canvas.height
-      );
+      context.drawImage(image, 0, 0, canvas.width, canvas.height);
     };
 
     // INITIAL RENDER
@@ -75,9 +66,9 @@ const ImageSequenceScroll = () => {
         frame: frameCount - 1,
         snap: "frame",
         ease: "none",
-        
+
         onUpdate: render,
-        
+
         scrollTrigger: {
           trigger: ".mid-animation",
           start: "25% top",
@@ -87,27 +78,17 @@ const ImageSequenceScroll = () => {
           markers: false,
         },
       });
-    };
+    }
 
     return () => {
-
-       if (window.innerWidth >= 768) {
-        tween.kill();
-
-        ScrollTrigger.getAll().forEach((t) => t.kill());
-      }
+      ScrollTrigger.getAll().forEach((t) => t.kill());
     };
-
   }, []);
 
   return (
-    <section
-      className="mid-animation pb-52"
-      style={{ minHeight: "100vh" }}
-    >
+    <section className="mid-animation pb-52" style={{ minHeight: "100vh" }}>
       <div>
         <div className="flex flex-col md:flex-row justify-between mx-auto mxd-container grid-container">
-
           <div className="flex flex-col md:w-2/4 gap-2 md:gap-5 pb-10 md:pb-52">
             <div className="flex items-center gap-7">
               <RevealText className="reveal-type">
@@ -121,17 +102,11 @@ const ImageSequenceScroll = () => {
                   decades of expertise
                 </div>
               </RevealText>
-
             </div>
 
             <div className="pt-10 text-5xl font-body reveal-type md:w-10/12">
-              We're a full-service print and promo shop in
-              Chatsworth, California. We handle it all
-              in-house with an experienced crew,
-              committed to delivering quality that lasts
-              and timelines you can actually count on.
+              We're a full-service print and promo shop trusted by businesses nationwide. Everything is handled in-house by an experienced crew committed to quality you can count on and timelines you can trust. Our specialty? Bulk orders.
             </div>
-
           </div>
 
           <div className="text-end">
@@ -141,17 +116,12 @@ const ImageSequenceScroll = () => {
               className="md:w-10/12 pt-20 md:pb-0 pb-24"
             />
           </div>
-
         </div>
       </div>
 
-      <canvas
-        ref={canvasRef}
-        className="mx-auto w-full hidden md:block"
-      />
-
+      <canvas ref={canvasRef} className="mx-auto w-full hidden md:block" />
     </section>
   );
 };
 
-export default ImageSequenceScroll; 
+export default ImageSequenceScroll;

@@ -139,7 +139,7 @@ export default function Hero() {
               <p className="hero-03-headline__caption loading__item text-white !font-body font-light">
                 Memorable merch
                 <br />
-                that makes your brand
+                that makes your business
                 <br />
                 impossible to ignore
               </p>
