@@ -1,3 +1,6 @@
+
+import Image from "next/image";
+
 export default function FulfillmentSection() {
   return (
     <section className=" text-black">
@@ -6,15 +9,11 @@ export default function FulfillmentSection() {
         <div className="grid grid-cols-1 gap-28 md:grid-cols-2">
           {/* Left Image */}
           <div>
-            <img
-              src="https://placehold.co/600x800"
-              alt="Embroidery machine"
-              className="h-full w-full object-cover"
-            />
+            <Image src="/img/kg/service/full01.png" alt="Embroidery machine" className="" width={4000} height={4000} />
           </div>
 
           {/* Right Content */}
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col justify-between gap-20">
             <p className="text-5xl leading-none font-body font-light">
               Fulfillment &amp; Delivery is another service we offer here at our
               Chatsworth, CA facility. Printing is one thing, but getting it
@@ -22,21 +21,13 @@ export default function FulfillmentSection() {
               the part people underestimate.
             </p>
 
-            <img
-              src="https://placehold.co/600x600"
-              alt="Printed apparel"
-              className="w-full object-cover"
-            />
+            <Image src="/img/kg/service/full02.png" alt="Printed apparel" className="w-full object-cover" width={600} height={600} />
           </div>
         </div>
 
         {/* Bottom Image */}
         <div className="my-28">
-          <img
-            src="https://placehold.co/1200x700"
-            alt="Large format printer"
-            className="w-full object-cover"
-          />
+          <Image src="/img/kg/service/full03.png" alt="Large format printer" className="w-full object-cover" width={1200} height={700} />
         </div>
 
         {/* Bottom Text */}

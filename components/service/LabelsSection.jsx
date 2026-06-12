@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function LabelsSection() {
   return (
     <section className="text-black">
@@ -26,11 +27,13 @@ export default function LabelsSection() {
           </div>
 
           {/* Right Content */}
-          <div className="flex flex-col justify-between">
-            <img
-              src="https://placehold.co/600x600"
+          <div className="flex flex-col justify-between gap-20">
+            <Image
+              src="/img/kg/service/label01.png"
               alt="Printed label sample"
               className="w-full object-cover"
+              width={600}
+              height={600}
             />
 
             <p className="text-5xl leading-none font-body font-light">
@@ -46,11 +49,7 @@ export default function LabelsSection() {
 
         {/* Bottom Image */}
         <div className="mt-28">
-          <img
-            src="https://placehold.co/1200x700"
-            alt="Large format label printer"
-            className="w-full object-cover"
-          />
+          <Image src="/img/kg/service/label02.png" alt="Large format label printer" className="w-full object-cover" width={1200} height={700} />
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function EmbroiderySection() {
   return (
     <section className=" text-black">
@@ -5,7 +7,7 @@ export default function EmbroiderySection() {
         {/* Top Grid */}
         <div className="grid grid-cols-1 gap-28 md:grid-cols-2">
           {/* Left Column */}
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col justify-between gap-20">
             <p className="text-5xl leading-none font-body font-light">
               Embroidery takes patience and expertise. Thread tension has to be
               just right, placement has to be precise, and there’s no rushing a
@@ -13,11 +15,7 @@ export default function EmbroiderySection() {
               designs become part of the fabric, they don’t just sit on top.
             </p>
 
-            <img
-              src="https://placehold.co/600x600"
-              alt="Printed apparel"
-              className="w-full object-cover"
-            />
+            <Image src="/img/kg/service/emb01.png" alt="Embroidery machine" className="" width={4000} height={4000} />
           </div>
 
           {/* Right Column */}
@@ -32,11 +30,7 @@ export default function EmbroiderySection() {
 
         {/* Large Bottom Image */}
         <div className="mt-28">
-          <img
-            src="https://placehold.co/1200x700"
-            alt="Large printing machine"
-            className="w-full object-cover"
-          />
+          <Image src="/img/kg/service/emb02.png" alt="Embroidery machine" className="" width={4000} height={4000} />
         </div>
 
         {/* Bottom Text */}

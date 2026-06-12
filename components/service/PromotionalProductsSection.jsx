@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function PromotionalProductsSection() {
   return (
     <section className=" text-black">
@@ -6,15 +8,11 @@ export default function PromotionalProductsSection() {
         <div className="grid grid-cols-1 gap-24 md:grid-cols-2">
           {/* Left Image */}
           <div>
-            <img
-              src="https://placehold.co/600x800"
-              alt="Embroidery machine"
-              className="h-full w-full object-cover"
-            />
+            <Image src="/img/kg/service/promo01.png" alt="Embroidery machine" className="" width={4000} height={4000} />
           </div>
 
           {/* Right Content */}
-          <div className="flex flex-col gap-24">
+          <div className="flex flex-col justify-between gap-24">
             <p className="text-5xl leading-none font-body font-light">
               Promotional Products don’t have to end up in a drawer if they’re
               sourced well. We source products people like to actually use. Good
@@ -24,11 +22,7 @@ export default function PromotionalProductsSection() {
               design team to know what works best.
             </p>
 
-            <img
-              src="https://placehold.co/600x600"
-              alt="Promotional apparel"
-              className="w-full object-cover"
-            />
+            <Image src="/img/kg/service/promo02.png" alt="Embroidery machine" className="" width={4000} height={4000} />
           </div>
         </div>
 
