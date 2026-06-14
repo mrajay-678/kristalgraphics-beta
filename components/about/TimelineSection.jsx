@@ -242,7 +242,14 @@ export default function Timeline() {
                 height={200}
               />
             </div>
-            <div className="absolute bottom-10 right-0" onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>
+            <div
+              className="absolute bottom-10 right-0"
+              onClick={() =>
+                document
+                  .getElementById("about")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
               <div className="flex flex-col items-center cursor-pointer">
                 <p
                   className="text-2xl pb-10"
