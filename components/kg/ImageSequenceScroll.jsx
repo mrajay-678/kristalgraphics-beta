@@ -61,7 +61,7 @@ const ImageSequenceScroll = () => {
       render();
     };
 
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 1024) {
       const tween = gsap.to(imageSeq, {
         frame: frameCount - 1,
         snap: "frame",

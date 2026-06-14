@@ -225,7 +225,7 @@ export default function Timeline() {
               <div className="text-6xl md:text-9xl leading-none font-light mb-10 w-full md:w-2/4 content">
                 {years[active]?.year}
                 <div className="relative w-4/4 content">
-                  <h2 className="mb-4  text-6xl md:text-9xl font-heading">
+                  <h2 className="mb-4  text-6xl lg:text-8xl font-heading">
                     {years[active]?.title}
                   </h2>
                   <p className="pt-10 text-gray-600">
@@ -243,7 +243,7 @@ export default function Timeline() {
               />
             </div>
             <div className="absolute bottom-10 right-0" onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center cursor-pointer">
                 <p
                   className="text-2xl pb-10"
                   style={{

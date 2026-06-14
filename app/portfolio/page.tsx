@@ -21,43 +21,43 @@ const equipment: BentoItem[] = [
     id: "anatol-screen-printing",
     title: "Anatol Automatic 12-Color Screen Printing Machine",
     image: equipment1,
-    className: "w-5/12 h-[488px] md:h-auto pr-7 mb-18",
+    className: "md:w-5/12 h-[488px] h-auto md:pr-7 mb-18",
   },
   {
     id: "truepress-label-press",
     title: "Truepress Jet L350UV Plus Label Press",
     image: equipment2,
-    className: "w-7/12 h-[488px] md:h-auto pl-7 mb-18",
+    className: "md:w-7/12 h-[488px] h-auto md:pl-7 mb-18",
   },
   {
     id: "xerox-color-press",
     title: "Xerox Color Press 1000i",
     image: equipment7,
-    className: "w-6/12 h-[662px] md:h-auto mb-18 pr-7",
+    className: "md:w-6/12 h-[662px] h-auto mb-18 md:pr-7",
   },
   {
     id: "mimaki-wide-format",
     title: "Mimaki UCVJ300 Wide Format Printer",
     image: equipment8,
-    className: "w-6/12 h-[662px] md:h-auto mb-18 pl-7",
+    className: "md:w-6/12 h-[662px] h-auto mb-18 md:pl-7",
   },
   {
     id: "uv-dtf-printer",
     title: '24" UV DTF Printer',
     image: equipment3,
-    className: "w-6/12 h-[662px] md:h-auto mb-18 pr-7",
+    className: "md:w-6/12 h-[662px] h-auto mb-18 md:pr-7",
   },
   {
     id: "yuxunda-cup-printer",
     title: "Yuxunda Digital Cup Printer YXD-CP1618",
     image: equipment4,
-    className: "w-6/12 h-[662px] md:h-auto mb-18 pl-7",
+    className: "md:w-6/12 h-[662px] h-auto mb-18 md:pl-7",
   },
   {
     id: "komori-offset-press",
     title: "Komori Lithrone Offset Press",
     image: equipment6,
-    className: "w-full",
+    className: "md:w-full",
   },
 
 ]
@@ -67,11 +67,11 @@ export default function PortfolioPage() {
     <main className="px-4 py-28 text-black py-60">
       <section className="container mx-auto">
         <div className="mb-14">
-          <h1 className="font-heading text-5xl leading-none md:text-9xl">
+          <h1 className="font-heading text-7xl leading-none md:text-9xl">
             Our Equipment
           </h1>
 
-          <p className="mt-5 font-body text-lg leading-tight md:text-5xl">
+          <p className="mt-5 font-body  leading-tight text-5xl">
             The foundation of our superior production lies in our
             high-end machinery.
             <br className="hidden md:block" />
@@ -83,7 +83,7 @@ export default function PortfolioPage() {
         {/* Dynamic Bento Grid */}
         <div
           className="
-            flex
+            md:flex
             flex-wrap
             justify-between
           "
@@ -94,7 +94,7 @@ export default function PortfolioPage() {
                 key={item.id}
                 src={item.image}
                 alt={item.title}
-                className={`w-full md:h-full`}
+                className={`md:w-full h-full`}
               />
             </div>
           ))}

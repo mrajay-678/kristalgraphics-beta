@@ -32,7 +32,7 @@ export default function Approch() {
                 <div className="mxd-approach-list__border anim-uni-in-up" />
                 <div className="mxd-approach-list__inner">
                   <div className="px-0 container-fluid">
-                    <div className="flex flex-col justify-between gap-20 gap-0 xl:flex-row">
+                    <div className="flex flex-col justify-between gap-20xl:flex-row">
                       <div className="w-full xl:w-1/2 mxd-grid-item no-margin">
                         <div className="mxd-approach-list__title !text-start anim-uni-in-up">
                           <h6 className="text-7xl font-heading">{item.title}</h6>

@@ -23,7 +23,7 @@ export const page = () => {
       <section className="container mx-auto">
         <ContactForm />
       </section>
-      <Image src={divider} alt="divider" className="w-full pt-52 pb-52" />
+      <Image src={divider} alt="divider" className="w-full md:pt-52 md:pb-52 py-20" />
       <section className="container mx-auto">
         <ContactDetails />
       </section>

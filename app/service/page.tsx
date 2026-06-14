@@ -68,14 +68,11 @@ const Page = () => {
                             <Link href={`/service/${item.slug}`}>
                               <div className="mxd-cpb-list__divider" />
 
-                              <div className="mxd-cpb-list__content anim-uni-in-up justify-between">
-                                <div className="mxd-awards-list__icon">
-                                  <i className="ph ph-arrow-right"> →</i>
-                                </div>
-                                <h6 className="m-0 w-1/4 mxd-cpb-list__title text-7xl font-heading">
+                              <div className="flex lg:flex-row flex-col lg:items-center gap-20 anim-uni-in-up py-20 justify-between">
+                                <h6 className="m-0 md:w-1/4 mxd-cpb-list__title text-7xl font-heading">
                                   {item.question}
                                 </h6>
-                                <div className="mxd-cpb-list__num w-2/4 font-heading">
+                                <div className="mxd-cpb-list__num lg:w-2/4 font-heading">
                                   {!isOpen && (
                                     <p className="text-5xl font-body font-light">
                                       {item.description}

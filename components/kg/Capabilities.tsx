@@ -48,7 +48,7 @@ export default function Capabilities() {
                   <div className="mxd-section-title__hrtitle">
                     <RevealText
                       as="h2"
-                      className="font-light reveal-type font-heading md:text-9xl text-7xl font-black"
+                      className="font-light reveal-type font-heading md:text-9xl text-7xl"
                     >
                       Our capabilities
                     </RevealText>

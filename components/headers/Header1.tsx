@@ -55,6 +55,17 @@ export default function Header1() {
       path: "https://www.promoplace.com/kristalgraphics",
     },
   ];
+  const MobileLinks = [
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/service" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "About us", path: "/about-us" },
+    {
+      name: "Promo Products",
+      path: "https://www.promoplace.com/kristalgraphics",
+    },
+    { name: "Get a quote",path: "/get-a-quote"},
+  ];
 
   return (
     <header
@@ -145,12 +156,12 @@ export default function Header1() {
       >
         <div className="border-t border-white/10 bg-black px-5 py-6">
           <ul className="flex flex-col gap-5">
-            {navLinks.map((link) => (
+            {MobileLinks.map((link) => (
               <li key={link.path}>
                 <Link
                   href={link.path}
                   onClick={() => setMobileMenu(false)}
-                  className={`block text-lg transition-all text-white duration-300 ${
+                  className={`block text-5xl transition-all text-white duration-300 ${
                     pathname === link.path
                       ? "font-bold text-[#FEBB12]"
                       : ""

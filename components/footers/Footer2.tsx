@@ -9,7 +9,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
   return (
     <footer
       id="mxd-footer"
-      className="mt-24 md:mt-32 lg:mt-52 min-h-screen flex flex-col justify-end gap-2 md:gap-10"
+      className="mt-24 md:mt-32 lg:mt-52 lg:min-h-screen flex flex-col justify-end gap-2 md:gap-10"
     >
       <div className="md:w-2/4 ms-auto px-8 md:px-32">
         <Image
@@ -35,12 +35,12 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
         </div>
 
         {/* Right Content */}
-        <div className="flex w-full items-start md:items-end flex-col gap-10 lg:flex-row lg:justify-between pt-20 md:pt-72">
+        <div className="flex w-full items-start lg:items-end flex-col gap-10 lg:flex-row lg:justify-between pt-20 lg:pt-72">
           <h3 className="font-heading md:w-6/12 font-medium text-white sm:text-7xl md:text-7xl lg:text-[5vw]">
             Get a <span className="text-[#FEBB12]">quote!</span>
           </h3>
           {/* Address */}
-          <div className="flex flex-wrap md:flex-row gap-5 md:w-6/12 justify-between items-start">
+          <div className="flex flex-wrap lg:flex-row gap-5 lg:w-6/12 justify-between items-start">
             <div className="flex flex-col items-center gap-2">
               <Image src={unionFooter} alt="Union Footer" />
               <Image src={sageFooter} alt="Sage Footer" className="w-3/5" />

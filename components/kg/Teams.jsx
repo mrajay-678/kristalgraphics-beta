@@ -14,7 +14,7 @@ let team = [juzer, murtaza, courtney, darwin, tasneem, ana, narisara, nafisa, fa
 
 const Teams = () => {
   return (
-    <section className="container mx-auto pt-20 pb-52">
+    <section className="container mx-auto pt-20 lg:pb-52">
       <div className="mxd-section-title__hrtitle anim-uni-in-up">
         <RevealText
           as="h2"
@@ -23,7 +23,7 @@ const Teams = () => {
           Meet the team
         </RevealText>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-20 pb-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-20 pb-24">
         {team.map((member, i) => (
           <div
             key={i}
