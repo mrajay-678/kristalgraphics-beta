@@ -27,10 +27,7 @@ export default function Header1() {
 
       if (currentScrollY < lastScrollY) {
         setShowHeader(true);
-      } else if (
-        currentScrollY > lastScrollY &&
-        currentScrollY > 100
-      ) {
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setShowHeader(false);
       }
 
@@ -41,8 +38,7 @@ export default function Header1() {
       passive: true,
     });
 
-    return () =>
-      window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
@@ -64,7 +60,7 @@ export default function Header1() {
       name: "Promo Products",
       path: "https://www.promoplace.com/kristalgraphics",
     },
-    { name: "Get a quote",path: "/get-a-quote"},
+    { name: "Get a quote", path: "/get-a-quote" },
   ];
 
   return (
@@ -87,7 +83,7 @@ export default function Header1() {
         ${showHeader ? "translate-y-0" : "-translate-y-full"}
         ${isSticky ? "py-10" : "py-5"}
       `}
-    > 
+    >
       <div className="flex items-center justify-between w-[90vw] mx-auto">
         {/* Logo */}
         <div className="mxd-header__logo loading__fade">
@@ -149,9 +145,7 @@ export default function Header1() {
       {/* Mobile Menu */}
       <div
         className={`overflow-hidden transition-all duration-500 xl:hidden ${
-          mobileMenu
-            ? "max-h-[500px] opacity-100"
-            : "max-h-0 opacity-0"
+          mobileMenu ? "max-h-[500px] opacity-100 mt-10" : "max-h-0 opacity-0"
         }`}
       >
         <div className="border-t border-white/10 bg-black px-5 py-6">
@@ -161,10 +155,8 @@ export default function Header1() {
                 <Link
                   href={link.path}
                   onClick={() => setMobileMenu(false)}
-                  className={`block text-5xl transition-all text-white duration-300 ${
-                    pathname === link.path
-                      ? "font-bold text-[#FEBB12]"
-                      : ""
+                  className={`block text-3xl text-light transition-all text-white duration-300 ${
+                    pathname === link.path ? "font-bold text-[#FEBB12]" : ""
                   }`}
                 >
                   {link.name}

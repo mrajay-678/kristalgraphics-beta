@@ -8,7 +8,7 @@ import LabelsSection from "@/components/service/LabelsSection";
 export const services = [
   {
     slug: "screen-printing",
-    question: "Screen printing",
+    question: "Screen Printing",
     description:
       "Screen printing is what we've been doing the longest, and honestly, it's still our favorite. There's something satisfying about watching ink go through mesh and land exactly where it should. It's also the most vibrant, durable, and consistent customization across hundreds and thousands of pieces...",
     hoverImage: "/img/kg/screen-hover.svg",

@@ -18,7 +18,7 @@ const years = [
   },
   {
     year: "1988",
-    image: "/img/kg/year-1977.png",
+    image: "/img/kg/year-1988.png",
     title: "New Chapter",
     description:
       "The business transitioned to new ownership under the Saifee family, continuing the legacy as a trusted union print shop.",
@@ -180,19 +180,19 @@ export default function Timeline() {
       ref={containerRef}
       className="h-screen container mx-auto overflow-hidden"
     >
-      <div className="text-6xl md:text-9xl font-heading font-thin kg-width pb-24">
+      <div className="text-7xl xl:text-9xl font-heading font-thin kg-width pb-24">
         40 years of print, perfect, repeat
       </div>
       <div className="flex kg-width justify-between">
         {/* LEFT YEARS */}
         <div className="relative flex items-center justify-center w-1/12 pl-10">
           {/* vertical line */}
-          <div className="space-y-4">
+          <div className="space-y-2">
             {years.map((year, i) => (
               <div
                 key={i}
                 ref={(el) => (yearRefs.current[i] = el)}
-                className="text-3xl md:text-5xl transition cursor-pointer opacity-30 py-2"
+                className="text-3xl xl:text-5xl transition cursor-pointer opacity-30 py-2"
                 onClick={() => goTo(i)}
               >
                 {year.year}
@@ -222,10 +222,10 @@ export default function Timeline() {
 
             {/* BIG YEAR */}
             <div className="relative md:flex">
-              <div className="text-6xl md:text-9xl leading-none font-light mb-10 w-full md:w-2/4 content">
+              <div className="text-7xl xl:text-9xl leading-none font-light mb-10 w-full md:w-2/4 content">
                 {years[active]?.year}
                 <div className="relative w-4/4 content">
-                  <h2 className="mb-4  text-6xl lg:text-8xl font-heading">
+                  <h2 className="mb-4 text-6xl xl:text-8xl font-heading">
                     {years[active]?.title}
                   </h2>
                   <p className="pt-10 text-gray-600">
@@ -238,8 +238,8 @@ export default function Timeline() {
                 alt="Year"
                 className="md:w-2/4 ms-auto content"
                 style={{ objectFit: "contain" }}
-                width={200}
-                height={200}
+                width={900}
+                height={900}
               />
             </div>
             <div
