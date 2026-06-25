@@ -71,11 +71,11 @@ const ImageSequenceScroll = () => {
 
         scrollTrigger: {
           trigger: ".mid-animation",
-          start: "25% top",
+          start: "25% 25%",
           end: "200% bottom",
           scrub: true,
           pin: true,
-          markers: false,
+          markers: true,
         },
       });
     }
@@ -105,7 +105,10 @@ const ImageSequenceScroll = () => {
             </div>
 
             <div className="pt-10 text-5xl font-body reveal-type md:w-10/12">
-              We're a full-service print and promo shop trusted by businesses nationwide. Everything is handled in-house by an experienced crew committed to quality you can count on and timelines you can trust. Our specialty? Bulk orders.
+              We're a full-service print and promo shop trusted by businesses
+              nationwide. Everything is handled in-house by an experienced crew
+              committed to quality you can count on and timelines you can trust.
+              Our specialty? Bulk orders.
             </div>
           </div>
 

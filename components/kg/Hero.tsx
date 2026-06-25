@@ -10,7 +10,6 @@ import marquee1 from "@/public/img/kg/marquee-1.png";
 import marquee2 from "@/public/img/kg/marquee-2.png";
 import marquee3 from "@/public/img/kg/marquee-3.png";
 import marquee4 from "@/public/img/kg/marquee-4.png";
-import marquee5 from "@/public/img/kg/marquee-5.png";
 
 export default function Hero() {
   return (
@@ -127,18 +126,6 @@ export default function Hero() {
                         className="mxd-move"
                         alt="Image"
                         src={marquee4}
-                        priority
-                      />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className="lg:!w-3/12">
-                  <div className="marquee__item one-line">
-                    <div className="hero-03-marquee__image">
-                      <Image
-                        className="mxd-move"
-                        alt="Image"
-                        src={marquee5}
                         priority
                       />
                     </div>
