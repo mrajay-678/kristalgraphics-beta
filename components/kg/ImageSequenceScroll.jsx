@@ -75,7 +75,7 @@ const ImageSequenceScroll = () => {
           end: "200% bottom",
           scrub: true,
           pin: true,
-          markers: true,
+          markers: false,
         },
       });
     }

@@ -28,11 +28,11 @@ export default function Hero() {
                 loop={true}
                 speed={5000}
                 allowTouchMove={false} // marquee usually doesn't need dragging
-                autoplay={{
-                  delay: 0,
-                  disableOnInteraction: false,
-                  pauseOnMouseEnter: false,
-                }}
+                // autoplay={{
+                //   delay: 0,
+                //   disableOnInteraction: false,
+                //   pauseOnMouseEnter: false,
+                // }}
                 onTouchEnd={(swiper) => {
                   swiper.autoplay.start();
                 }}
@@ -41,7 +41,7 @@ export default function Hero() {
                 }}
                 dir="rtl"
               >
-                <SwiperSlide className="lg:!w-3/12">
+                <SwiperSlide className="lg:!w-3/12 h-full">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <video
@@ -55,11 +55,11 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="lg:!w-3/12">
+                <SwiperSlide className="lg:!w-3/12 h-full">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <Image
-                        className="mxd-move"
+                        className="mxd-move object-cover h-full"
                         alt="Image"
                         src={marquee1}
                         priority
@@ -67,11 +67,11 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="lg:!w-3/12">
+                <SwiperSlide className="lg:!w-3/12 h-full">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <Image
-                        className="mxd-move"
+                        className="mxd-move object-cover h-full"
                         alt="Image"
                         src={marquee2}
                         priority
@@ -79,7 +79,7 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="lg:!w-3/12">
+                <SwiperSlide className="lg:!w-3/12 h-full">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <video
@@ -93,11 +93,11 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="lg:!w-3/12">
+                <SwiperSlide className="lg:!w-3/12 h-full">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <Image
-                        className="mxd-move"
+                        className="mxd-move object-cover h-full"
                         alt="Image"
                         src={marquee3}
                         priority
@@ -105,7 +105,7 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="lg:!w-3/12">
+                <SwiperSlide className="lg:!w-3/12 h-full">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <video
@@ -119,11 +119,11 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="lg:!w-3/12">
+                <SwiperSlide className="lg:!w-3/12 h-full">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <Image
-                        className="mxd-move"
+                        className="mxd-move object-cover h-full"
                         alt="Image"
                         src={marquee4}
                         priority

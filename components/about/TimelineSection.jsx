@@ -221,26 +221,28 @@ export default function Timeline() {
             </div>
 
             {/* BIG YEAR */}
-            <div className="relative md:flex">
+            <div className="relative">
               <div className="text-7xl xl:text-9xl leading-none font-light mb-10 w-full md:w-2/4 content">
                 {years[active]?.year}
-                <div className="relative w-4/4 content">
+              </div>
+              <div className="flex items-end ">
+                <div className="relative content">
                   <h2 className="mb-4 text-6xl xl:text-8xl font-heading">
                     {years[active]?.title}
                   </h2>
-                  <p className="pt-10 text-gray-600">
-                    {years[active]?.description}
-                  </p>
                 </div>
+                <Image
+                  src={years[active]?.image}
+                  alt="Year"
+                  className="md:w-2/4 ms-auto content"
+                  style={{ objectFit: "contain" }}
+                  width={900}
+                  height={900}
+                />
               </div>
-              <Image
-                src={years[active]?.image}
-                alt="Year"
-                className="md:w-2/4 ms-auto content"
-                style={{ objectFit: "contain" }}
-                width={900}
-                height={900}
-              />
+              <p className="pt-10 text-gray-600">
+                {years[active]?.description}
+              </p>
             </div>
             <div
               className="absolute bottom-10 right-0"

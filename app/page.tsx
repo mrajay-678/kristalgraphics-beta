@@ -53,10 +53,10 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
         <BrandsMarquee direction="rtl" items={brandImage} />
         <BrandsMarquee direction="ltr" items={brandImage.reverse()} />
         <div className="max-w-[1200px] w-full mx-auto text-[40px] text-center leading-none font-light font-heading pt-52">
-          <Image
-            src={HomeFooter}
-            alt="Trusted by unions, local businesses, national brands, event planners and companies that care about quality."
-          />
+          <div>
+            Trusted by unions, local businesses, national brands, event planners
+            and companies that care about quality.
+          </div>
         </div>
       </main>
     </>
