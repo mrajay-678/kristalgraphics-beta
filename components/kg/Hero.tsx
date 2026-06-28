@@ -28,11 +28,11 @@ export default function Hero() {
                 loop={true}
                 speed={5000}
                 allowTouchMove={false} // marquee usually doesn't need dragging
-                // autoplay={{
-                //   delay: 0,
-                //   disableOnInteraction: false,
-                //   pauseOnMouseEnter: false,
-                // }}
+                autoplay={{
+                  delay: 0,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: false,
+                }}
                 onTouchEnd={(swiper) => {
                   swiper.autoplay.start();
                 }}
