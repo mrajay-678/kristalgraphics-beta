@@ -67,7 +67,7 @@ export default function Hero() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="lg:!w-3/12 h-full">
+                {/* <SwiperSlide className="lg:!w-3/12 h-full">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <Image
@@ -78,7 +78,7 @@ export default function Hero() {
                       />
                     </div>
                   </div>
-                </SwiperSlide>
+                </SwiperSlide> */}
                 <SwiperSlide className="lg:!w-3/12 h-full">
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
@@ -123,7 +123,7 @@ export default function Hero() {
                   <div className="marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <Image
-                        className="mxd-move object-cover h-full"
+                        className="mxd-move object-cover h-full p-20"
                         alt="Image"
                         src={marquee4}
                         priority
