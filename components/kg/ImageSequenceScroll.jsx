@@ -70,11 +70,11 @@ const ImageSequenceScroll = () => {
         onUpdate: render,
 
         scrollTrigger: {
-          trigger: ".mid-animation",
-          start: "25% 25%",
-          end: "200% bottom",
+          trigger: ".canva-animation",
+          start: "00% 50%",
+          end: "100% 25%",
           scrub: true,
-          pin: true,
+          pin: false,
           markers: false,
         },
       });
@@ -122,7 +122,10 @@ const ImageSequenceScroll = () => {
         </div>
       </div>
 
-      <canvas ref={canvasRef} className="mx-auto w-full hidden md:block" />
+      <canvas
+        ref={canvasRef}
+        className="mx-auto w-full hidden md:block canva-animation"
+      />
     </section>
   );
 };
