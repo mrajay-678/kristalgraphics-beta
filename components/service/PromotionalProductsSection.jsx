@@ -8,7 +8,13 @@ export default function PromotionalProductsSection() {
         <div className="grid grid-cols-1 gap-24 md:grid-cols-2">
           {/* Left Image */}
           <div>
-            <Image src="/img/kg/service/promo01.png" alt="Embroidery machine" className="" width={4000} height={4000} />
+            <Image
+              src="/img/kg/service/promo01.png"
+              alt="Embroidery machine"
+              className=""
+              width={4000}
+              height={4000}
+            />
           </div>
 
           {/* Right Content */}
@@ -22,7 +28,13 @@ export default function PromotionalProductsSection() {
               design team to know what works best.
             </p>
 
-            <Image src="/img/kg/service/promo02.png" alt="Embroidery machine" className="" width={4000} height={4000} />
+            <Image
+              src="/img/kg/service/promo02.png"
+              alt="Embroidery machine"
+              className=""
+              width={4000}
+              height={4000}
+            />
           </div>
         </div>
 
@@ -39,10 +51,13 @@ export default function PromotionalProductsSection() {
 
         {/* Bottom Image */}
         <div className="">
-          <img
-            src="https://placehold.co/1200x700"
-            alt="Large format printer"
-            className="w-full object-cover"
+          <video
+            src="/video/kg/promotional.mp4"
+            autoPlay
+            loop
+            playsInline
+            muted
+            className="w-full"
           />
         </div>
       </div>

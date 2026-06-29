@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 export default function ScreenPrintingSection() {
@@ -21,11 +20,11 @@ export default function ScreenPrintingSection() {
           {/* Right Content */}
           <div className="flex flex-col justify-between gap-20">
             <p className="text-5xl leading-none font-body font-light">
-              Screen printing is what we’ve been doing the longest, and honestly,
-              it’s still our favorite. There’s something satisfying about
-              watching ink go through mesh and land exactly where it should. It’s
-              also the most vibrant, durable, and consistent customization across
-              hundreds and thousands of pieces.
+              Screen printing is what we’ve been doing the longest, and
+              honestly, it’s still our favorite. There’s something satisfying
+              about watching ink go through mesh and land exactly where it
+              should. It’s also the most vibrant, durable, and consistent
+              customization across hundreds and thousands of pieces.
             </p>
 
             <Image
@@ -51,11 +50,16 @@ export default function ScreenPrintingSection() {
 
         {/* Bottom Image */}
         <div className="mt-28">
-          <img
-            src="https://placehold.co/1200x600"
-            alt="Large format printing"
-            className="w-full object-cover"
-          />
+          <div className="">
+            <video
+              src="/video/kg/screen-printing.mp4"
+              autoPlay
+              loop
+              playsInline
+              muted
+              className=""
+            />
+          </div>
         </div>
       </div>
     </section>

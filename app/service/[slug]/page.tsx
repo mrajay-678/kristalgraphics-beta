@@ -8,9 +8,7 @@ export default async function ServicePage({
 }) {
   const { slug } = await params;
 
-  const service = services.find(
-    (item) => item.slug === slug
-  );
+  const service = services.find((item) => item.slug === slug);
 
   if (!service) {
     notFound();
@@ -22,7 +20,6 @@ export default async function ServicePage({
         <h1 className="text-7xl font-heading leading-normal">
           {service.question}
         </h1>
-
         {service.answer}
       </div>
     </main>

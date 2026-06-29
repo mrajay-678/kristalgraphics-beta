@@ -10,7 +10,17 @@ import narisara from "@/public/img/kg/teams/narisara.svg";
 import nafisa from "@/public/img/kg/teams/nafisa.svg";
 import fatema from "@/public/img/kg/teams/fatema.svg";
 
-let team = [juzer, murtaza, courtney, darwin, tasneem, ana, narisara, nafisa, fatema];
+let team = [
+  juzer,
+  murtaza,
+  courtney,
+  darwin,
+  tasneem,
+  ana,
+  narisara,
+  nafisa,
+  fatema,
+];
 
 const Teams = () => {
   return (
@@ -23,12 +33,9 @@ const Teams = () => {
           Meet the team
         </RevealText>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-20 pb-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-20 pb-24">
         {team.map((member, i) => (
-          <div
-            key={i}
-            className="mb-20"
-          >
+          <div key={i} className="mb-20">
             <Image
               src={member}
               alt={`Team member ${i + 1}`}

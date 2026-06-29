@@ -19,11 +19,16 @@ export default function LabelsSection() {
         <div className="mt-28 grid grid-cols-1 gap-28 md:grid-cols-2">
           {/* Left Image */}
           <div>
-            <img
-              src="https://placehold.co/600x800"
-              alt="Embroidery machine"
-              className="h-full w-full object-cover"
-            />
+            <div className="">
+              <video
+                src="/video/kg/labels.mp4"
+                autoPlay
+                loop
+                playsInline
+                muted
+                className=""
+              />
+            </div>
           </div>
 
           {/* Right Content */}
@@ -49,7 +54,13 @@ export default function LabelsSection() {
 
         {/* Bottom Image */}
         <div className="mt-28">
-          <Image src="/img/kg/service/label02.png" alt="Large format label printer" className="w-full object-cover" width={1200} height={700} />
+          <Image
+            src="/img/kg/service/label02.png"
+            alt="Large format label printer"
+            className="w-full object-cover"
+            width={1200}
+            height={700}
+          />
         </div>
       </div>
     </section>

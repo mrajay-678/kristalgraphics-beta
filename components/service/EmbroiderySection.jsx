@@ -15,22 +15,37 @@ export default function EmbroiderySection() {
               designs become part of the fabric, they don’t just sit on top.
             </p>
 
-            <Image src="/img/kg/service/emb01.png" alt="Embroidery machine" className="" width={4000} height={4000} />
+            <Image
+              src="/img/kg/service/emb01.png"
+              alt="Embroidery machine"
+              className=""
+              width={4000}
+              height={4000}
+            />
           </div>
 
           {/* Right Column */}
-          <div>
-            <img
-              src="https://placehold.co/600x800"
-              alt="Embroidery machine"
-              className="h-full w-full object-cover"
+          <div className="">
+            <video
+              src="/video/kg/embroidery.mp4"
+              autoPlay
+              loop
+              playsInline
+              muted
+              className=""
             />
           </div>
         </div>
 
         {/* Large Bottom Image */}
         <div className="mt-28">
-          <Image src="/img/kg/service/emb02.png" alt="Embroidery machine" className="" width={4000} height={4000} />
+          <Image
+            src="/img/kg/service/emb02.png"
+            alt="Embroidery machine"
+            className=""
+            width={4000}
+            height={4000}
+          />
         </div>
 
         {/* Bottom Text */}

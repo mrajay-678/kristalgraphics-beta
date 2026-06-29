@@ -1,12 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import ScreenPrintingSection from "@/components/service/ScreenPrintingSection";
-import EmbroiderySection from "@/components/service/EmbroiderySection";
-import PromotionalProductsSection from "@/components/service/PromotionalProductsSection";
-import PackagingSection from "@/components/service/PackagingSection";
-import FulfillmentSection from "@/components/service/FulfillmentSection";
-import LabelsSection from "@/components/service/LabelsSection";
 import Image from "next/image";
 import ServiceHero from "@/components/kg/ServiceHero";
 import { services } from "@/data/kg/services";
