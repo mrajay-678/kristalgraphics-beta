@@ -225,7 +225,7 @@ export default function Timeline() {
               <div className="text-7xl xl:text-9xl leading-none font-light mb-10 w-full md:w-2/4 content">
                 {years[active]?.year}
               </div>
-              <div className="flex items-end ">
+              <div className="md:flex items-end ">
                 <div className="relative content">
                   <h2 className="mb-4 text-6xl xl:text-8xl font-heading">
                     {years[active]?.title}
