@@ -166,8 +166,6 @@ function validateForm(form) {
 
   if (!form.serviceType) nextErrors.serviceType = ERROR_REQUIRED;
 
-  if (form.products.length === 0) nextErrors.products = ERROR_REQUIRED;
-
   if (!form.quantity) nextErrors.quantity = ERROR_REQUIRED;
 
   if (!form.deadline) nextErrors.deadline = ERROR_REQUIRED;
@@ -236,7 +234,6 @@ export default function ContactForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log("Sent");
     setSubmitError("");
 
     const nextErrors = validateForm(form);
@@ -278,7 +275,7 @@ export default function ContactForm() {
       setForm(initialForm);
       setShowSuccess(true);
     } catch (error) {
-      console.error(error);
+      console.error("Quote email failed:", error);
       setSubmitError(error.message || ERROR_SUBMIT);
     } finally {
       setIsSubmitting(false);

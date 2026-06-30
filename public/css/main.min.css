@@ -8518,11 +8518,6 @@ form textarea:required:valid {
   width: 100%;
   overflow: hidden;
 }
-@media only screen and (min-width: 1600px) {
-  .mxd-hero-03__marquee {
-    /* top: -20%; */
-  }
-}
 .mxd-hero-03__marquee .marquee__item {
   width: auto;
   height: auto;
@@ -17824,10 +17819,7 @@ form textarea:required:valid {
 .marquee.muted .marquee__text {
   color: var(--t-muted);
 }
-.marquee.muted-extra .marquee__image,
-.marquee.muted-extra .marquee__text {
-  /* color: var(--t-muted-extra); */
-}
+
 .marquee.permanent-desktop .marquee__image,
 .marquee.permanent-desktop .marquee__text {
   color: var(--t-bright);
@@ -17899,10 +17891,6 @@ form textarea:required:valid {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   gap: 20px;
   -webkit-animation: animateZ 1s infinite;
   -moz-animation: animateZ 1s infinite;

@@ -13,7 +13,6 @@ const requiredFields = [
   "email",
   "phone",
   "serviceType",
-  "products",
   "quantity",
   "deadline",
   "artwork",
@@ -151,6 +150,50 @@ export async function POST(request) {
       throw new Error(
         error.message || "Resend could not send the quote email.",
       );
+    }
+
+    const { error: confirmationError } = await resend.emails.send({
+      from: QUOTE_FROM,
+      to: body.email,
+      subject: "We've received your quote request",
+      text: `Hi ${body.name},
+
+Thank you for contacting Kristal Graphics.
+
+We've received your quote request successfully. Our team will review your requirements and get back to you within 24 hours.
+
+Regards,
+Kristal Graphics Team`,
+      html: `<div style="font-family:Arial;padding:40px">
+
+                <h2>Hi ${escapeHtml(body.name)},</h2>
+
+                <p>
+                  Thank you for contacting <strong>Kristal Graphics</strong>.
+                </p>
+
+                <p>
+                  We've received your quote request successfully.
+                </p>
+
+                <p>
+                  Our team will review your requirements and get back to you within
+                  <strong>24 hours</strong>.
+                </p>
+
+                <br/>
+
+                <p>
+                  Regards,<br/>
+                  Kristal Graphics Team
+                </p>
+
+              </div>
+            `,
+    });
+
+    if (confirmationError) {
+      console.warn("Quote confirmation email failed:", confirmationError);
     }
 
     return NextResponse.json({ ok: true });

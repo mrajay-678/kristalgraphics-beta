@@ -38,19 +38,23 @@ export default function MarqueeSlider({
             }}
           >
             {items.map((item, index) => (
-              <SwiperSlide
-                key={index}
-                style={{ width: "auto" }}
-              >
-                <div className="marquee__item one-line item-regular text flex items-center !m-0">
+              <SwiperSlide key={index} style={{ width: "auto" }}>
+                <div className="marquee__item one-line item-regular text flex items-end !m-0">
                   <p
                     className={`text-black marquee__text font-heading ${className}`}
                     dangerouslySetInnerHTML={{ __html: item }}
                   />
 
-                  <div className="p-5 marquee__image mt-0 md:mt-12">
+                  <div className="p-5 marquee__image mt-0">
                     {img == "logo" && <Image src={logo} alt="Logo" />}
-                    {img == "round-logo" && <Image src={roundLogo} width={55} height={55} alt="Logo" />}
+                    {img == "round-logo" && (
+                      <Image
+                        src={roundLogo}
+                        width={55}
+                        height={55}
+                        alt="Logo"
+                      />
+                    )}
                   </div>
                 </div>
               </SwiperSlide>

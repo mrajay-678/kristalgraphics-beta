@@ -112,13 +112,17 @@ export default function Timeline() {
 
     const width = rightSection.offsetWidth;
 
-    gsap.to(dotRef.current, {
-      x: progress * width - 8, // center the dot
-      duration: 0.4,
-      ease: "power2.out",
-    });
+    // gsap.to(dotRef.current, {
+    //   x: progress * width - 8, // center the dot
+    //   duration: 0.4,
+    //   ease: "power2.out",
+    // });
     setActive(index);
-
+    gsap.to(".year-slider", {
+      xPercent: -(index * 8.33),
+      duration: 0.7,
+      ease: "power3.out",
+    });
     const target = yearRefs.current[index];
 
     // move horizontal indicator
@@ -185,7 +189,7 @@ export default function Timeline() {
       </div>
       <div className="flex kg-width justify-between">
         {/* LEFT YEARS */}
-        <div className="relative flex items-center justify-center w-1/12 pl-10">
+        <div className="relative flex items-end justify-center w-1/12 pl-10">
           {/* vertical line */}
           <div className="space-y-2">
             {years.map((year, i) => (
@@ -202,15 +206,15 @@ export default function Timeline() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="relative flex flex-col justify-between gap-20 w-10/12 px-16 pt-20 right-section pb-20">
+        <div className="relative flex flex-col justify-between gap-20 w-10/12 px-16 pt-20 right-section">
           {/* TOP LINE */}
-          <div>
+          <div className="h-full">
             <div className="absolute top-0 left-0 w-full h-[2px] bg-gray-300" />
 
             {/* MOVING DOT */}
             <div
               ref={dotRef}
-              className="absolute top-0 left-0 w-10 h-10 -translate-y-1/2 bg-yellow-1000"
+              className="absolute top-0 left-[6%] w-10 h-10 -translate-y-1/2 bg-yellow-1000"
             >
               <Image
                 src="/img/kg/time-logo.svg"
@@ -221,28 +225,43 @@ export default function Timeline() {
             </div>
 
             {/* BIG YEAR */}
-            <div className="relative">
-              <div className="text-7xl xl:text-9xl leading-none font-light mb-10 w-full md:w-2/4 content">
-                {years[active]?.year}
-              </div>
-              <div className="md:flex items-end ">
-                <div className="relative content">
-                  <h2 className="mb-4 text-6xl xl:text-8xl font-heading">
-                    {years[active]?.title}
-                  </h2>
+            <div className="relative h-full flex flex-col justify-between">
+              <div className="relative h-36 overflow-hidden mb-10 w-full">
+                <div className="flex items-center year-slider w-max ">
+                  {years.map((item, index) => (
+                    <div
+                      key={item.year}
+                      className={`year-item w-1/12 text-9xl text-center pr-20 whitespace-nowrap transition-all duration-500 ${
+                        active === index
+                          ? "text-black scale-100 opacity-100"
+                          : "text-gray-300 scale-90 opacity-100"
+                      }`}
+                    >
+                      {item.year}
+                    </div>
+                  ))}
                 </div>
-                <Image
-                  src={years[active]?.image}
-                  alt="Year"
-                  className="md:w-2/4 ms-auto content"
-                  style={{ objectFit: "contain" }}
-                  width={900}
-                  height={900}
-                />
               </div>
-              <p className="pt-10 text-gray-600">
-                {years[active]?.description}
-              </p>
+              <div>
+                <div className="md:flex items-end ">
+                  <div className="relative content">
+                    <h2 className="mb-4 text-6xl xl:text-8xl font-heading">
+                      {years[active]?.title}
+                    </h2>
+                  </div>
+                  <Image
+                    src={years[active]?.image}
+                    alt="Year"
+                    className="md:w-2/4 max-h-96 ms-auto content"
+                    style={{ objectFit: "contain" }}
+                    width={900}
+                    height={900}
+                  />
+                </div>
+                <p className="pt-10 text-gray-600">
+                  {years[active]?.description}
+                </p>
+              </div>
             </div>
             <div
               className="absolute bottom-10 right-0"
@@ -262,7 +281,18 @@ export default function Timeline() {
                 >
                   Scroll down
                 </p>
-                <Image src={scrollDown} alt="Scroll down" className="w-12" />
+                <div className="animate-bounce">
+                  <Image
+                    src={scrollDown}
+                    alt="Scroll down"
+                    className="w-12 rotate-180 "
+                  />
+                  <Image
+                    src={scrollDown}
+                    alt="Scroll down"
+                    className="w-12 rotate-180"
+                  />
+                </div>
               </div>
             </div>
           </div>

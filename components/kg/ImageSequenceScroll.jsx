@@ -71,7 +71,7 @@ const ImageSequenceScroll = () => {
 
         scrollTrigger: {
           trigger: ".canva-animation",
-          start: "00% 50%",
+          start: "00% 75%",
           end: "100% 25%",
           scrub: true,
           pin: false,
@@ -86,7 +86,7 @@ const ImageSequenceScroll = () => {
   }, []);
 
   return (
-    <section className="mid-animation pb-52" style={{ minHeight: "100vh" }}>
+    <section className="mid-animation pb-52">
       <div>
         <div className="flex flex-col md:flex-row justify-between mx-auto mxd-container grid-container">
           <div className="flex flex-col md:w-2/4 gap-2 md:gap-5 pb-10 md:pb-52">
