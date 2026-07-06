@@ -44,7 +44,7 @@ export default function Header1() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/service" },
-    { name: "Portfolio", path: "/portfolio" },
+    // { name: "Portfolio", path: "/portfolio" },
     { name: "About us", path: "/about-us" },
     {
       name: "Promo Products",
@@ -54,7 +54,7 @@ export default function Header1() {
   const MobileLinks = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/service" },
-    { name: "Portfolio", path: "/portfolio" },
+    // { name: "Portfolio", path: "/portfolio" },
     { name: "About us", path: "/about-us" },
     {
       name: "Promo Products",

@@ -136,9 +136,9 @@ export default function Hero() {
             </div>
             {/* headline */}
             <div className="mxd-hero-03__headline ">
-              <div className="mb-32 text-black hero-03-headline__title loading__item">
-                <div className="!text-[10vh] font-heading leading-none hero-03-headline__svg-mobile">
-                  Kristal <span className="">Graphics</span>
+              <div className="md:mb-32 text-black hero-03-headline__title loading__item">
+                <div className="!text-[8vh] font-heading leading-none hero-03-headline__svg-mobile">
+                  Your Partner <span className="">In Print</span>
                 </div>
                 <svg
                   className="w-full hero-03-headline__svg"
