@@ -123,5 +123,6 @@
   .home-page-footer {
     background: unset;
     padding: 0;
+    margin-bottom: 100px;
   }
 }

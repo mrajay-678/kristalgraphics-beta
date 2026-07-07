@@ -214,7 +214,7 @@ export default function Timeline() {
             {/* MOVING DOT */}
             <div
               ref={dotRef}
-              className="absolute -top-5w left-[6%] w-10 h-10 bg-yellow-1000"
+              className="absolute -top-5 left-[6%] w-10 h-10 bg-yellow-1000"
             >
               <Image
                 src="/img/kg/time-logo.svg"
