@@ -45,10 +45,13 @@ export default function Hero() {
                   <div className="justify-center marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <video
-                        preload="auto"
-                        autoPlay
-                        loop
                         muted
+                        loop
+                        autoPlay
+                        playsInline
+                        preload="metadata"
+                        disablePictureInPicture
+                        controls={false}
                         src={"/video/kg/video1.mp4"}
                         className={"rounded-[800px]"}
                       />
@@ -83,10 +86,13 @@ export default function Hero() {
                   <div className="justify-center marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <video
-                        preload="auto"
-                        autoPlay
-                        loop
                         muted
+                        loop
+                        autoPlay
+                        playsInline
+                        preload="metadata"
+                        disablePictureInPicture
+                        controls={false}
                         src={"/video/kg/video2.mp4"}
                         className={"rounded-[800px]"}
                       />
@@ -109,10 +115,13 @@ export default function Hero() {
                   <div className="justify-center marquee__item one-line">
                     <div className="hero-03-marquee__image">
                       <video
-                        preload="auto"
-                        autoPlay
-                        loop
                         muted
+                        loop
+                        autoPlay
+                        playsInline
+                        preload="metadata"
+                        disablePictureInPicture
+                        controls={false}
                         src={"/video/kg/video3.mp4"}
                         className={"rounded-[800px]"}
                       />
