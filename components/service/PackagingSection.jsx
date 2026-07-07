@@ -6,7 +6,7 @@ export default function PackagingSection() {
         {/* Top Grid */}
         <div className="grid grid-cols-1 gap-28 md:grid-cols-2">
           {/* Left Content */}
-          <div className="flex flex-col justify-between gap-20">
+          <div className="flex flex-col  gap-20">
             <Image
               src="/img/kg/service/pack01.png"
               alt="Embroidery machine"

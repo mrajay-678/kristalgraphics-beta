@@ -18,7 +18,7 @@ export default function PromotionalProductsSection() {
           </div>
 
           {/* Right Content */}
-          <div className="flex flex-col justify-between gap-24">
+          <div className="flex flex-col gap-20">
             <p className="text-5xl leading-none font-body font-light">
               Promotional Products don’t have to end up in a drawer if they’re
               sourced well. We source products people like to actually use. Good

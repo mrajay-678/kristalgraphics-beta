@@ -206,7 +206,7 @@ export default function Timeline() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="relative flex flex-col justify-between gap-20 w-10/12 px-16 pt-20 right-section">
+        <div className="relative flex flex-col  gap-20 w-10/12 px-16 pt-20 right-section">
           {/* TOP LINE */}
           <div className="h-full">
             <div className="absolute top-0 left-0 w-full h-[2px] bg-gray-300" />

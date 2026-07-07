@@ -32,7 +32,7 @@ export default function LabelsSection() {
           </div>
 
           {/* Right Content */}
-          <div className="flex flex-col justify-between gap-20">
+          <div className="flex flex-col  gap-20">
             <Image
               src="/img/kg/service/label01.png"
               alt="Printed label sample"

@@ -122,5 +122,6 @@
 @media (max-width: 768px) {
   .home-page-footer {
     background: unset;
+    padding: 0;
   }
 }

@@ -19,6 +19,18 @@ const brandImage = Array(18)
   .map((_, index) => {
     return `brand-${index}.svg`;
   });
+
+function shuffleArray(array: any) {
+  const shuffled = [...array]; // Don't mutate the original array
+
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const randomIndex = Math.floor(Math.random() * (i + 1));
+
+    [shuffled[i], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[i]];
+  }
+
+  return shuffled;
+}
 export default function HomeSoftwareDevelopmentCompanyPage() {
   return (
     <>
@@ -50,8 +62,11 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
             Businesses that trust us
           </div>
         </section>
-        <BrandsMarquee direction="rtl" items={brandImage} />
-        <BrandsMarquee direction="ltr" items={brandImage.reverse()} />
+        <BrandsMarquee direction="rtl" items={shuffleArray(brandImage)} />
+        <BrandsMarquee
+          direction="ltr"
+          items={shuffleArray(brandImage.reverse())}
+        />
         <div className="max-w-[1200px] w-full mx-auto text-[40px] text-center leading-none font-light font-heading home-page-footer">
           <div>
             Trusted by unions, local businesses, national brands, event planners
