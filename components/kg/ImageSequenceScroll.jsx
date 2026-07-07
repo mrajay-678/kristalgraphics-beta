@@ -13,7 +13,7 @@ const ImageSequenceScroll = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    const frameCount = 118;
+    const frameCount = 176;
 
     const currentFrame = (index) =>
       `/img/kg/sequence/ezgif-frame-${String(index).padStart(3, "0")}.png`;
