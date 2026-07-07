@@ -26,7 +26,7 @@ export const services = [
     slug: "labels",
     question: "Labels",
     description:
-      "Promotional Products don't have to end up in a drawer if they're sourced well. We source products people like to actually use. Good quality drinkware, useful accessories, hats and tees that last, and totes that don't fall apart. We customize them with your branding with print, embroidery, or labels; you can consult our design team to know what works best...",
+      "Labels seem simple until you need them to have the perfect finish that suits your brand identity or look professional on a hundred different products. With an in-house designer to support you, we print custom labels in matte, glossy, clear, and holographic finishes. They're waterproof, oil-resistant, and can be die-cut to any shape...",
     hoverImage: "/img/kg/labels-hover.svg",
     answer: <LabelsSection />,
   },
@@ -34,7 +34,7 @@ export const services = [
     slug: "promotional-products",
     question: "Promotional Products",
     description:
-      "Packaging is crucial for your business because it's the first thing someone touches, and it sets the tone before they even see what's inside. We make luxury packaging boxes, mylar bags and shipment boxes. The kind of stuff that actually protects your product and makes it look thoughtful...",
+      "Promotional Products don't have to end up in a drawer if they're sourced well. We source products people like to actually use. Good quality drinkware, useful accessories, hats and tees that last, and totes that don't fall apart. We customize them with your branding with print, embroidery, or labels; you can consult our design team to know what works best...",
     hoverImage: "/img/kg/promotional-hover.svg",
     answer: <PromotionalProductsSection />,
   },
@@ -42,7 +42,7 @@ export const services = [
     slug: "packaging",
     question: "Packaging",
     description:
-      "Fulfillment & Deilvery is another service we offer here at our Chatsworth, CA facility. Printing is one thing, but getting it packed, sorted, and shipped to the right place on time? That's the part people underestimate...",
+      "Packaging is crucial for your business because it's the first thing someone touches, and it sets the tone before they even see what's inside. We make luxury packaging boxes, mylar bags and shipment boxes. The kind of stuff that actually protects your product and makes it look thoughtful...",
     hoverImage: "/img/kg/packing-hover.svg",
     answer: <PackagingSection />,
   },
@@ -50,7 +50,7 @@ export const services = [
     slug: "fulfillment-delivery",
     question: "Fulfillment & Delivery",
     description:
-      "Labels seem simple until you need them to have the perfect finish that suits your brand identity or look professional on a hundred different products. With an in-house designer to support you, we print custom labels in matte, glossy, clear, and holographic finishes. They're waterproof, oil-resistant, and can be die-cut to any shape...",
+      "Fulfillment & Deilvery is another service we offer here at our Chatsworth, CA facility. Printing is one thing, but getting it packed, sorted, and shipped to the right place on time? That's the part people underestimate...",
     hoverImage: "/img/kg/fulfillment-hover.svg",
     answer: <FulfillmentSection />,
   },
