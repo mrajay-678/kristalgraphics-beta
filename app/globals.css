@@ -118,3 +118,9 @@
   padding: 200px 0;
   margin-top: 100px;
 }
+
+@media (max-width: 768px) {
+  .home-page-footer {
+    background: unset;
+  }
+}

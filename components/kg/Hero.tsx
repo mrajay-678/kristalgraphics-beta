@@ -136,7 +136,7 @@ export default function Hero() {
             </div>
             {/* headline */}
             <div className="mxd-hero-03__headline ">
-              <div className="md:mb-32 text-black hero-03-headline__title loading__item">
+              <div className="md:mb-24 text-black hero-03-headline__title loading__item">
                 <div className="!text-[8vh] font-heading leading-none hero-03-headline__svg-mobile">
                   Your Partner <span className="">In Print</span>
                 </div>
