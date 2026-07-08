@@ -84,7 +84,7 @@ export default function Header1() {
         ${isSticky ? "py-10" : "py-5"}
       `}
     >
-      <div className="flex items-center justify-between w-[90vw] mx-auto">
+      <div className="flex items-center justify-between max-w-[1920px] mxd-hero-03__header mx-auto px-[4.5rem]">
         {/* Logo */}
         <div className="mxd-header__logo loading__fade">
           <Link href="/" className="mxd-logo">
@@ -100,7 +100,7 @@ export default function Header1() {
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden items-center w-full text-center justify-evenly xl:flex">
+        <ul className="hidden items-center text-center justify-evenly gap-20  xl:flex">
           {navLinks.map((link) => (
             <li key={link.path}>
               <Link
@@ -118,10 +118,10 @@ export default function Header1() {
         </ul>
 
         {/* Desktop Right */}
-        <div className="hidden items-center justify-center w-3/12 gap-4 xl:flex">
+        <div className="hidden items-center justify-end gap-4 xl:flex">
           <AnimatedButton
             text="Get a Quote!"
-            className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right !text-3xl !font-heading"
+            className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right !text-3xl !font-heading px-20"
             href="/get-a-quote"
           >
             <ArrowUpRight />
