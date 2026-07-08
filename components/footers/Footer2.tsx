@@ -40,12 +40,20 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             Get a <span className="text-[#FEBB12]">quote!</span>
           </h3>
           {/* Address */}
-          <div className="flex flex-wrap lg:flex-row gap-5 lg:w-6/12 justify-between items-end">
-            <div className="flex flex-col items-center gap-2">
-              <Image src={unionFooter} alt="Union Footer" />
-              <Image src={sageFooter} alt="Sage Footer" className="w-3/5" />
+          <div className="flex md:flex-wrap flex-col lg:flex-row gap-5 lg:w-6/12 justify-between md:items-end">
+            <div className="flex md:w-3/12 flex-col items-center gap-2">
+              <Image
+                className="w-4/4 md:w-5/12"
+                src={unionFooter}
+                alt="Union Footer"
+              />
+              <Image
+                className="w-4/4 md:w-5/12"
+                src={sageFooter}
+                alt="Sage Footer"
+              />
             </div>
-            <div>
+            <div className="md:w-3/12">
               <h4 className="mb-10 font-body font-bold text-5xl text-white sm:text-2xl lg:text-3xl">
                 Address:
               </h4>
@@ -60,7 +68,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             </div>
 
             {/* Contact */}
-            <div>
+            <div className="md:w-3/12">
               <h4 className="mb-10 font-body font-bold text-5xl text-white sm:text-2xl lg:text-3xl">
                 We got you!
               </h4>
@@ -84,7 +92,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
         </div>
         <div className="mx-auto pt-20 px-0">
           <div className="flex flex-col gap-6 border-t border-white/30 pt-8 md:flex-row md:items-end md:justify-between">
-            <div className="font-body text-sm text-white/80 sm:text-2xl lg:text-xl">
+            <div className="font-body md:w-6/12 text-sm text-white/80 sm:text-2xl lg:text-xl">
               <p className="text-white text-3xl pb-5">
                 Privacy Policy | Terms of Service
               </p>
@@ -93,41 +101,38 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
               </p>
             </div>
 
-            <div className="font-body text-white/80 flex gap-28">
-              <ul>
-                <li className="pb-2 text-3xl">
-                  <Link href="#" className="text-white">
-                    Home
-                  </Link>
-                </li>
-                <li className="pb-2 text-3xl">
-                  <Link href="#" className="text-white">
-                    Service
-                  </Link>
-                </li>
-                <li className="pb-2 text-3xl">
-                  <Link href="#" className="text-white">
-                    Portfolio
-                  </Link>
-                </li>
-              </ul>
-              <ul>
-                <li className="pb-2 text-3xl">
-                  <Link href="#" className="text-white">
-                    About Us
-                  </Link>
-                </li>
-                <li className="pb-2 text-3xl">
-                  <Link href="#" className="text-white">
-                    Catalog
-                  </Link>
-                </li>
-                <li className="pb-2 text-3xl">
-                  <Link href="#" className="text-white">
-                    FAQs
-                  </Link>
-                </li>
-              </ul>
+            <div className="flex flex-wrap lg:flex-row gap-5 lg:w-6/12 justify-between items-end">
+              <div className="w-3/12 flex flex-col items-center gap-2 opacity-0"></div>
+              <div className="w-3/12">
+                <ul>
+                  <li className="pb-2 text-3xl">
+                    <Link href="#" className="text-white">
+                      Home
+                    </Link>
+                  </li>
+                  <li className="pb-2 text-3xl">
+                    <Link href="#" className="text-white">
+                      Services
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Contact */}
+              <div className="w-3/12">
+                <ul>
+                  <li className="pb-2 text-3xl">
+                    <Link href="#" className="text-white">
+                      About Us
+                    </Link>
+                  </li>
+                  <li className="pb-2 text-3xl">
+                    <Link href="#" className="text-white">
+                      Promo Products
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
