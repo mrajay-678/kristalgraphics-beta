@@ -34,7 +34,7 @@ export default function Instagram() {
           (almost incurably) social!
         </h2>
 
-        <p className="lg:w-6/12 font-body leading-relaxed text-5xl">
+        <p className="lg:w-6/12 font-body text-5xl">
           Follow us for behind-the-scenes action, service spotlights and
           exclusive offers.
         </p>
