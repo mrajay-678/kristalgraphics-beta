@@ -67,8 +67,8 @@ export default function HomeSoftwareDevelopmentCompanyPage() {
           direction="ltr"
           items={shuffleArray(brandImage.reverse())}
         />
-        <div className="max-w-[1200px] w-full mx-auto text-[40px] text-center leading-none font-light font-heading home-page-footer">
-          <div>
+        <div className="max-w-[1200px] w-full mx-auto font-heading home-page-footer">
+          <div className="px-40 text-7xl text-center">
             Trusted by unions, local businesses, national brands, event planners
             and companies that care about quality.
           </div>

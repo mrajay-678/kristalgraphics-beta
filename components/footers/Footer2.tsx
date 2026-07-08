@@ -40,7 +40,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
             Get a <span className="text-[#FEBB12]">quote!</span>
           </h3>
           {/* Address */}
-          <div className="flex flex-wrap lg:flex-row gap-5 lg:w-6/12 justify-between items-start">
+          <div className="flex flex-wrap lg:flex-row gap-5 lg:w-6/12 justify-between items-end">
             <div className="flex flex-col items-center gap-2">
               <Image src={unionFooter} alt="Union Footer" />
               <Image src={sageFooter} alt="Sage Footer" className="w-3/5" />
@@ -83,7 +83,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
           </div>
         </div>
         <div className="mx-auto pt-20 px-0">
-          <div className="flex flex-col gap-6 border-t border-white/30 pt-8 md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col gap-6 border-t border-white/30 pt-8 md:flex-row md:items-end md:justify-between">
             <div className="font-body text-sm text-white/80 sm:text-2xl lg:text-xl">
               <p className="text-white text-3xl pb-5">
                 Privacy Policy | Terms of Service
