@@ -21,13 +21,13 @@ export const ContactDetails = () => {
       <div className="text-5xl font-body text-start pt-52">
         <h2 className="font-heading">Prefer to talk directly?</h2>
         <div className="pt-20 flex flex-col md:flex-row gap-20 text-3xl">
-          <div className="w-1/2">
+          <div className="md:w-1/2">
             <p>
-              <b>Call us:</b> (818) 342-7822
+              <b>Call us: &nbsp;</b>(818) 342-7822
             </p>
             <p>Monday – Friday, 9am – 5pm PST</p>
           </div>
-          <div>
+          <div className="md:w-1/2">
             <b>Visit us:</b> <br /> 9607 Canoga Ave, <br /> Chatsworth, CA 91311
           </div>
         </div>
