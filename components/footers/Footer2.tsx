@@ -25,8 +25,8 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
         <div className="relative mx-auto grid-container py-8 md:py-24 px-8 md:px-32 gap-16 pb-20  lg:flex-row lg:items-end lg:gap-10 bg-[#181818]">
           {/* Left Content */}
           <div className="flex w-full justify-between items-end">
-            <h2 className="font-heading text-4xl font-light leading-tight text-white w-6/12 sm:text-5xl md:text-6xl lg:text-[5vw]">
-              Ready to print something people keep forever?
+            <h2 className="font-heading text-4xl font-light leading-normal text-white w-6/12 sm:text-5xl md:text-6xl lg:text-[5vw]">
+              Ready to print merch at scale?
             </h2>
             <div className="w-6/12">
               <Image
@@ -39,7 +39,7 @@ export default function Footer2({ text = "rayosttudio" }: { text?: string }) {
 
           {/* Right Content */}
           <div className="flex w-full items-start lg:items-end flex-col gap-6 lg:flex-row lg:justify-between pt-20 lg:pt-72">
-            <h3 className="font-heading md:w-6/12 font-medium text-white sm:text-7xl md:text-7xl lg:text-[5vw]">
+            <h3 className="font-heading font-medium text-white sm:text-7xl md:text-7xl lg:text-[5vw]">
               Get a <span className="text-[#FEBB12]">quote!</span>
             </h3>
             {/* Address */}

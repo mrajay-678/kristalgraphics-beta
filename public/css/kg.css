@@ -1,19 +1,19 @@
 .hero-03-headline__title {
-    font-size: 7vw;
-    color: #fff;
+  font-size: 7vw;
+  color: #fff;
 
-    span {
-        font-weight: 300;
-    }
+  span {
+    font-weight: 300;
+  }
 }
 .m-0 {
-    margin: 0;
+  margin: 0;
 }
 .font-40 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
-.hero-section-marquee  .swiper-wrapper {
+.hero-section-marquee .swiper-wrapper {
   transition-timing-function: linear !important;
   align-items: center;
 }
@@ -29,4 +29,3 @@
   transition-timing-function: linear !important;
   flex-direction: row-reverse;
 }
-

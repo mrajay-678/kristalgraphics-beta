@@ -29,13 +29,13 @@ const ServiceHero = () => {
         <Image
           src={serviceOne}
           alt="Customise Your Print"
-          className="absolute w-56 md:w-64 lg:w-[50%] -top-10 md:-top-38 -left-16 md:-left-72 service-animate-1"
+          className="absolute w-56 md:w-64 lg:w-[60%] -top-12 md:-top-28 -left-16 md:-left-[40%] service-animate-1"
         />
 
         <Image
           src={serviceTwo}
           alt="Customise Your Print"
-          className="absolute w-32 md:w-48 lg:w-[40%] -top-12 md:-top-32 -right-8 md:-right-60 -z-10 service-animate-2"
+          className="absolute w-32 md:w-48 lg:w-[40%] -top-10 md:-top-28 -right-8 md:-right-64 -z-10 service-animate-2"
         />
 
         <h1 className="font-heading text-7x lg:text-9xl leading-[1.1]">

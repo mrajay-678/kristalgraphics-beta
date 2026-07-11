@@ -8600,17 +8600,20 @@ form textarea:required:valid {
   mix-blend-mode: difference;
 }
 @media only screen and (min-width: 768px) {
-  .mxd-hero-03__headline ,.mxd-hero-03__header {
+  .mxd-hero-03__headline,
+  .mxd-hero-03__header {
     padding: 0 4.5rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .mxd-hero-03__headline ,.mxd-hero-03__header {
+  .mxd-hero-03__headline,
+  .mxd-hero-03__header {
     bottom: 2rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .mxd-hero-03__headline ,.mxd-hero-03__header {
+  .mxd-hero-03__headline,
+  .mxd-hero-03__header {
     padding: 0 7.5rem;
   }
 }
@@ -21026,4 +21029,22 @@ html {
 }
 .mix-blend-normal {
   mix-blend-mode: normal;
+}
+.animate-spin-slow {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    background-image: none !important;
+  }
 }
