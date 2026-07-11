@@ -1,5 +1,4 @@
 import "@/public/css/kg.css";
-
 import Capabilities from "@/components/kg/Capabilities";
 import Hero from "@/components/kg/Hero";
 import MarqueeSlider from "@/components/kg/MarqueeSlider";
@@ -9,7 +8,6 @@ import Instagram from "@/components/kg/Instagram";
 import Image from "next/image";
 import HomeFooter from "@/public/img/kg/homefooter.svg";
 import { Metadata } from "next";
-
 export const metadata: Metadata = {
   title: "Kristal Graphics",
   description: "Kristal Graphics",
